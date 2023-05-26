@@ -2865,12 +2865,18 @@ void PWM_duty(char canal, float duty){
     if (canal == 1){
         int particion1 = (int)(4*duty/((1.0f/4000000)*16));
         CCPR1L = (char)(-((particion1 >> 2)-94));
+
+
+
         CCP1CONbits.DC1B0 = (particion1&(0b1));
         CCP1CONbits.DC1B1 = ((particion1>>1) &(0b1));
     }
     else if (canal == 2){
         int particion2 = (int)(4*duty/((1.0f/4000000)*16));
-        CCPR2L = (char)(((particion2 >> 2)+94));
+        CCPR2L = (char)(((particion2 >> 2)+60));
+
+
+
         CCP2CONbits.DC2B0 = (particion2&(0b1));
         CCP2CONbits.DC2B1 = ((particion2>>1) &(0b1));
     }

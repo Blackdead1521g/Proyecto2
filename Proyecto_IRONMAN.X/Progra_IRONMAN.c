@@ -36,18 +36,17 @@
 
 #define _tmr0_value 0 // valor de tmr0 para que la interrupción sea cada 16.38ms 
 #define _XTAL_FREQ 4000000 //definimos la frecuencia del oscilador
-#define canal 2 //Canal 1 del PWM
 #define periodo 0.020f //Periodo de 20 ms
-#define periodoTotal 0.0000001f //Tendremos un periodo de 1 ms para el led
-#define ciclo_trabajo 0.00035f //Ciclo de trabajo de 2 ms
-#define LED_PIN PORTCbits.RC3 /// usar e0 como salida del led
-#define servo1 PORTCbits.RC4 /// usar e0 como salida del servo 1
-#define servo2 PORTCbits.RC5 /// usar e0 como salida del servo 1
+#define ciclo_trabajo 0.00025f //Ciclo de trabajo de 2 ms
+#define servo1 PORTCbits.RC4 /// usar C4 como salida del servo 1
+#define servo2 PORTCbits.RC5 /// usar C5 como salida del servo 2
 #define aumentar PORTBbits.RB0
 #define decrementar PORTBbits.RB1
 
 
-unsigned char ang1, ang2, cont = 1;
+unsigned char servo = 1, ang1, ang2, cont = 1;
+double angulo, ang22;
+
 //---------------------Variables---------------------------------
 int i = 0;
 int valorPot1 = 0;
@@ -63,38 +62,42 @@ float potMapeado = 0;
 void setup(void);
 void duty_cicle(int ciclo);
 void pulse();
+void pulse2();
 
 //----------------------Interrupciones---------------------------
 void __interrupt() isr(void) {
-    if (INTCONbits.T0IF){ //Si se activa la bandera de interrupción del TMR0
+    if (INTCONbits.T0IF) //Si se activa la bandera de interrupción del TMR0
+    {
         pulse(); //Llamaremos a nuestra función de ciclo de trabajo para el led
         INTCONbits.T0IF = 0; //Limpiamos la bandera del TMR0
     }
-    
+
     if (INTCONbits.RBIF) //Revisamos si la bandera de interrupción del Puerto B se enciende
     {
         //RB0 -> Aumentar el contador 
-        /*if (PORTBbits.RB0 == 0){
-            ang1++;
+        if (PORTBbits.RB0 == 0){
+            servo = servo + 1;
         }
-        //RB1 -> Decrementar el contador
-        else if (PORTBbits.RB1 == 0){
-            ang1--;
-        }*/
         INTCONbits.RBIF = 0; //Apagamos la bandera del puerto B
     }
     
     if (PIR1bits.ADIF) { //Si se activa la bandera de interrupcion del ADC
+        //Canal para girar ambos cañones PWM CCP1
         if (ADCON0bits.CHS == 0b0000){ //Si está en ADC AN0
+            valorPot1 = 0.9*ADRESH;
+            PWM_duty(1, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
         }
+        //Canal para el IRONMAN PWM CCP2
         else if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
-            valorPot2 = 0.37*ADRESH;
-            valorPot1 = 0.37*ADRESH;
-            PWM_duty(2, ciclo_trabajo*((valorPot2)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
-            PWM_duty(1, ciclo_trabajo*((valorPot1)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+            valorPot2 = 0.9*ADRESH;
+            PWM_duty(2, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
         }
+        else if (ADCON0bits.CHS == 0b0001){//Si está en ADC AN1
+            ang1 = ((ADRESH*0.1176470588)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
+        }
+        //Canal para girar el cañón 2
         else if (ADCON0bits.CHS == 0b0010){//Si está en ADC AN2
-            ang1 = ((ADRESH*0.07058823529)+14); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
+            ang2 = ((ADRESH*0.1176470588)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
         }
         PIR1bits.ADIF = 0; //Limpiar la bandera de la interrupcion del ADC
     }
@@ -102,42 +105,50 @@ void __interrupt() isr(void) {
 }
 
 void pulse(){
-    if (servo1 == 1)
-        {
-            TMR0 = ang1; //Le ingresamos el valor de 14 al TMR0 y colocamos el pin en bajo para que el TMR0 tarde 241 en desbordarse (en este tiempo el pin estará en bajo)
-            servo1 = 0;
-        }
-        else 
-        {
-            TMR0 = (255-ang1); //Le ingresamos el valor de (255-14) al TMR0 y colocamos el pin en alto para que el TMR0 tarde 14 en desbordarse (en este tiempo el pin estará en alto)
-            servo1 = 1;
-        }
+    if(servo == 1){
+        if (servo1 == 1)
+            {
+                TMR0 = ang1; //Le ingresamos el valor de 14 al TMR0 y colocamos el pin en bajo para que el TMR0 tarde 241 en desbordarse (en este tiempo el pin estará en bajo)
+                servo1 = 0;
+            }
+            else 
+            {
+                TMR0 = (255-ang1); //Le ingresamos el valor de (255-14) al TMR0 y colocamos el pin en alto para que el TMR0 tarde 14 en desbordarse (en este tiempo el pin estará en alto)
+                servo1 = 1;
+            }
+    }
+    else if(servo == 2){
+        if (servo2 == 1)
+            {
+                TMR0 = ang2; //Le ingresamos el valor de 14 al TMR0 y colocamos el pin en bajo para que el TMR0 tarde 241 en desbordarse (en este tiempo el pin estará en bajo)
+                servo2 = 0;
+            }
+            else 
+            {
+                TMR0 = (255-ang2); //Le ingresamos el valor de (255-14) al TMR0 y colocamos el pin en alto para que el TMR0 tarde 14 en desbordarse (en este tiempo el pin estará en alto)
+                servo2 = 1;
+            }
+    }
     return;
 }
 
 void main(void) {
-    int Lmin = 14, Lmax = 32;
+    int Lmin = 6, Lmax = 36;
     ang1 = Lmin;
     ang2 = Lmin;
     setup (); 
     ADCON0bits.GO = 1; //Activamos la lectura del ADC
     while(1){ //loop forever
-        
-        /*if(aumentar){
-            __delay_ms(200);
-            ang1++;
+        if(servo == 3){
+            servo = 1;
         }
-        if(decrementar){
-            __delay_ms(200);
-            ang1--;
-        }*/
-        //PORTD = ang1;
+
         ang1 = (ang1<Lmin) ? Lmin:ang1;
         ang1 = (ang1>Lmax) ? Lmax:ang1;
         
-        potMapeado = (0.39215686f*potenciometro)/100; //Esta variable contendrá el valor que tenga el potenciometro en un rango (0-100) en porcentaje
-        dutyPot = (int)(periodoTotal * potMapeado); //En el ciclo de trabajo ingresamos el porcentaje del potenciometro multiplicado por el total del periodo 
-                                               //para que vaya incrementando/decrementando el ciclo de trabajo conforme se modifique el potenciometro
+        ang2 = (ang2<Lmin) ? Lmin:ang2;
+        ang2 = (ang2>Lmax) ? Lmax:ang2;
+        
         //PORTB = (unsigned char)dutyPot; //Presentamos el valor del ciclo de trabajo en el PUERTOB para verificar el valor del ciclo conforme se varía el potenciometro
         if (ADCON0bits.GO == 0) { // Si la lectura del ADC se desactiva
             if(ADCON0bits.CHS == 0b0000) //Revisamos si el canal esta en el AN0
@@ -150,6 +161,10 @@ void main(void) {
             }
             else if(ADCON0bits.CHS == 0b0010) //Revisamos si el canal esta en el AN2
             {
+                ADCON0bits.CHS = 0b0001; //Si, sí está cambiamos el ADC al canal AN0
+            }
+            else if(ADCON0bits.CHS == 0b0001) //Revisamos si el canal esta en el AN2
+            {
                 ADCON0bits.CHS = 0b0000; //Si, sí está cambiamos el ADC al canal AN0
             }
             __delay_us(1000); //Este es el tiempo que se dará cada vez que se desactiva la lectura
@@ -158,18 +173,6 @@ void main(void) {
     }
     return;
 }
-
-/*void duty_cicle(int ciclo){
-    i++; //Incrementamos nuestra variable comparadora
-    if (i <= ciclo){ //Si nuestra variable comparadora es menor o igual a nuestro ciclo de trabajo
-        LED_PIN = 1; //Que se mantenga encendido nuestro led
-    }
-    else{
-        LED_PIN = 0; //Sino que lo apague
-        i = 0; //Reseteamos nuestra variable comparadora
-    }
-    return;
-}*/
 
 void setup(void){
     //definir digitales
@@ -235,3 +238,5 @@ void setup(void){
     PWM_duty(2, ciclo_trabajo);
     return;
 }
+
+        

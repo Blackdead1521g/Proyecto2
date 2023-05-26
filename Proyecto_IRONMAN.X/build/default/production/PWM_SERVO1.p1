@@ -434,43 +434,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37
 [; ;PWM_SERVO1.c: 37:         CCPR1L = (char)(-((particion1 >> 2)-94));
 [e = _CCPR1L -> -> -U - >> _particion1 -> 2 `i -> 94 `i `uc `uc ]
-"38
-[; ;PWM_SERVO1.c: 38:         CCP1CONbits.DC1B0 = (particion1&(0b1));
+"41
+[; ;PWM_SERVO1.c: 41:         CCP1CONbits.DC1B0 = (particion1&(0b1));
 [e = . . _CCP1CONbits 1 4 -> & _particion1 -> 1 `i `uc ]
-"39
-[; ;PWM_SERVO1.c: 39:         CCP1CONbits.DC1B1 = ((particion1>>1) &(0b1));
+"42
+[; ;PWM_SERVO1.c: 42:         CCP1CONbits.DC1B1 = ((particion1>>1) &(0b1));
 [e = . . _CCP1CONbits 1 5 -> & >> _particion1 -> 1 `i -> 1 `i `uc ]
-"40
-[; ;PWM_SERVO1.c: 40:     }
+"43
+[; ;PWM_SERVO1.c: 43:     }
 }
 [e $U 154  ]
-"41
-[; ;PWM_SERVO1.c: 41:     else if (canal == 2){
+"44
+[; ;PWM_SERVO1.c: 44:     else if (canal == 2){
 [e :U 153 ]
 [e $ ! == -> _canal `i -> 2 `i 155  ]
 {
-"42
-[; ;PWM_SERVO1.c: 42:         int particion2 = (int)(4*duty/((1.0f/4000000)*16));
+"45
+[; ;PWM_SERVO1.c: 45:         int particion2 = (int)(4*duty/((1.0f/4000000)*16));
 [v _particion2 `i ~T0 @X0 1 a ]
 [e = _particion2 -> / * -> -> 4 `i `f _duty * / -> .1.0 `f -> -> 4000000 `l `f -> -> 16 `i `f `i ]
-"43
-[; ;PWM_SERVO1.c: 43:         CCPR2L = (char)(((particion2 >> 2)+94));
-[e = _CCPR2L -> -> + >> _particion2 -> 2 `i -> 94 `i `uc `uc ]
-"44
-[; ;PWM_SERVO1.c: 44:         CCP2CONbits.DC2B0 = (particion2&(0b1));
-[e = . . _CCP2CONbits 0 1 -> & _particion2 -> 1 `i `uc ]
-"45
-[; ;PWM_SERVO1.c: 45:         CCP2CONbits.DC2B1 = ((particion2>>1) &(0b1));
-[e = . . _CCP2CONbits 0 2 -> & >> _particion2 -> 1 `i -> 1 `i `uc ]
 "46
-[; ;PWM_SERVO1.c: 46:     }
+[; ;PWM_SERVO1.c: 46:         CCPR2L = (char)(((particion2 >> 2)+60));
+[e = _CCPR2L -> -> + >> _particion2 -> 2 `i -> 60 `i `uc `uc ]
+"50
+[; ;PWM_SERVO1.c: 50:         CCP2CONbits.DC2B0 = (particion2&(0b1));
+[e = . . _CCP2CONbits 0 1 -> & _particion2 -> 1 `i `uc ]
+"51
+[; ;PWM_SERVO1.c: 51:         CCP2CONbits.DC2B1 = ((particion2>>1) &(0b1));
+[e = . . _CCP2CONbits 0 2 -> & >> _particion2 -> 1 `i -> 1 `i `uc ]
+"52
+[; ;PWM_SERVO1.c: 52:     }
 }
 [e :U 155 ]
 [e :U 154 ]
-"47
-[; ;PWM_SERVO1.c: 47:     return;
+"53
+[; ;PWM_SERVO1.c: 53:     return;
 [e $UE 152  ]
-"48
-[; ;PWM_SERVO1.c: 48: }
+"54
+[; ;PWM_SERVO1.c: 54: }
 [e :UE 152 ]
 }

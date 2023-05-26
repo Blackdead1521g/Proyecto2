@@ -2853,8 +2853,10 @@ extern char * ftoa(float f, int * status);
 void PWM_config(char canal, float periodo_ms);
 void PWM_duty(char canal, float duty);
 # 35 "Progra_IRONMAN.c" 2
-# 50 "Progra_IRONMAN.c"
-unsigned char ang1, ang2, cont = 1;
+# 47 "Progra_IRONMAN.c"
+unsigned char servo = 1, ang1, ang2, cont = 1;
+double angulo, ang22;
+
 
 int i = 0;
 int valorPot1 = 0;
@@ -2870,31 +2872,42 @@ float potMapeado = 0;
 void setup(void);
 void duty_cicle(int ciclo);
 void pulse();
+void pulse2();
 
 
 void __attribute__((picinterrupt(("")))) isr(void) {
-    if (INTCONbits.T0IF){
+    if (INTCONbits.T0IF)
+    {
         pulse();
         INTCONbits.T0IF = 0;
     }
 
     if (INTCONbits.RBIF)
     {
-# 84 "Progra_IRONMAN.c"
+
+        if (PORTBbits.RB0 == 0){
+            servo = servo + 1;
+        }
         INTCONbits.RBIF = 0;
     }
 
     if (PIR1bits.ADIF) {
+
         if (ADCON0bits.CHS == 0b0000){
+            valorPot1 = 0.9*ADRESH;
+            PWM_duty(1, 0.00025f*((ADRESH)/255.0f));
         }
+
         else if (ADCON0bits.CHS == 0b0100){
-            valorPot2 = 0.37*ADRESH;
-            valorPot1 = 0.37*ADRESH;
-            PWM_duty(2, 0.00035f*((valorPot2)/255.0f));
-            PWM_duty(1, 0.00035f*((valorPot1)/255.0f));
+            valorPot2 = 0.9*ADRESH;
+            PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
         }
+        else if (ADCON0bits.CHS == 0b0001){
+            ang1 = ((ADRESH*0.1176470588)+6);
+        }
+
         else if (ADCON0bits.CHS == 0b0010){
-            ang1 = ((ADRESH*0.07058823529)+14);
+            ang2 = ((ADRESH*0.1176470588)+6);
         }
         PIR1bits.ADIF = 0;
     }
@@ -2902,32 +2915,49 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 }
 
 void pulse(){
-    if (PORTCbits.RC4 == 1)
-        {
-            TMR0 = ang1;
-            PORTCbits.RC4 = 0;
-        }
-        else
-        {
-            TMR0 = (255-ang1);
-            PORTCbits.RC4 = 1;
-        }
+    if(servo == 1){
+        if (PORTCbits.RC4 == 1)
+            {
+                TMR0 = ang1;
+                PORTCbits.RC4 = 0;
+            }
+            else
+            {
+                TMR0 = (255-ang1);
+                PORTCbits.RC4 = 1;
+            }
+    }
+    else if(servo == 2){
+        if (PORTCbits.RC5 == 1)
+            {
+                TMR0 = ang2;
+                PORTCbits.RC5 = 0;
+            }
+            else
+            {
+                TMR0 = (255-ang2);
+                PORTCbits.RC5 = 1;
+            }
+    }
     return;
 }
 
 void main(void) {
-    int Lmin = 14, Lmax = 32;
+    int Lmin = 6, Lmax = 36;
     ang1 = Lmin;
     ang2 = Lmin;
     setup ();
     ADCON0bits.GO = 1;
     while(1){
-# 135 "Progra_IRONMAN.c"
+        if(servo == 3){
+            servo = 1;
+        }
+
         ang1 = (ang1<Lmin) ? Lmin:ang1;
         ang1 = (ang1>Lmax) ? Lmax:ang1;
 
-        potMapeado = (0.39215686f*potenciometro)/100;
-        dutyPot = (int)(0.0000001f * potMapeado);
+        ang2 = (ang2<Lmin) ? Lmin:ang2;
+        ang2 = (ang2>Lmax) ? Lmax:ang2;
 
 
         if (ADCON0bits.GO == 0) {
@@ -2941,6 +2971,10 @@ void main(void) {
             }
             else if(ADCON0bits.CHS == 0b0010)
             {
+                ADCON0bits.CHS = 0b0001;
+            }
+            else if(ADCON0bits.CHS == 0b0001)
+            {
                 ADCON0bits.CHS = 0b0000;
             }
             _delay((unsigned long)((1000)*(4000000/4000000.0)));
@@ -2949,7 +2983,7 @@ void main(void) {
     }
     return;
 }
-# 174 "Progra_IRONMAN.c"
+
 void setup(void){
 
     ANSELbits.ANS0 = 1;
@@ -3009,8 +3043,8 @@ void setup(void){
 
 
     PWM_config(1, 0.020f);
-    PWM_duty(1, 0.00035f);
+    PWM_duty(1, 0.00025f);
     PWM_config(2, 0.020f);
-    PWM_duty(2, 0.00035f);
+    PWM_duty(2, 0.00025f);
     return;
 }
