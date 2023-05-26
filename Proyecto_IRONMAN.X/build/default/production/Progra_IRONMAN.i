@@ -2855,7 +2855,6 @@ void PWM_duty(char canal, float duty);
 # 35 "Progra_IRONMAN.c" 2
 # 47 "Progra_IRONMAN.c"
 unsigned char servo = 1, ang1, ang2, cont = 1;
-double angulo, ang22;
 
 
 int i = 0;
@@ -2885,7 +2884,7 @@ void __attribute__((picinterrupt(("")))) isr(void) {
     if (INTCONbits.RBIF)
     {
 
-        if (PORTBbits.RB0 == 0){
+        if (PORTBbits.RB1 == 0){
             servo = servo + 1;
         }
         INTCONbits.RBIF = 0;
@@ -2898,16 +2897,21 @@ void __attribute__((picinterrupt(("")))) isr(void) {
             PWM_duty(1, 0.00025f*((ADRESH)/255.0f));
         }
 
-        else if (ADCON0bits.CHS == 0b0100){
-            valorPot2 = 0.9*ADRESH;
-            PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
-        }
         else if (ADCON0bits.CHS == 0b0001){
             ang1 = ((ADRESH*0.1176470588)+6);
         }
 
         else if (ADCON0bits.CHS == 0b0010){
             ang2 = ((ADRESH*0.1176470588)+6);
+        }
+
+        else if (ADCON0bits.CHS == 0b0011){
+            valorPot2 = 0.9*ADRESH;
+            PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
+        }
+
+        else if (ADCON0bits.CHS == 0b0100){
+            potenciometro = ADRESH;
         }
         PIR1bits.ADIF = 0;
     }
@@ -2967,6 +2971,10 @@ void main(void) {
             }
             else if(ADCON0bits.CHS == 0b0100)
             {
+                ADCON0bits.CHS = 0b0011;
+            }
+            else if(ADCON0bits.CHS == 0b0011)
+            {
                 ADCON0bits.CHS = 0b0010;
             }
             else if(ADCON0bits.CHS == 0b0010)
@@ -2987,7 +2995,9 @@ void main(void) {
 void setup(void){
 
     ANSELbits.ANS0 = 1;
+    ANSELbits.ANS1 = 1;
     ANSELbits.ANS2 = 1;
+    ANSELbits.ANS3 = 1;
     ANSELbits.ANS4 = 1;
     ANSELH = 0;
 

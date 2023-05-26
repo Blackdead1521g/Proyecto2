@@ -45,7 +45,6 @@
 
 
 unsigned char servo = 1, ang1, ang2, cont = 1;
-double angulo, ang22;
 
 //---------------------Variables---------------------------------
 int i = 0;
@@ -75,7 +74,7 @@ void __interrupt() isr(void) {
     if (INTCONbits.RBIF) //Revisamos si la bandera de interrupción del Puerto B se enciende
     {
         //RB0 -> Aumentar el contador 
-        if (PORTBbits.RB0 == 0){
+        if (PORTBbits.RB1 == 0){
             servo = servo + 1;
         }
         INTCONbits.RBIF = 0; //Apagamos la bandera del puerto B
@@ -87,17 +86,22 @@ void __interrupt() isr(void) {
             valorPot1 = 0.9*ADRESH;
             PWM_duty(1, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
         }
-        //Canal para el IRONMAN PWM CCP2
-        else if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
-            valorPot2 = 0.9*ADRESH;
-            PWM_duty(2, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
-        }
+        //Canal para girar el cañón 1
         else if (ADCON0bits.CHS == 0b0001){//Si está en ADC AN1
             ang1 = ((ADRESH*0.1176470588)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
         }
         //Canal para girar el cañón 2
         else if (ADCON0bits.CHS == 0b0010){//Si está en ADC AN2
             ang2 = ((ADRESH*0.1176470588)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
+        }
+        //Canal para el IRONMAN PWM CCP2
+        else if (ADCON0bits.CHS == 0b0011){ //Si está en ADC AN3
+            valorPot2 = 0.9*ADRESH;
+            PWM_duty(2, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+        }
+        //Canal para el IRONMAN PWM CCP2
+        else if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
+            potenciometro = ADRESH;
         }
         PIR1bits.ADIF = 0; //Limpiar la bandera de la interrupcion del ADC
     }
@@ -157,13 +161,17 @@ void main(void) {
             }
             else if(ADCON0bits.CHS == 0b0100) //Revisamos si el canal esta en el AN4
             {
+                ADCON0bits.CHS = 0b0011; //Si, sí está cambiamos el ADC al canal AN3
+            }
+            else if(ADCON0bits.CHS == 0b0011) //Revisamos si el canal esta en el AN3
+            {
                 ADCON0bits.CHS = 0b0010; //Si, sí está cambiamos el ADC al canal AN2
             }
             else if(ADCON0bits.CHS == 0b0010) //Revisamos si el canal esta en el AN2
             {
-                ADCON0bits.CHS = 0b0001; //Si, sí está cambiamos el ADC al canal AN0
+                ADCON0bits.CHS = 0b0001; //Si, sí está cambiamos el ADC al canal AN1
             }
-            else if(ADCON0bits.CHS == 0b0001) //Revisamos si el canal esta en el AN2
+            else if(ADCON0bits.CHS == 0b0001) //Revisamos si el canal esta en el AN1
             {
                 ADCON0bits.CHS = 0b0000; //Si, sí está cambiamos el ADC al canal AN0
             }
@@ -177,7 +185,9 @@ void main(void) {
 void setup(void){
     //definir digitales
     ANSELbits.ANS0 = 1; //Seleccionamos solo los dos pines que utilizaremos como analógicos
+    ANSELbits.ANS1 = 1;
     ANSELbits.ANS2 = 1;
+    ANSELbits.ANS3 = 1;
     ANSELbits.ANS4 = 1;
     ANSELH = 0; 
     
@@ -238,5 +248,3 @@ void setup(void){
     PWM_duty(2, ciclo_trabajo);
     return;
 }
-
-        

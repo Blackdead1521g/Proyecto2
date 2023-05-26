@@ -9,15 +9,15 @@
 ### Memory Usage ###
  Intel Hex-file ranges:
   0h - 5h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  8h - FFDh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  104Ah - 1FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  233Ch - 2FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  8h - FF9h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  101Ch - 1FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  234Eh - 2FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
   4000h - 4007h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
   400Eh - 4011h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
  Unused ranges:
   6h - 7h
-  FFEh - 1049h
-  2000h - 233Bh
+  FFAh - 101Bh
+  2000h - 234Dh
   3000h - 3FFFh
   4008h - 400Dh
 
@@ -283,9 +283,12 @@
 00000FC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00000FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+00000FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- --
 ----------------------------------------------------------
-00001040 | -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1 H1 H1
+00001010 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
+00001020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001030 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001040 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001050 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001060 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001070 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -538,8 +541,7 @@
 00001FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------
-00002330 | -- -- -- -- -- -- -- -- -- -- -- -- H1 H1 H1 H1
-00002340 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002340 | -- -- -- -- -- -- -- -- -- -- -- -- -- -- H1 H1
 00002350 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002360 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002370 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
