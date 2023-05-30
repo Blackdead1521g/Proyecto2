@@ -432,8 +432,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _particion1 `i ~T0 @X0 1 a ]
 [e = _particion1 -> / * -> -> 4 `i `f _duty * / -> .1.0 `f -> -> 4000000 `l `f -> -> 16 `i `f `i ]
 "37
-[; ;PWM_SERVO1.c: 37:         CCPR1L = (char)(-((particion1 >> 2)-94));
-[e = _CCPR1L -> -> -U - >> _particion1 -> 2 `i -> 94 `i `uc `uc ]
+[; ;PWM_SERVO1.c: 37:         CCPR1L = (char)(-((particion1 >> 2)-69));
+[e = _CCPR1L -> -> -U - >> _particion1 -> 2 `i -> 69 `i `uc `uc ]
 "41
 [; ;PWM_SERVO1.c: 41:         CCP1CONbits.DC1B0 = (particion1&(0b1));
 [e = . . _CCP1CONbits 1 4 -> & _particion1 -> 1 `i `uc ]

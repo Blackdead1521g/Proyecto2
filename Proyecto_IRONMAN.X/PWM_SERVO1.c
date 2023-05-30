@@ -34,7 +34,7 @@ void PWM_config(char canal, float periodo_ms){
 void PWM_duty(char canal, float duty){
     if (canal == 1){
         int particion1 = (int)(4*duty/((1.0f/_XTAL_FREQ)*16)); 
-        CCPR1L = (char)(-((particion1 >> 2)-94)); //Lo corremos dos bits  a la derecha para ingresarle los 8 bits más significativos
+        CCPR1L = (char)(-((particion1 >> 2)-69)); //Lo corremos dos bits  a la derecha para ingresarle los 8 bits más significativos
         /*if ((particion1 >> 2) <= 130){
             CCPR1L = (char)(-((particion1 >> 2)-94)); //Lo corremos dos bits  a la derecha para ingresarle los 8 bits más significativos
         }*/

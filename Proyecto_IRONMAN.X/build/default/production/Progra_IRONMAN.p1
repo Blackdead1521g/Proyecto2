@@ -16,9 +16,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "483
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 483: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
-"63 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 63: void pulse();
+"72 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 72: void pulse();
 [v _pulse `(v ~T0 @X0 0 e? ]
+"544 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 544:     struct {
+[s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S19 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
+"543
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 543: typedef union {
+[u S18 `S19 1 ]
+[n S18 . . ]
+"554
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 554: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
+[v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
+"70 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 70: void TXT(void);
+[v _TXT `(v ~T0 @X0 0 ef ]
 "235 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 235:     struct {
 [s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -30,18 +44,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "246
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 246: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
 [v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
-"544
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 544:     struct {
-[s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S19 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
-"543
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 543: typedef union {
-[u S18 `S19 1 ]
-[n S18 . . ]
-"554
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 554: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
-[v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
-"1252
+"74 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 74: void write_EEPROM (uint8_t address, uint8_t data);
+[v _write_EEPROM `(v ~T0 @X0 0 ef2`uc`uc ]
+"75
+[; ;Progra_IRONMAN.c: 75: uint8_t read_EEPROM(uint8_t address);
+[v _read_EEPROM `(uc ~T0 @X0 0 ef1`uc ]
+"73
+[; ;Progra_IRONMAN.c: 73: void servos(uint8_t dato, int modo);
+[v _servos `(v ~T0 @X0 0 ef2`uc`i ]
+"1252 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1252:     struct {
 [s S45 :1 `uc 1 :1 `uc 1 :4 `uc 1 :2 `uc 1 ]
 [n S45 . ADON GO_nDONE CHS ADCS ]
@@ -85,9 +97,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 60: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
 [p mainexit ]
-"61 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 61: void setup(void);
+"68 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 68: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
+"69
+[; ;Progra_IRONMAN.c: 69: void initUART(void);
+[v _initUART `(v ~T0 @X0 0 ef ]
+"353 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 353: extern volatile unsigned char PORTD __attribute__((address(0x008)));
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"415
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 415: extern volatile unsigned char PORTE __attribute__((address(0x009)));
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
 [v F36 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\builtins.h
 [v __delay `JF36 ~T0 @X0 0 e ]
@@ -109,9 +130,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1479
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1479: extern volatile unsigned char TRISB __attribute__((address(0x086)));
 [v _TRISB `Vuc ~T0 @X0 0 e@134 ]
-"1541
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1541: extern volatile unsigned char TRISC __attribute__((address(0x087)));
-[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"1417
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1417: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
 "1603
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1603: extern volatile unsigned char TRISD __attribute__((address(0x088)));
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
@@ -127,12 +148,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "291
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 291: extern volatile unsigned char PORTC __attribute__((address(0x007)));
 [v _PORTC `Vuc ~T0 @X0 0 e@7 ]
-"353
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 353: extern volatile unsigned char PORTD __attribute__((address(0x008)));
-[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
-"415
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 415: extern volatile unsigned char PORTE __attribute__((address(0x009)));
-[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
 "1353
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1353:     struct {
 [s S50 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -191,6 +206,107 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16 ./PWM_SERVO1.h
 [; ;./PWM_SERVO1.h: 16: void PWM_config(char canal, float periodo_ms);
 [v _PWM_config `(v ~T0 @X0 0 ef2`uc`f ]
+"2643 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2643: extern volatile unsigned char SPBRG __attribute__((address(0x099)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"2705
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2705: extern volatile unsigned char SPBRGH __attribute__((address(0x09A)));
+[v _SPBRGH `Vuc ~T0 @X0 0 e@154 ]
+"3700
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3700: extern volatile __bit BRGH __attribute__((address(0x4C2)));
+[v _BRGH `Vb ~T0 @X0 0 e@1218 ]
+"3673
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3673: extern volatile __bit BRG16 __attribute__((address(0xC3B)));
+[v _BRG16 `Vb ~T0 @X0 0 e@3131 ]
+"3841
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3841: extern volatile __bit CREN __attribute__((address(0xC4)));
+[v _CREN `Vb ~T0 @X0 0 e@196 ]
+"4318
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4318: extern volatile __bit SYNC __attribute__((address(0x4C4)));
+[v _SYNC `Vb ~T0 @X0 0 e@1220 ]
+"4264
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4264: extern volatile __bit SPEN __attribute__((address(0xC7)));
+[v _SPEN `Vb ~T0 @X0 0 e@199 ]
+"2563
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2563:     struct {
+[s S99 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S99 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"2573
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2573:     struct {
+[s S100 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S100 . TXD8 . nTX8 ]
+"2578
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2578:     struct {
+[s S101 :6 `uc 1 :1 `uc 1 ]
+[n S101 . . TX8_9 ]
+"2562
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2562: typedef union {
+[u S98 `S99 1 `S100 1 `S101 1 ]
+[n S98 . . . . ]
+"2583
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 2583: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0x098)));
+[v _TXSTAbits `VS98 ~T0 @X0 0 e@152 ]
+"1045
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1045:     struct {
+[s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S37 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1055
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1055:     struct {
+[s S38 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S38 . RCD8 . RC9 ]
+"1060
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1060:     struct {
+[s S39 :6 `uc 1 :1 `uc 1 ]
+[n S39 . . nRC8 ]
+"1064
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1064:     struct {
+[s S40 :6 `uc 1 :1 `uc 1 ]
+[n S40 . . RC8_9 ]
+"1044
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1044: typedef union {
+[u S36 `S37 1 `S38 1 `S39 1 `S40 1 ]
+[n S36 . . . . . ]
+"1069
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1069: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0x018)));
+[v _RCSTAbits `VS36 ~T0 @X0 0 e@24 ]
+"4543
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4543: extern volatile __bit TXEN __attribute__((address(0x4C5)));
+[v _TXEN `Vb ~T0 @X0 0 e@1221 ]
+"4549
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4549: extern volatile __bit TXIF __attribute__((address(0x64)));
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"4633
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4633: extern volatile __bit WR __attribute__((address(0xC61)));
+[v _WR `Vb ~T0 @X0 0 e@3169 ]
+"4183
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 4183: extern volatile __bit RD __attribute__((address(0xC60)));
+[v _RD `Vb ~T0 @X0 0 e@3168 ]
+"3258
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3258: extern volatile unsigned char EEADR __attribute__((address(0x10D)));
+[v _EEADR `Vuc ~T0 @X0 0 e@269 ]
+"3506
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3506:     struct {
+[s S137 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S137 . RD WR WREN WRERR . EEPGD ]
+"3505
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3505: typedef union {
+[u S136 `S137 1 ]
+[n S136 . . ]
+"3515
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3515: extern volatile EECON1bits_t EECON1bits __attribute__((address(0x18C)));
+[v _EECON1bits `VS136 ~T0 @X0 0 e@396 ]
+"3251
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3251: extern volatile unsigned char EEDAT __attribute__((address(0x10C)));
+[v _EEDAT `Vuc ~T0 @X0 0 e@268 ]
+"3901
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3901: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"3545
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3545: extern volatile unsigned char EECON2 __attribute__((address(0x18D)));
+[v _EECON2 `Vuc ~T0 @X0 0 e@397 ]
+"1141
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1141: extern volatile unsigned char RCREG __attribute__((address(0x01A)));
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
 "14 Progra_IRONMAN.c
 [p x FOSC  =  INTRC_NOCLKOUT ]
 "15
@@ -450,51 +566,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3547: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "47 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 47: unsigned char servo = 1, ang1, ang2, cont = 1;
+[; ;Progra_IRONMAN.c: 47: unsigned char servo = 1, ang1, ang2;
 [v _servo `uc ~T0 @X0 1 e ]
 [i _servo
 -> -> 1 `i `uc
 ]
 [v _ang1 `uc ~T0 @X0 1 e ]
 [v _ang2 `uc ~T0 @X0 1 e ]
-[v _cont `uc ~T0 @X0 1 e ]
-[i _cont
--> -> 1 `i `uc
-]
 "50
-[; ;Progra_IRONMAN.c: 50: int i = 0;
-[v _i `i ~T0 @X0 1 e ]
-[i _i
+[; ;Progra_IRONMAN.c: 50: int modo = 0;
+[v _modo `i ~T0 @X0 1 e ]
+[i _modo
 -> 0 `i
 ]
 "51
-[; ;Progra_IRONMAN.c: 51: int valorPot1 = 0;
+[; ;Progra_IRONMAN.c: 51: int i = -1;
+[v _i `i ~T0 @X0 1 e ]
+[i _i
+-U -> 1 `i
+]
+"52
+[; ;Progra_IRONMAN.c: 52: int valorPot1 = 0;
 [v _valorPot1 `i ~T0 @X0 1 e ]
 [i _valorPot1
 -> 0 `i
 ]
-"52
-[; ;Progra_IRONMAN.c: 52: int valorPot2 = 0;
+"53
+[; ;Progra_IRONMAN.c: 53: int valorPot2 = 0;
 [v _valorPot2 `i ~T0 @X0 1 e ]
 [i _valorPot2
 -> 0 `i
 ]
-"53
-[; ;Progra_IRONMAN.c: 53: int dutyPot = 0;
+"54
+[; ;Progra_IRONMAN.c: 54: int dutyPot = 0;
 [v _dutyPot `i ~T0 @X0 1 e ]
 [i _dutyPot
 -> 0 `i
 ]
-"54
-[; ;Progra_IRONMAN.c: 54: int periodoPot = 0;
+"55
+[; ;Progra_IRONMAN.c: 55: int periodoPot = 0;
 [v _periodoPot `i ~T0 @X0 1 e ]
 [i _periodoPot
--> 0 `i
-]
-"55
-[; ;Progra_IRONMAN.c: 55: int potenciometro = 0;
-[v _potenciometro `i ~T0 @X0 1 e ]
-[i _potenciometro
 -> 0 `i
 ]
 "56
@@ -503,532 +615,970 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _potMapeado
 -> -> 0 `i `f
 ]
+"57
+[; ;Progra_IRONMAN.c: 57: int contador = 0;
+[v _contador `i ~T0 @X0 1 e ]
+[i _contador
+-> 0 `i
+]
+"58
+[; ;Progra_IRONMAN.c: 58: char numero[2];
+[v _numero `uc ~T0 @X0 -> 2 `i e ]
+"59
+[; ;Progra_IRONMAN.c: 59: int valor_entero;
+[v _valor_entero `i ~T0 @X0 1 e ]
+"60
+[; ;Progra_IRONMAN.c: 60: char caracter[2];
+[v _caracter `uc ~T0 @X0 -> 2 `i e ]
+"61
+[; ;Progra_IRONMAN.c: 61: int flag = 0;
+[v _flag `i ~T0 @X0 1 e ]
+[i _flag
+-> 0 `i
+]
+"62
+[; ;Progra_IRONMAN.c: 62: int entero = 0;
+[v _entero `i ~T0 @X0 1 e ]
+[i _entero
+-> 0 `i
+]
+"63
+[; ;Progra_IRONMAN.c: 63: uint8_t address = 0, data = 0, potenciometro = 0;
+[v _address `uc ~T0 @X0 1 e ]
+[i _address
+-> -> 0 `i `uc
+]
+[v _data `uc ~T0 @X0 1 e ]
+[i _data
+-> -> 0 `i `uc
+]
+[v _potenciometro `uc ~T0 @X0 1 e ]
+[i _potenciometro
+-> -> 0 `i `uc
+]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"67
-[; ;Progra_IRONMAN.c: 67: void __attribute__((picinterrupt(("")))) isr(void) {
+"78
+[; ;Progra_IRONMAN.c: 78: void __attribute__((picinterrupt(("")))) isr(void) {
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"68
-[; ;Progra_IRONMAN.c: 68:     if (INTCONbits.T0IF)
+"80
+[; ;Progra_IRONMAN.c: 80:     if (INTCONbits.T0IF)
 [e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 144  ]
-"69
-[; ;Progra_IRONMAN.c: 69:     {
+"81
+[; ;Progra_IRONMAN.c: 81:     {
 {
-"70
-[; ;Progra_IRONMAN.c: 70:         pulse();
+"82
+[; ;Progra_IRONMAN.c: 82:         pulse();
 [e ( _pulse ..  ]
-"71
-[; ;Progra_IRONMAN.c: 71:         INTCONbits.T0IF = 0;
+"83
+[; ;Progra_IRONMAN.c: 83:         INTCONbits.T0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"72
-[; ;Progra_IRONMAN.c: 72:     }
+"84
+[; ;Progra_IRONMAN.c: 84:     }
 }
 [e :U 144 ]
-"74
-[; ;Progra_IRONMAN.c: 74:     if (INTCONbits.RBIF)
-[e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 145  ]
-"75
-[; ;Progra_IRONMAN.c: 75:     {
+"87
+[; ;Progra_IRONMAN.c: 87:     if(PIR1bits.RCIF){
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 145  ]
 {
-"77
-[; ;Progra_IRONMAN.c: 77:         if (PORTBbits.RB1 == 0){
-[e $ ! == -> . . _PORTBbits 0 1 `i -> 0 `i 146  ]
-{
-"78
-[; ;Progra_IRONMAN.c: 78:             servo = servo + 1;
-[e = _servo -> + -> _servo `i -> 1 `i `uc ]
-"79
-[; ;Progra_IRONMAN.c: 79:         }
-}
-[e :U 146 ]
-"80
-[; ;Progra_IRONMAN.c: 80:         INTCONbits.RBIF = 0;
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"81
-[; ;Progra_IRONMAN.c: 81:     }
+"88
+[; ;Progra_IRONMAN.c: 88:         TXT();
+[e ( _TXT ..  ]
+"91
+[; ;Progra_IRONMAN.c: 91:     }
 }
 [e :U 145 ]
-"83
-[; ;Progra_IRONMAN.c: 83:     if (PIR1bits.ADIF) {
-[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 147  ]
-{
-"85
-[; ;Progra_IRONMAN.c: 85:         if (ADCON0bits.CHS == 0b0000){
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 148  ]
-{
-"86
-[; ;Progra_IRONMAN.c: 86:             valorPot1 = 0.9*ADRESH;
-[e = _valorPot1 -> * .0.9 -> -> _ADRESH `i `d `i ]
-"87
-[; ;Progra_IRONMAN.c: 87:             PWM_duty(1, 0.00025f*((ADRESH)/255.0f));
-[e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> -> _ADRESH `i `f -> .255.0 `f ]
-"88
-[; ;Progra_IRONMAN.c: 88:         }
-}
-[e $U 149  ]
-"90
-[; ;Progra_IRONMAN.c: 90:         else if (ADCON0bits.CHS == 0b0001){
-[e :U 148 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 150  ]
-{
-"91
-[; ;Progra_IRONMAN.c: 91:             ang1 = ((ADRESH*0.1176470588)+6);
-[e = _ang1 -> + * -> -> _ADRESH `i `d .0.1176470588 -> -> 6 `i `d `uc ]
-"92
-[; ;Progra_IRONMAN.c: 92:         }
-}
-[e $U 151  ]
 "94
-[; ;Progra_IRONMAN.c: 94:         else if (ADCON0bits.CHS == 0b0010){
-[e :U 150 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 152  ]
-{
+[; ;Progra_IRONMAN.c: 94:     if (INTCONbits.RBIF)
+[e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 146  ]
 "95
-[; ;Progra_IRONMAN.c: 95:             ang2 = ((ADRESH*0.1176470588)+6);
-[e = _ang2 -> + * -> -> _ADRESH `i `d .0.1176470588 -> -> 6 `i `d `uc ]
+[; ;Progra_IRONMAN.c: 95:     {
+{
 "96
-[; ;Progra_IRONMAN.c: 96:         }
-}
-[e $U 153  ]
+[; ;Progra_IRONMAN.c: 96:         if (PORTBbits.RB0 == 0){
+[e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 147  ]
+{
+"97
+[; ;Progra_IRONMAN.c: 97:             modo = modo + 1;
+[e = _modo + _modo -> 1 `i ]
 "98
-[; ;Progra_IRONMAN.c: 98:         else if (ADCON0bits.CHS == 0b0011){
-[e :U 152 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 154  ]
-{
-"99
-[; ;Progra_IRONMAN.c: 99:             valorPot2 = 0.9*ADRESH;
-[e = _valorPot2 -> * .0.9 -> -> _ADRESH `i `d `i ]
+[; ;Progra_IRONMAN.c: 98:         }
+}
+[e $U 148  ]
 "100
-[; ;Progra_IRONMAN.c: 100:             PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
-[e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> -> _ADRESH `i `f -> .255.0 `f ]
-"101
-[; ;Progra_IRONMAN.c: 101:         }
-}
-[e $U 155  ]
-"103
-[; ;Progra_IRONMAN.c: 103:         else if (ADCON0bits.CHS == 0b0100){
-[e :U 154 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 156  ]
-{
-"104
-[; ;Progra_IRONMAN.c: 104:             potenciometro = ADRESH;
-[e = _potenciometro -> _ADRESH `i ]
-"105
-[; ;Progra_IRONMAN.c: 105:         }
-}
-[e :U 156 ]
-[e :U 155 ]
-[e :U 153 ]
-[e :U 151 ]
-[e :U 149 ]
-"106
-[; ;Progra_IRONMAN.c: 106:         PIR1bits.ADIF = 0;
-[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"107
-[; ;Progra_IRONMAN.c: 107:     }
-}
+[; ;Progra_IRONMAN.c: 100:         else if (PORTBbits.RB1 == 0){
 [e :U 147 ]
+[e $ ! == -> . . _PORTBbits 0 1 `i -> 0 `i 149  ]
+{
+"101
+[; ;Progra_IRONMAN.c: 101:             servo = servo + 1;
+[e = _servo -> + -> _servo `i -> 1 `i `uc ]
+"102
+[; ;Progra_IRONMAN.c: 102:         }
+}
+[e $U 150  ]
+"104
+[; ;Progra_IRONMAN.c: 104:         else if (PORTBbits.RB2 == 0){
+[e :U 149 ]
+[e $ ! == -> . . _PORTBbits 0 2 `i -> 0 `i 151  ]
+{
+"105
+[; ;Progra_IRONMAN.c: 105:             address++;
+[e ++ _address -> -> 1 `i `uc ]
+"107
+[; ;Progra_IRONMAN.c: 107:             contador = 0;
+[e = _contador -> 0 `i ]
 "108
-[; ;Progra_IRONMAN.c: 108:     return;
+[; ;Progra_IRONMAN.c: 108:         }
+}
+[e $U 152  ]
+"110
+[; ;Progra_IRONMAN.c: 110:         else if (PORTBbits.RB3 == 0){
+[e :U 151 ]
+[e $ ! == -> . . _PORTBbits 0 3 `i -> 0 `i 153  ]
+{
+"111
+[; ;Progra_IRONMAN.c: 111:             address--;
+[e -- _address -> -> 1 `i `uc ]
+"112
+[; ;Progra_IRONMAN.c: 112:             contador = 0;
+[e = _contador -> 0 `i ]
+"113
+[; ;Progra_IRONMAN.c: 113:         }
+}
+[e $U 154  ]
+"115
+[; ;Progra_IRONMAN.c: 115:         else if (PORTBbits.RB4 == 0){
+[e :U 153 ]
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 155  ]
+{
+"116
+[; ;Progra_IRONMAN.c: 116:             write_EEPROM (address, potenciometro);
+[e ( _write_EEPROM (2 , _address _potenciometro ]
+"117
+[; ;Progra_IRONMAN.c: 117:             contador = 0;
+[e = _contador -> 0 `i ]
+"118
+[; ;Progra_IRONMAN.c: 118:         }
+}
+[e $U 156  ]
+"120
+[; ;Progra_IRONMAN.c: 120:         else if (PORTBbits.RB5 == 0){
+[e :U 155 ]
+[e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 157  ]
+{
+"122
+[; ;Progra_IRONMAN.c: 122:             data = read_EEPROM(address);
+[e = _data ( _read_EEPROM (1 _address ]
+"124
+[; ;Progra_IRONMAN.c: 124:             contador = 0;
+[e = _contador -> 0 `i ]
+"125
+[; ;Progra_IRONMAN.c: 125:             servos(data, modo);
+[e ( _servos (2 , _data _modo ]
+"126
+[; ;Progra_IRONMAN.c: 126:         }
+}
+[e $U 158  ]
+"128
+[; ;Progra_IRONMAN.c: 128:         else if (PORTBbits.RB6 == 0){
+[e :U 157 ]
+[e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 159  ]
+{
+"129
+[; ;Progra_IRONMAN.c: 129:              contador = 1;
+[e = _contador -> 1 `i ]
+"132
+[; ;Progra_IRONMAN.c: 132:         }
+}
+[e :U 159 ]
+[e :U 158 ]
+[e :U 156 ]
+[e :U 154 ]
+[e :U 152 ]
+[e :U 150 ]
+[e :U 148 ]
+"133
+[; ;Progra_IRONMAN.c: 133:         INTCONbits.RBIF = 0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"134
+[; ;Progra_IRONMAN.c: 134:     }
+}
+[e :U 146 ]
+"137
+[; ;Progra_IRONMAN.c: 137:     if (PIR1bits.ADIF) {
+[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 160  ]
+{
+"138
+[; ;Progra_IRONMAN.c: 138:         if(modo == 0){
+[e $ ! == _modo -> 0 `i 161  ]
+{
+"140
+[; ;Progra_IRONMAN.c: 140:             if (ADCON0bits.CHS == 0b0000){
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 162  ]
+{
+"141
+[; ;Progra_IRONMAN.c: 141:                 valorPot1 = 0.6*ADRESH;
+[e = _valorPot1 -> * .0.6 -> -> _ADRESH `i `d `i ]
+"142
+[; ;Progra_IRONMAN.c: 142:                 PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+[e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> _valorPot1 `f -> .255.0 `f ]
+"143
+[; ;Progra_IRONMAN.c: 143:             }
+}
+[e $U 163  ]
+"145
+[; ;Progra_IRONMAN.c: 145:             else if (ADCON0bits.CHS == 0b0001){
+[e :U 162 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 164  ]
+{
+"146
+[; ;Progra_IRONMAN.c: 146:                 ang1 = ((ADRESH*0.0470)+6);
+[e = _ang1 -> + * -> -> _ADRESH `i `d .0.0470 -> -> 6 `i `d `uc ]
+"147
+[; ;Progra_IRONMAN.c: 147:             }
+}
+[e $U 165  ]
+"149
+[; ;Progra_IRONMAN.c: 149:             else if (ADCON0bits.CHS == 0b0010){
+[e :U 164 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 166  ]
+{
+"150
+[; ;Progra_IRONMAN.c: 150:                 ang2 = ((ADRESH*0.0470)+6);
+[e = _ang2 -> + * -> -> _ADRESH `i `d .0.0470 -> -> 6 `i `d `uc ]
+"151
+[; ;Progra_IRONMAN.c: 151:             }
+}
+[e $U 167  ]
+"153
+[; ;Progra_IRONMAN.c: 153:             else if (ADCON0bits.CHS == 0b0011){
+[e :U 166 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 168  ]
+{
+"154
+[; ;Progra_IRONMAN.c: 154:                 valorPot2 = 0.9*ADRESH;
+[e = _valorPot2 -> * .0.9 -> -> _ADRESH `i `d `i ]
+"155
+[; ;Progra_IRONMAN.c: 155:                 PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
+[e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> -> _ADRESH `i `f -> .255.0 `f ]
+"156
+[; ;Progra_IRONMAN.c: 156:             }
+}
+[e :U 168 ]
+[e :U 167 ]
+[e :U 165 ]
+[e :U 163 ]
+"161
+[; ;Progra_IRONMAN.c: 161:         }
+}
+[e $U 169  ]
+"162
+[; ;Progra_IRONMAN.c: 162:         else if(modo == 1){
+[e :U 161 ]
+[e $ ! == _modo -> 1 `i 170  ]
+{
+"164
+[; ;Progra_IRONMAN.c: 164:             if (ADCON0bits.CHS == 0b0100){
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 171  ]
+{
+"165
+[; ;Progra_IRONMAN.c: 165:                 potenciometro = ADRESH;
+[e = _potenciometro _ADRESH ]
+"166
+[; ;Progra_IRONMAN.c: 166:                 contador = 0;
+[e = _contador -> 0 `i ]
+"167
+[; ;Progra_IRONMAN.c: 167:             }
+}
+[e :U 171 ]
+"168
+[; ;Progra_IRONMAN.c: 168:         }
+}
+[e :U 170 ]
+[e :U 169 ]
+"170
+[; ;Progra_IRONMAN.c: 170:         PIR1bits.ADIF = 0;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"171
+[; ;Progra_IRONMAN.c: 171:     }
+}
+[e :U 160 ]
+"172
+[; ;Progra_IRONMAN.c: 172:     return;
 [e $UE 143  ]
-"109
-[; ;Progra_IRONMAN.c: 109: }
+"173
+[; ;Progra_IRONMAN.c: 173: }
 [e :UE 143 ]
 }
-"111
-[; ;Progra_IRONMAN.c: 111: void pulse(){
+"175
+[; ;Progra_IRONMAN.c: 175: void pulse(){
 [v _pulse `(v ~T0 @X0 1 ef ]
 {
 [e :U _pulse ]
 [f ]
-"112
-[; ;Progra_IRONMAN.c: 112:     if(servo == 1){
-[e $ ! == -> _servo `i -> 1 `i 158  ]
+"176
+[; ;Progra_IRONMAN.c: 176:     if(servo == 1){
+[e $ ! == -> _servo `i -> 1 `i 173  ]
 {
-"113
-[; ;Progra_IRONMAN.c: 113:         if (PORTCbits.RC4 == 1)
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 1 `i 159  ]
-"114
-[; ;Progra_IRONMAN.c: 114:             {
+"177
+[; ;Progra_IRONMAN.c: 177:         if (PORTCbits.RC4 == 1)
+[e $ ! == -> . . _PORTCbits 0 4 `i -> 1 `i 174  ]
+"178
+[; ;Progra_IRONMAN.c: 178:             {
 {
-"115
-[; ;Progra_IRONMAN.c: 115:                 TMR0 = ang1;
+"179
+[; ;Progra_IRONMAN.c: 179:                 TMR0 = ang1;
 [e = _TMR0 _ang1 ]
-"116
-[; ;Progra_IRONMAN.c: 116:                 PORTCbits.RC4 = 0;
+"180
+[; ;Progra_IRONMAN.c: 180:                 PORTCbits.RC4 = 0;
 [e = . . _PORTCbits 0 4 -> -> 0 `i `uc ]
-"117
-[; ;Progra_IRONMAN.c: 117:             }
+"181
+[; ;Progra_IRONMAN.c: 181:             }
 }
-[e $U 160  ]
-"118
-[; ;Progra_IRONMAN.c: 118:             else
-[e :U 159 ]
-"119
-[; ;Progra_IRONMAN.c: 119:             {
+[e $U 175  ]
+"182
+[; ;Progra_IRONMAN.c: 182:             else
+[e :U 174 ]
+"183
+[; ;Progra_IRONMAN.c: 183:             {
 {
-"120
-[; ;Progra_IRONMAN.c: 120:                 TMR0 = (255-ang1);
+"184
+[; ;Progra_IRONMAN.c: 184:                 TMR0 = (255-ang1);
 [e = _TMR0 -> - -> 255 `i -> _ang1 `i `uc ]
-"121
-[; ;Progra_IRONMAN.c: 121:                 PORTCbits.RC4 = 1;
+"185
+[; ;Progra_IRONMAN.c: 185:                 PORTCbits.RC4 = 1;
 [e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
-"122
-[; ;Progra_IRONMAN.c: 122:             }
+"186
+[; ;Progra_IRONMAN.c: 186:             }
 }
-[e :U 160 ]
-"123
-[; ;Progra_IRONMAN.c: 123:     }
+[e :U 175 ]
+"187
+[; ;Progra_IRONMAN.c: 187:     }
 }
-[e $U 161  ]
-"124
-[; ;Progra_IRONMAN.c: 124:     else if(servo == 2){
-[e :U 158 ]
-[e $ ! == -> _servo `i -> 2 `i 162  ]
+[e $U 176  ]
+"188
+[; ;Progra_IRONMAN.c: 188:     else if(servo == 2){
+[e :U 173 ]
+[e $ ! == -> _servo `i -> 2 `i 177  ]
 {
-"125
-[; ;Progra_IRONMAN.c: 125:         if (PORTCbits.RC5 == 1)
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 1 `i 163  ]
-"126
-[; ;Progra_IRONMAN.c: 126:             {
+"189
+[; ;Progra_IRONMAN.c: 189:         if (PORTCbits.RC5 == 1)
+[e $ ! == -> . . _PORTCbits 0 5 `i -> 1 `i 178  ]
+"190
+[; ;Progra_IRONMAN.c: 190:             {
 {
-"127
-[; ;Progra_IRONMAN.c: 127:                 TMR0 = ang2;
+"191
+[; ;Progra_IRONMAN.c: 191:                 TMR0 = ang2;
 [e = _TMR0 _ang2 ]
-"128
-[; ;Progra_IRONMAN.c: 128:                 PORTCbits.RC5 = 0;
+"192
+[; ;Progra_IRONMAN.c: 192:                 PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"129
-[; ;Progra_IRONMAN.c: 129:             }
+"193
+[; ;Progra_IRONMAN.c: 193:             }
 }
-[e $U 164  ]
-"130
-[; ;Progra_IRONMAN.c: 130:             else
-[e :U 163 ]
-"131
-[; ;Progra_IRONMAN.c: 131:             {
+[e $U 179  ]
+"194
+[; ;Progra_IRONMAN.c: 194:             else
+[e :U 178 ]
+"195
+[; ;Progra_IRONMAN.c: 195:             {
 {
-"132
-[; ;Progra_IRONMAN.c: 132:                 TMR0 = (255-ang2);
+"196
+[; ;Progra_IRONMAN.c: 196:                 TMR0 = (255-ang2);
 [e = _TMR0 -> - -> 255 `i -> _ang2 `i `uc ]
-"133
-[; ;Progra_IRONMAN.c: 133:                 PORTCbits.RC5 = 1;
+"197
+[; ;Progra_IRONMAN.c: 197:                 PORTCbits.RC5 = 1;
 [e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"134
-[; ;Progra_IRONMAN.c: 134:             }
+"198
+[; ;Progra_IRONMAN.c: 198:             }
 }
-[e :U 164 ]
-"135
-[; ;Progra_IRONMAN.c: 135:     }
+[e :U 179 ]
+"199
+[; ;Progra_IRONMAN.c: 199:     }
 }
-[e :U 162 ]
-[e :U 161 ]
-"136
-[; ;Progra_IRONMAN.c: 136:     return;
-[e $UE 157  ]
-"137
-[; ;Progra_IRONMAN.c: 137: }
-[e :UE 157 ]
+[e :U 177 ]
+[e :U 176 ]
+"200
+[; ;Progra_IRONMAN.c: 200:     return;
+[e $UE 172  ]
+"201
+[; ;Progra_IRONMAN.c: 201: }
+[e :UE 172 ]
+}
+"203
+[; ;Progra_IRONMAN.c: 203: void servos(uint8_t dato, int modo){
+[v _servos `(v ~T0 @X0 1 ef2`uc`i ]
+{
+[e :U _servos ]
+[v _dato `uc ~T0 @X0 1 r1 ]
+[v _modo `i ~T0 @X0 1 r2 ]
+[f ]
+"204
+[; ;Progra_IRONMAN.c: 204:     if(modo == 1){
+[e $ ! == _modo -> 1 `i 181  ]
+{
+"206
+[; ;Progra_IRONMAN.c: 206:         ang1 = ((dato*0.0470)+6);
+[e = _ang1 -> + * -> -> _dato `i `d .0.0470 -> -> 6 `i `d `uc ]
+"209
+[; ;Progra_IRONMAN.c: 209:         ang2 = ((dato*0.0470)+6);
+[e = _ang2 -> + * -> -> _dato `i `d .0.0470 -> -> 6 `i `d `uc ]
+"212
+[; ;Progra_IRONMAN.c: 212:         valorPot1 = 0.6*dato;
+[e = _valorPot1 -> * .0.6 -> -> _dato `i `d `i ]
+"213
+[; ;Progra_IRONMAN.c: 213:         PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+[e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> _valorPot1 `f -> .255.0 `f ]
+"217
+[; ;Progra_IRONMAN.c: 217:         PWM_duty(2, 0.00025f*((dato)/255.0f));
+[e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> -> _dato `i `f -> .255.0 `f ]
+"218
+[; ;Progra_IRONMAN.c: 218:     }
+}
+[e :U 181 ]
+"219
+[; ;Progra_IRONMAN.c: 219:     return;
+[e $UE 180  ]
+"220
+[; ;Progra_IRONMAN.c: 220: }
+[e :UE 180 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"139
-[; ;Progra_IRONMAN.c: 139: void main(void) {
+"222
+[; ;Progra_IRONMAN.c: 222: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"140
-[; ;Progra_IRONMAN.c: 140:     int Lmin = 6, Lmax = 36;
+"223
+[; ;Progra_IRONMAN.c: 223:     int Lmin = 6, Lmax = 19;
 [v _Lmin `i ~T0 @X0 1 a ]
 [e = _Lmin -> 6 `i ]
 [v _Lmax `i ~T0 @X0 1 a ]
-[e = _Lmax -> 36 `i ]
-"141
-[; ;Progra_IRONMAN.c: 141:     ang1 = Lmin;
+[e = _Lmax -> 19 `i ]
+"224
+[; ;Progra_IRONMAN.c: 224:     ang1 = Lmin;
 [e = _ang1 -> _Lmin `uc ]
-"142
-[; ;Progra_IRONMAN.c: 142:     ang2 = Lmin;
+"225
+[; ;Progra_IRONMAN.c: 225:     ang2 = Lmin;
 [e = _ang2 -> _Lmin `uc ]
-"143
-[; ;Progra_IRONMAN.c: 143:     setup ();
+"226
+[; ;Progra_IRONMAN.c: 226:     setup ();
 [e ( _setup ..  ]
-"144
-[; ;Progra_IRONMAN.c: 144:     ADCON0bits.GO = 1;
+"227
+[; ;Progra_IRONMAN.c: 227:     initUART();
+[e ( _initUART ..  ]
+"228
+[; ;Progra_IRONMAN.c: 228:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"145
-[; ;Progra_IRONMAN.c: 145:     while(1){
-[e :U 167 ]
+"229
+[; ;Progra_IRONMAN.c: 229:     while(1){
+[e :U 184 ]
 {
-"146
-[; ;Progra_IRONMAN.c: 146:         if(servo == 3){
-[e $ ! == -> _servo `i -> 3 `i 169  ]
+"230
+[; ;Progra_IRONMAN.c: 230:         if(flag == 1){
+[e $ ! == _flag -> 1 `i 186  ]
 {
-"147
-[; ;Progra_IRONMAN.c: 147:             servo = 1;
+"231
+[; ;Progra_IRONMAN.c: 231:             flag = 0;
+[e = _flag -> 0 `i ]
+"232
+[; ;Progra_IRONMAN.c: 232:             PORTD = valor_entero;
+[e = _PORTD -> _valor_entero `uc ]
+"233
+[; ;Progra_IRONMAN.c: 233:         }
+}
+[e :U 186 ]
+"235
+[; ;Progra_IRONMAN.c: 235:         if (contador == 1){
+[e $ ! == _contador -> 1 `i 187  ]
+{
+"236
+[; ;Progra_IRONMAN.c: 236:             __asm("sleep");
+[; <" sleep ;# ">
+"237
+[; ;Progra_IRONMAN.c: 237:         }
+}
+[e :U 187 ]
+"239
+[; ;Progra_IRONMAN.c: 239:         PORTE = modo;
+[e = _PORTE -> _modo `uc ]
+"241
+[; ;Progra_IRONMAN.c: 241:         if(modo == 3){
+[e $ ! == _modo -> 3 `i 188  ]
+{
+"242
+[; ;Progra_IRONMAN.c: 242:             modo = 0;
+[e = _modo -> 0 `i ]
+"243
+[; ;Progra_IRONMAN.c: 243:         }
+}
+[e :U 188 ]
+"245
+[; ;Progra_IRONMAN.c: 245:         if(servo == 3){
+[e $ ! == -> _servo `i -> 3 `i 189  ]
+{
+"246
+[; ;Progra_IRONMAN.c: 246:             servo = 1;
 [e = _servo -> -> 1 `i `uc ]
-"148
-[; ;Progra_IRONMAN.c: 148:         }
+"247
+[; ;Progra_IRONMAN.c: 247:         }
 }
-[e :U 169 ]
-"150
-[; ;Progra_IRONMAN.c: 150:         ang1 = (ang1<Lmin) ? Lmin:ang1;
+[e :U 189 ]
+"249
+[; ;Progra_IRONMAN.c: 249:         ang1 = (ang1<Lmin) ? Lmin:ang1;
 [e = _ang1 -> ? < -> _ang1 `i _Lmin : _Lmin -> _ang1 `i `uc ]
-"151
-[; ;Progra_IRONMAN.c: 151:         ang1 = (ang1>Lmax) ? Lmax:ang1;
+"250
+[; ;Progra_IRONMAN.c: 250:         ang1 = (ang1>Lmax) ? Lmax:ang1;
 [e = _ang1 -> ? > -> _ang1 `i _Lmax : _Lmax -> _ang1 `i `uc ]
-"153
-[; ;Progra_IRONMAN.c: 153:         ang2 = (ang2<Lmin) ? Lmin:ang2;
+"252
+[; ;Progra_IRONMAN.c: 252:         ang2 = (ang2<Lmin) ? Lmin:ang2;
 [e = _ang2 -> ? < -> _ang2 `i _Lmin : _Lmin -> _ang2 `i `uc ]
-"154
-[; ;Progra_IRONMAN.c: 154:         ang2 = (ang2>Lmax) ? Lmax:ang2;
+"253
+[; ;Progra_IRONMAN.c: 253:         ang2 = (ang2>Lmax) ? Lmax:ang2;
 [e = _ang2 -> ? > -> _ang2 `i _Lmax : _Lmax -> _ang2 `i `uc ]
-"157
-[; ;Progra_IRONMAN.c: 157:         if (ADCON0bits.GO == 0) {
-[e $ ! == -> . . _ADCON0bits 1 1 `i -> 0 `i 170  ]
+"256
+[; ;Progra_IRONMAN.c: 256:         if (ADCON0bits.GO == 0) {
+[e $ ! == -> . . _ADCON0bits 1 1 `i -> 0 `i 190  ]
 {
-"158
-[; ;Progra_IRONMAN.c: 158:             if(ADCON0bits.CHS == 0b0000)
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 171  ]
-"159
-[; ;Progra_IRONMAN.c: 159:             {
+"257
+[; ;Progra_IRONMAN.c: 257:             if(ADCON0bits.CHS == 0b0000)
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 191  ]
+"258
+[; ;Progra_IRONMAN.c: 258:             {
 {
-"160
-[; ;Progra_IRONMAN.c: 160:                 ADCON0bits.CHS = 0b0100;
+"259
+[; ;Progra_IRONMAN.c: 259:                 ADCON0bits.CHS = 0b0100;
 [e = . . _ADCON0bits 0 2 -> -> 4 `i `uc ]
-"161
-[; ;Progra_IRONMAN.c: 161:             }
+"260
+[; ;Progra_IRONMAN.c: 260:             }
 }
-[e $U 172  ]
-"162
-[; ;Progra_IRONMAN.c: 162:             else if(ADCON0bits.CHS == 0b0100)
-[e :U 171 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 173  ]
-"163
-[; ;Progra_IRONMAN.c: 163:             {
+[e $U 192  ]
+"261
+[; ;Progra_IRONMAN.c: 261:             else if(ADCON0bits.CHS == 0b0100)
+[e :U 191 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 193  ]
+"262
+[; ;Progra_IRONMAN.c: 262:             {
 {
-"164
-[; ;Progra_IRONMAN.c: 164:                 ADCON0bits.CHS = 0b0011;
+"263
+[; ;Progra_IRONMAN.c: 263:                 ADCON0bits.CHS = 0b0011;
 [e = . . _ADCON0bits 0 2 -> -> 3 `i `uc ]
-"165
-[; ;Progra_IRONMAN.c: 165:             }
+"264
+[; ;Progra_IRONMAN.c: 264:             }
 }
-[e $U 174  ]
-"166
-[; ;Progra_IRONMAN.c: 166:             else if(ADCON0bits.CHS == 0b0011)
-[e :U 173 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 175  ]
-"167
-[; ;Progra_IRONMAN.c: 167:             {
+[e $U 194  ]
+"265
+[; ;Progra_IRONMAN.c: 265:             else if(ADCON0bits.CHS == 0b0011)
+[e :U 193 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 195  ]
+"266
+[; ;Progra_IRONMAN.c: 266:             {
 {
-"168
-[; ;Progra_IRONMAN.c: 168:                 ADCON0bits.CHS = 0b0010;
+"267
+[; ;Progra_IRONMAN.c: 267:                 ADCON0bits.CHS = 0b0010;
 [e = . . _ADCON0bits 0 2 -> -> 2 `i `uc ]
-"169
-[; ;Progra_IRONMAN.c: 169:             }
+"268
+[; ;Progra_IRONMAN.c: 268:             }
 }
-[e $U 176  ]
-"170
-[; ;Progra_IRONMAN.c: 170:             else if(ADCON0bits.CHS == 0b0010)
-[e :U 175 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 177  ]
-"171
-[; ;Progra_IRONMAN.c: 171:             {
+[e $U 196  ]
+"269
+[; ;Progra_IRONMAN.c: 269:             else if(ADCON0bits.CHS == 0b0010)
+[e :U 195 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 197  ]
+"270
+[; ;Progra_IRONMAN.c: 270:             {
 {
-"172
-[; ;Progra_IRONMAN.c: 172:                 ADCON0bits.CHS = 0b0001;
+"271
+[; ;Progra_IRONMAN.c: 271:                 ADCON0bits.CHS = 0b0001;
 [e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
-"173
-[; ;Progra_IRONMAN.c: 173:             }
+"272
+[; ;Progra_IRONMAN.c: 272:             }
 }
-[e $U 178  ]
-"174
-[; ;Progra_IRONMAN.c: 174:             else if(ADCON0bits.CHS == 0b0001)
-[e :U 177 ]
-[e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 179  ]
-"175
-[; ;Progra_IRONMAN.c: 175:             {
+[e $U 198  ]
+"273
+[; ;Progra_IRONMAN.c: 273:             else if(ADCON0bits.CHS == 0b0001)
+[e :U 197 ]
+[e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 199  ]
+"274
+[; ;Progra_IRONMAN.c: 274:             {
 {
-"176
-[; ;Progra_IRONMAN.c: 176:                 ADCON0bits.CHS = 0b0000;
+"275
+[; ;Progra_IRONMAN.c: 275:                 ADCON0bits.CHS = 0b0000;
 [e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
-"177
-[; ;Progra_IRONMAN.c: 177:             }
+"276
+[; ;Progra_IRONMAN.c: 276:             }
 }
-[e :U 179 ]
-[e :U 178 ]
-[e :U 176 ]
-[e :U 174 ]
-[e :U 172 ]
-"178
-[; ;Progra_IRONMAN.c: 178:             _delay((unsigned long)((1000)*(4000000/4000000.0)));
+[e :U 199 ]
+[e :U 198 ]
+[e :U 196 ]
+[e :U 194 ]
+[e :U 192 ]
+"277
+[; ;Progra_IRONMAN.c: 277:             _delay((unsigned long)((1000)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"179
-[; ;Progra_IRONMAN.c: 179:             ADCON0bits.GO = 1;
+"278
+[; ;Progra_IRONMAN.c: 278:             ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"180
-[; ;Progra_IRONMAN.c: 180:         }
+"279
+[; ;Progra_IRONMAN.c: 279:         }
 }
-[e :U 170 ]
-"181
-[; ;Progra_IRONMAN.c: 181:     }
+[e :U 190 ]
+"280
+[; ;Progra_IRONMAN.c: 280:     }
 }
-[e :U 166 ]
-[e $U 167  ]
-[e :U 168 ]
-"182
-[; ;Progra_IRONMAN.c: 182:     return;
-[e $UE 165  ]
-"183
-[; ;Progra_IRONMAN.c: 183: }
-[e :UE 165 ]
+[e :U 183 ]
+[e $U 184  ]
+[e :U 185 ]
+"281
+[; ;Progra_IRONMAN.c: 281:     return;
+[e $UE 182  ]
+"282
+[; ;Progra_IRONMAN.c: 282: }
+[e :UE 182 ]
 }
-"185
-[; ;Progra_IRONMAN.c: 185: void setup(void){
+"284
+[; ;Progra_IRONMAN.c: 284: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"187
-[; ;Progra_IRONMAN.c: 187:     ANSELbits.ANS0 = 1;
+"286
+[; ;Progra_IRONMAN.c: 286:     ANSELbits.ANS0 = 1;
 [e = . . _ANSELbits 0 0 -> -> 1 `i `uc ]
-"188
-[; ;Progra_IRONMAN.c: 188:     ANSELbits.ANS1 = 1;
+"287
+[; ;Progra_IRONMAN.c: 287:     ANSELbits.ANS1 = 1;
 [e = . . _ANSELbits 0 1 -> -> 1 `i `uc ]
-"189
-[; ;Progra_IRONMAN.c: 189:     ANSELbits.ANS2 = 1;
+"288
+[; ;Progra_IRONMAN.c: 288:     ANSELbits.ANS2 = 1;
 [e = . . _ANSELbits 0 2 -> -> 1 `i `uc ]
-"190
-[; ;Progra_IRONMAN.c: 190:     ANSELbits.ANS3 = 1;
+"289
+[; ;Progra_IRONMAN.c: 289:     ANSELbits.ANS3 = 1;
 [e = . . _ANSELbits 0 3 -> -> 1 `i `uc ]
-"191
-[; ;Progra_IRONMAN.c: 191:     ANSELbits.ANS4 = 1;
+"290
+[; ;Progra_IRONMAN.c: 290:     ANSELbits.ANS4 = 1;
 [e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
-"192
-[; ;Progra_IRONMAN.c: 192:     ANSELH = 0;
+"291
+[; ;Progra_IRONMAN.c: 291:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"195
-[; ;Progra_IRONMAN.c: 195:     TRISB = 0x0f;
-[e = _TRISB -> -> 15 `i `uc ]
-"196
-[; ;Progra_IRONMAN.c: 196:     TRISC = 0;
-[e = _TRISC -> -> 0 `i `uc ]
-"197
-[; ;Progra_IRONMAN.c: 197:     TRISD = 0;
+"294
+[; ;Progra_IRONMAN.c: 294:     TRISB = 0b11111111;
+[e = _TRISB -> -> 255 `i `uc ]
+"295
+[; ;Progra_IRONMAN.c: 295:     TRISA = 0b11111111;
+[e = _TRISA -> -> 255 `i `uc ]
+"297
+[; ;Progra_IRONMAN.c: 297:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"198
-[; ;Progra_IRONMAN.c: 198:     TRISE = 0;
+"298
+[; ;Progra_IRONMAN.c: 298:     TRISE = 0;
 [e = _TRISE -> -> 0 `i `uc ]
-"201
-[; ;Progra_IRONMAN.c: 201:     PORTA = 0;
+"301
+[; ;Progra_IRONMAN.c: 301:     PORTA = 0;
 [e = _PORTA -> -> 0 `i `uc ]
-"202
-[; ;Progra_IRONMAN.c: 202:     PORTB = 0;
+"302
+[; ;Progra_IRONMAN.c: 302:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
-"203
-[; ;Progra_IRONMAN.c: 203:     PORTC = 0;
+"303
+[; ;Progra_IRONMAN.c: 303:     PORTC = 0;
 [e = _PORTC -> -> 0 `i `uc ]
-"204
-[; ;Progra_IRONMAN.c: 204:     PORTD = 0;
+"304
+[; ;Progra_IRONMAN.c: 304:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"205
-[; ;Progra_IRONMAN.c: 205:     PORTE = 0;
+"305
+[; ;Progra_IRONMAN.c: 305:     PORTE = 0;
 [e = _PORTE -> -> 0 `i `uc ]
-"207
-[; ;Progra_IRONMAN.c: 207:     OPTION_REGbits.nRBPU = 0;
+"307
+[; ;Progra_IRONMAN.c: 307:     OPTION_REGbits.nRBPU = 0;
 [e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-"208
-[; ;Progra_IRONMAN.c: 208:     IOCB = 0b01111111;
-[e = _IOCB -> -> 127 `i `uc ]
-"210
-[; ;Progra_IRONMAN.c: 210:     OSCCONbits.IRCF = 0b110 ;
+"308
+[; ;Progra_IRONMAN.c: 308:     IOCB = 0b11111111;
+[e = _IOCB -> -> 255 `i `uc ]
+"310
+[; ;Progra_IRONMAN.c: 310:     OSCCONbits.IRCF = 0b110 ;
 [e = . . _OSCCONbits 0 4 -> -> 6 `i `uc ]
-"211
-[; ;Progra_IRONMAN.c: 211:     OSCCONbits.SCS = 1;
+"311
+[; ;Progra_IRONMAN.c: 311:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"216
-[; ;Progra_IRONMAN.c: 216:     OPTION_REGbits.T0CS = 0;
+"316
+[; ;Progra_IRONMAN.c: 316:     OPTION_REGbits.T0CS = 0;
 [e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-"217
-[; ;Progra_IRONMAN.c: 217:     OPTION_REGbits.PSA = 0;
+"317
+[; ;Progra_IRONMAN.c: 317:     OPTION_REGbits.PSA = 0;
 [e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-"218
-[; ;Progra_IRONMAN.c: 218:     OPTION_REGbits.PS2 = 1;
+"318
+[; ;Progra_IRONMAN.c: 318:     OPTION_REGbits.PS2 = 1;
 [e = . . _OPTION_REGbits 1 2 -> -> 1 `i `uc ]
-"219
-[; ;Progra_IRONMAN.c: 219:     OPTION_REGbits.PS1 = 0;
+"319
+[; ;Progra_IRONMAN.c: 319:     OPTION_REGbits.PS1 = 0;
 [e = . . _OPTION_REGbits 1 1 -> -> 0 `i `uc ]
-"220
-[; ;Progra_IRONMAN.c: 220:     OPTION_REGbits.PS0 = 1;
+"320
+[; ;Progra_IRONMAN.c: 320:     OPTION_REGbits.PS0 = 1;
 [e = . . _OPTION_REGbits 1 0 -> -> 1 `i `uc ]
-"221
-[; ;Progra_IRONMAN.c: 221:     TMR0 = 0;
+"321
+[; ;Progra_IRONMAN.c: 321:     TMR0 = 0;
 [e = _TMR0 -> -> 0 `i `uc ]
-"224
-[; ;Progra_IRONMAN.c: 224:     INTCONbits.RBIF = 0;
+"324
+[; ;Progra_IRONMAN.c: 324:     INTCONbits.RBIF = 0;
 [e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"225
-[; ;Progra_IRONMAN.c: 225:     INTCONbits.RBIE = 1;
+"325
+[; ;Progra_IRONMAN.c: 325:     INTCONbits.RBIE = 1;
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"226
-[; ;Progra_IRONMAN.c: 226:     INTCONbits.T0IF = 0;
+"326
+[; ;Progra_IRONMAN.c: 326:     INTCONbits.T0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"227
-[; ;Progra_IRONMAN.c: 227:     INTCONbits.T0IE = 1;
+"327
+[; ;Progra_IRONMAN.c: 327:     INTCONbits.T0IE = 1;
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"228
-[; ;Progra_IRONMAN.c: 228:     PIR1bits.ADIF = 0;
+"328
+[; ;Progra_IRONMAN.c: 328:     PIR1bits.ADIF = 0;
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"229
-[; ;Progra_IRONMAN.c: 229:     INTCONbits.PEIE = 1;
+"329
+[; ;Progra_IRONMAN.c: 329:     INTCONbits.PEIE = 1;
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"230
-[; ;Progra_IRONMAN.c: 230:     PIE1bits.ADIE = 1;
+"330
+[; ;Progra_IRONMAN.c: 330:     PIE1bits.ADIE = 1;
 [e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
-"231
-[; ;Progra_IRONMAN.c: 231:     INTCONbits.GIE = 1;
+"331
+[; ;Progra_IRONMAN.c: 331:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"232
-[; ;Progra_IRONMAN.c: 232:     ADCON0bits.GO = 1;
+"332
+[; ;Progra_IRONMAN.c: 332:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"235
-[; ;Progra_IRONMAN.c: 235:     ADCON0bits.CHS = 0b0000;
+"335
+[; ;Progra_IRONMAN.c: 335:     ADCON0bits.CHS = 0b0000;
 [e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
-"236
-[; ;Progra_IRONMAN.c: 236:     ADCON1bits.VCFG0 = 0;
+"336
+[; ;Progra_IRONMAN.c: 336:     ADCON1bits.VCFG0 = 0;
 [e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
-"237
-[; ;Progra_IRONMAN.c: 237:     ADCON1bits.VCFG1 = 0;
+"337
+[; ;Progra_IRONMAN.c: 337:     ADCON1bits.VCFG1 = 0;
 [e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
-"238
-[; ;Progra_IRONMAN.c: 238:     ADCON0bits.ADCS = 0b10;
+"338
+[; ;Progra_IRONMAN.c: 338:     ADCON0bits.ADCS = 0b10;
 [e = . . _ADCON0bits 0 3 -> -> 2 `i `uc ]
-"240
-[; ;Progra_IRONMAN.c: 240:     ADCON1bits.ADFM = 0;
+"340
+[; ;Progra_IRONMAN.c: 340:     ADCON1bits.ADFM = 0;
 [e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
-"241
-[; ;Progra_IRONMAN.c: 241:     ADCON0bits.ADON = 1;
+"341
+[; ;Progra_IRONMAN.c: 341:     ADCON0bits.ADON = 1;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"242
-[; ;Progra_IRONMAN.c: 242:      _delay((unsigned long)((1)*(4000000/4000.0)));
+"342
+[; ;Progra_IRONMAN.c: 342:      _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"245
-[; ;Progra_IRONMAN.c: 245:     PWM_config(1, 0.020f);
+"345
+[; ;Progra_IRONMAN.c: 345:     PWM_config(1, 0.020f);
 [e ( _PWM_config (2 , -> -> 1 `i `uc -> .0.020 `f ]
-"246
-[; ;Progra_IRONMAN.c: 246:     PWM_duty(1, 0.00025f);
+"346
+[; ;Progra_IRONMAN.c: 346:     PWM_duty(1, 0.00025f);
 [e ( _PWM_duty (2 , -> -> 1 `i `uc -> .0.00025 `f ]
-"247
-[; ;Progra_IRONMAN.c: 247:     PWM_config(2, 0.020f);
+"347
+[; ;Progra_IRONMAN.c: 347:     PWM_config(2, 0.020f);
 [e ( _PWM_config (2 , -> -> 2 `i `uc -> .0.020 `f ]
-"248
-[; ;Progra_IRONMAN.c: 248:     PWM_duty(2, 0.00025f);
+"348
+[; ;Progra_IRONMAN.c: 348:     PWM_duty(2, 0.00025f);
 [e ( _PWM_duty (2 , -> -> 2 `i `uc -> .0.00025 `f ]
-"249
-[; ;Progra_IRONMAN.c: 249:     return;
-[e $UE 180  ]
-"250
-[; ;Progra_IRONMAN.c: 250: }
-[e :UE 180 ]
+"349
+[; ;Progra_IRONMAN.c: 349:     return;
+[e $UE 200  ]
+"350
+[; ;Progra_IRONMAN.c: 350: }
+[e :UE 200 ]
+}
+"352
+[; ;Progra_IRONMAN.c: 352: void initUART(void){
+[v _initUART `(v ~T0 @X0 1 ef ]
+{
+[e :U _initUART ]
+[f ]
+"354
+[; ;Progra_IRONMAN.c: 354:     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"355
+[; ;Progra_IRONMAN.c: 355:     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"356
+[; ;Progra_IRONMAN.c: 356:     BRGH = 1;
+[e = _BRGH -> -> 1 `i `b ]
+"357
+[; ;Progra_IRONMAN.c: 357:     BRG16 = 0;
+[e = _BRG16 -> -> 0 `i `b ]
+"360
+[; ;Progra_IRONMAN.c: 360:     CREN = 1;
+[e = _CREN -> -> 1 `i `b ]
+"361
+[; ;Progra_IRONMAN.c: 361:     SYNC = 0;
+[e = _SYNC -> -> 0 `i `b ]
+"362
+[; ;Progra_IRONMAN.c: 362:     SPEN = 1;
+[e = _SPEN -> -> 1 `i `b ]
+"363
+[; ;Progra_IRONMAN.c: 363:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"366
+[; ;Progra_IRONMAN.c: 366:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+"369
+[; ;Progra_IRONMAN.c: 369:     TXEN = 1;
+[e = _TXEN -> -> 1 `i `b ]
+"370
+[; ;Progra_IRONMAN.c: 370:     TXIF = 0;
+[e = _TXIF -> -> 0 `i `b ]
+"374
+[; ;Progra_IRONMAN.c: 374:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"375
+[; ;Progra_IRONMAN.c: 375:     PIR1bits.RCIF = 0;
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+"382
+[; ;Progra_IRONMAN.c: 382: }
+[e :UE 201 ]
+}
+"384
+[; ;Progra_IRONMAN.c: 384: uint8_t read_EEPROM(uint8_t address){
+[v _read_EEPROM `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _read_EEPROM ]
+[v _address `uc ~T0 @X0 1 r1 ]
+[f ]
+"385
+[; ;Progra_IRONMAN.c: 385:     while(WR||RD);
+[e $U 203  ]
+[e :U 204 ]
+[e :U 203 ]
+[e $ || _WR _RD 204  ]
+[e :U 205 ]
+"387
+[; ;Progra_IRONMAN.c: 387:     EEADR = address;
+[e = _EEADR _address ]
+"388
+[; ;Progra_IRONMAN.c: 388:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 5 -> -> 0 `i `uc ]
+"389
+[; ;Progra_IRONMAN.c: 389:     EECON1bits.RD = 1;
+[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+"390
+[; ;Progra_IRONMAN.c: 390:     return EEDAT;
+[e ) _EEDAT ]
+[e $UE 202  ]
+"391
+[; ;Progra_IRONMAN.c: 391: }
+[e :UE 202 ]
+}
+"393
+[; ;Progra_IRONMAN.c: 393: void write_EEPROM (uint8_t address, uint8_t data){
+[v _write_EEPROM `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _write_EEPROM ]
+[v _address `uc ~T0 @X0 1 r1 ]
+[v _data `uc ~T0 @X0 1 r2 ]
+[f ]
+"394
+[; ;Progra_IRONMAN.c: 394:     uint8_t gieStatus;
+[v _gieStatus `uc ~T0 @X0 1 a ]
+"395
+[; ;Progra_IRONMAN.c: 395:     while (WR);
+[e $U 207  ]
+[e :U 208 ]
+[e :U 207 ]
+[e $ _WR 208  ]
+[e :U 209 ]
+"397
+[; ;Progra_IRONMAN.c: 397:     EEADR = address;
+[e = _EEADR _address ]
+"398
+[; ;Progra_IRONMAN.c: 398:     EEDAT = data;
+[e = _EEDAT _data ]
+"399
+[; ;Progra_IRONMAN.c: 399:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 5 -> -> 0 `i `uc ]
+"400
+[; ;Progra_IRONMAN.c: 400:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"401
+[; ;Progra_IRONMAN.c: 401:     gieStatus = GIE;
+[e = _gieStatus -> _GIE `uc ]
+"402
+[; ;Progra_IRONMAN.c: 402:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"403
+[; ;Progra_IRONMAN.c: 403:     EECON2 = 0x55;
+[e = _EECON2 -> -> 85 `i `uc ]
+"404
+[; ;Progra_IRONMAN.c: 404:     EECON2 = 0xAA;
+[e = _EECON2 -> -> 170 `i `uc ]
+"405
+[; ;Progra_IRONMAN.c: 405:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+"406
+[; ;Progra_IRONMAN.c: 406:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
+"408
+[; ;Progra_IRONMAN.c: 408:     INTCONbits.GIE = gieStatus;
+[e = . . _INTCONbits 0 7 _gieStatus ]
+"409
+[; ;Progra_IRONMAN.c: 409: }
+[e :UE 206 ]
+}
+"426
+[; ;Progra_IRONMAN.c: 426: void TXT(void)
+[v _TXT `(v ~T0 @X0 1 ef ]
+"427
+[; ;Progra_IRONMAN.c: 427: {
+{
+[e :U _TXT ]
+[f ]
+"428
+[; ;Progra_IRONMAN.c: 428:     if (modo == 2){
+[e $ ! == _modo -> 2 `i 211  ]
+{
+"429
+[; ;Progra_IRONMAN.c: 429:         while(!PIR1bits.RCIF);
+[e $U 212  ]
+[e :U 213 ]
+[e :U 212 ]
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 213  ]
+[e :U 214 ]
+"431
+[; ;Progra_IRONMAN.c: 431:         i++;
+[e ++ _i -> 1 `i ]
+"436
+[; ;Progra_IRONMAN.c: 436:         caracter[i] = RCREG;
+[e = *U + &U _caracter * -> -> _i `ui `ux -> -> # *U &U _caracter `ui `ux -> _RCREG `uc ]
+"437
+[; ;Progra_IRONMAN.c: 437:         entero = caracter[i] - '0';
+[e = _entero -> - -> *U + &U _caracter * -> -> _i `ui `ux -> -> # *U &U _caracter `ui `ux `ui -> 48 `ui `i ]
+"438
+[; ;Progra_IRONMAN.c: 438:         numero[i] = entero;
+[e = *U + &U _numero * -> -> _i `ui `ux -> -> # *U &U _numero `ui `ux -> _entero `uc ]
+"446
+[; ;Progra_IRONMAN.c: 446:         if (i == 2){
+[e $ ! == _i -> 2 `i 215  ]
+{
+"447
+[; ;Progra_IRONMAN.c: 447:             i = -1;
+[e = _i -U -> 1 `i ]
+"448
+[; ;Progra_IRONMAN.c: 448:             flag = 1;
+[e = _flag -> 1 `i ]
+"449
+[; ;Progra_IRONMAN.c: 449:             valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
+[e = _valor_entero + + * -> *U + &U _numero * -> -> -> 0 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 100 `i * -> *U + &U _numero * -> -> -> 1 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 10 `i * -> *U + &U _numero * -> -> -> 2 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 1 `i ]
+"450
+[; ;Progra_IRONMAN.c: 450:         }
+}
+[e :U 215 ]
+"463
+[; ;Progra_IRONMAN.c: 463:     }
+}
+[e :U 211 ]
+"464
+[; ;Progra_IRONMAN.c: 464:     return;
+[e $UE 210  ]
+"465
+[; ;Progra_IRONMAN.c: 465: }
+[e :UE 210 ]
 }

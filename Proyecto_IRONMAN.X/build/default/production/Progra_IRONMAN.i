@@ -2854,65 +2854,129 @@ void PWM_config(char canal, float periodo_ms);
 void PWM_duty(char canal, float duty);
 # 35 "Progra_IRONMAN.c" 2
 # 47 "Progra_IRONMAN.c"
-unsigned char servo = 1, ang1, ang2, cont = 1;
+unsigned char servo = 1, ang1, ang2;
 
 
-int i = 0;
+int modo = 0;
+int i = -1;
 int valorPot1 = 0;
 int valorPot2 = 0;
 int dutyPot = 0;
 int periodoPot = 0;
-int potenciometro = 0;
 float potMapeado = 0;
+int contador = 0;
+char numero[2];
+int valor_entero;
+char caracter[2];
+int flag = 0;
+int entero = 0;
+uint8_t address = 0, data = 0, potenciometro = 0;
 
 
 
 
 void setup(void);
-void duty_cicle(int ciclo);
+void initUART(void);
+void TXT(void);
+uint8_t cadena(char txt);
 void pulse();
-void pulse2();
+void servos(uint8_t dato, int modo);
+void write_EEPROM (uint8_t address, uint8_t data);
+uint8_t read_EEPROM(uint8_t address);
 
 
 void __attribute__((picinterrupt(("")))) isr(void) {
+
     if (INTCONbits.T0IF)
     {
         pulse();
         INTCONbits.T0IF = 0;
     }
 
+
+    if(PIR1bits.RCIF){
+        TXT();
+
+
+    }
+
+
     if (INTCONbits.RBIF)
     {
+        if (PORTBbits.RB0 == 0){
+            modo = modo + 1;
+        }
 
-        if (PORTBbits.RB1 == 0){
+        else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
+        }
+
+        else if (PORTBbits.RB2 == 0){
+            address++;
+
+            contador = 0;
+        }
+
+        else if (PORTBbits.RB3 == 0){
+            address--;
+            contador = 0;
+        }
+
+        else if (PORTBbits.RB4 == 0){
+            write_EEPROM (address, potenciometro);
+            contador = 0;
+        }
+
+        else if (PORTBbits.RB5 == 0){
+
+            data = read_EEPROM(address);
+
+            contador = 0;
+            servos(data, modo);
+        }
+
+        else if (PORTBbits.RB6 == 0){
+             contador = 1;
+
+
         }
         INTCONbits.RBIF = 0;
     }
 
+
     if (PIR1bits.ADIF) {
+        if(modo == 0){
 
-        if (ADCON0bits.CHS == 0b0000){
-            valorPot1 = 0.9*ADRESH;
-            PWM_duty(1, 0.00025f*((ADRESH)/255.0f));
+            if (ADCON0bits.CHS == 0b0000){
+                valorPot1 = 0.6*ADRESH;
+                PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+            }
+
+            else if (ADCON0bits.CHS == 0b0001){
+                ang1 = ((ADRESH*0.0470)+6);
+            }
+
+            else if (ADCON0bits.CHS == 0b0010){
+                ang2 = ((ADRESH*0.0470)+6);
+            }
+
+            else if (ADCON0bits.CHS == 0b0011){
+                valorPot2 = 0.9*ADRESH;
+                PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
+            }
+
+
+
+
+        }
+        else if(modo == 1){
+
+            if (ADCON0bits.CHS == 0b0100){
+                potenciometro = ADRESH;
+                contador = 0;
+            }
         }
 
-        else if (ADCON0bits.CHS == 0b0001){
-            ang1 = ((ADRESH*0.1176470588)+6);
-        }
-
-        else if (ADCON0bits.CHS == 0b0010){
-            ang2 = ((ADRESH*0.1176470588)+6);
-        }
-
-        else if (ADCON0bits.CHS == 0b0011){
-            valorPot2 = 0.9*ADRESH;
-            PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
-        }
-
-        else if (ADCON0bits.CHS == 0b0100){
-            potenciometro = ADRESH;
-        }
         PIR1bits.ADIF = 0;
     }
     return;
@@ -2946,13 +3010,48 @@ void pulse(){
     return;
 }
 
+void servos(uint8_t dato, int modo){
+    if(modo == 1){
+
+        ang1 = ((dato*0.0470)+6);
+
+
+        ang2 = ((dato*0.0470)+6);
+
+
+        valorPot1 = 0.6*dato;
+        PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+
+
+
+        PWM_duty(2, 0.00025f*((dato)/255.0f));
+    }
+    return;
+}
+
 void main(void) {
-    int Lmin = 6, Lmax = 36;
+    int Lmin = 6, Lmax = 19;
     ang1 = Lmin;
     ang2 = Lmin;
     setup ();
+    initUART();
     ADCON0bits.GO = 1;
     while(1){
+        if(flag == 1){
+            flag = 0;
+            PORTD = valor_entero;
+        }
+
+        if (contador == 1){
+            __asm("sleep");
+        }
+
+        PORTE = modo;
+
+        if(modo == 3){
+            modo = 0;
+        }
+
         if(servo == 3){
             servo = 1;
         }
@@ -3002,8 +3101,9 @@ void setup(void){
     ANSELH = 0;
 
 
-    TRISB = 0x0f;
-    TRISC = 0;
+    TRISB = 0b11111111;
+    TRISA = 0b11111111;
+
     TRISD = 0;
     TRISE = 0;
 
@@ -3015,7 +3115,7 @@ void setup(void){
     PORTE = 0;
 
     OPTION_REGbits.nRBPU = 0;
-    IOCB = 0b01111111;
+    IOCB = 0b11111111;
 
     OSCCONbits.IRCF = 0b110 ;
     OSCCONbits.SCS = 1;
@@ -3056,5 +3156,94 @@ void setup(void){
     PWM_duty(1, 0.00025f);
     PWM_config(2, 0.020f);
     PWM_duty(2, 0.00025f);
+    return;
+}
+
+void initUART(void){
+
+    SPBRG = 25;
+    SPBRGH = 0;
+    BRGH = 1;
+    BRG16 = 0;
+
+
+    CREN = 1;
+    SYNC = 0;
+    SPEN = 1;
+    TXSTAbits.TXEN = 1;
+
+
+    RCSTAbits.RX9 = 0;
+
+
+    TXEN = 1;
+    TXIF = 0;
+
+
+
+    PIE1bits.RCIE = 1;
+    PIR1bits.RCIF = 0;
+
+
+
+
+
+
+}
+
+uint8_t read_EEPROM(uint8_t address){
+    while(WR||RD);
+
+    EEADR = address;
+    EECON1bits.EEPGD = 0;
+    EECON1bits.RD = 1;
+    return EEDAT;
+}
+
+void write_EEPROM (uint8_t address, uint8_t data){
+    uint8_t gieStatus;
+    while (WR);
+
+    EEADR = address;
+    EEDAT = data;
+    EECON1bits.EEPGD = 0;
+    EECON1bits.WREN = 1;
+    gieStatus = GIE;
+    INTCONbits.GIE = 0;
+    EECON2 = 0x55;
+    EECON2 = 0xAA;
+    EECON1bits.WR = 1;
+    EECON1bits.WREN = 0;
+
+    INTCONbits.GIE = gieStatus;
+}
+# 426 "Progra_IRONMAN.c"
+void TXT(void)
+{
+    if (modo == 2){
+        while(!PIR1bits.RCIF);
+
+        i++;
+
+
+
+
+        caracter[i] = RCREG;
+        entero = caracter[i] - '0';
+        numero[i] = entero;
+
+
+
+
+
+
+
+        if (i == 2){
+            i = -1;
+            flag = 1;
+            valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
+        }
+# 463 "Progra_IRONMAN.c"
+    }
     return;
 }

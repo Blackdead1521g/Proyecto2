@@ -2864,7 +2864,7 @@ void PWM_config(char canal, float periodo_ms){
 void PWM_duty(char canal, float duty){
     if (canal == 1){
         int particion1 = (int)(4*duty/((1.0f/4000000)*16));
-        CCPR1L = (char)(-((particion1 >> 2)-94));
+        CCPR1L = (char)(-((particion1 >> 2)-69));
 
 
 

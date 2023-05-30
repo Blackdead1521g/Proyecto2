@@ -44,65 +44,129 @@
 #define decrementar PORTBbits.RB1
 
 
-unsigned char servo = 1, ang1, ang2, cont = 1;
+unsigned char servo = 1, ang1, ang2;
 
 //---------------------Variables---------------------------------
-int i = 0;
+int modo = 0;
+int i = -1;
 int valorPot1 = 0;
 int valorPot2 = 0;
 int dutyPot = 0;
 int periodoPot = 0;
-int potenciometro = 0;
 float potMapeado = 0;
+int contador = 0;
+char numero[2];
+int valor_entero;
+char caracter[2];
+int flag = 0;
+int entero = 0;
+uint8_t  address = 0, data = 0, potenciometro = 0;
 
 
 
 //-------------------Prototipos de funciones------------------
 void setup(void);
-void duty_cicle(int ciclo);
+void initUART(void);
+void TXT(void);
+uint8_t cadena(char txt);
 void pulse();
-void pulse2();
+void servos(uint8_t  dato, int modo);
+void write_EEPROM (uint8_t  address, uint8_t  data);
+uint8_t  read_EEPROM(uint8_t  address);
 
 //----------------------Interrupciones---------------------------
 void __interrupt() isr(void) {
+    //Interrupción del TMR0
     if (INTCONbits.T0IF) //Si se activa la bandera de interrupción del TMR0
     {
         pulse(); //Llamaremos a nuestra función de ciclo de trabajo para el led
         INTCONbits.T0IF = 0; //Limpiamos la bandera del TMR0
     }
+    
+    //Interrupción del puerto serial
+    if(PIR1bits.RCIF){ //Verificamos que la bandera del EUSART esté llena (ya recibió un valor)
+        TXT();
+        //recibido = RCREG; //Ingresamos el dato recibido desde la hiperterminal en la variable recibido
+        //RCREG es el registro que contiene el valor que ingresamos en la hiperterminal
+    }
 
+    //Interrupción del Puerto B
     if (INTCONbits.RBIF) //Revisamos si la bandera de interrupción del Puerto B se enciende
-    {
-        //RB0 -> Aumentar el contador 
-        if (PORTBbits.RB1 == 0){
+    {   //RB0 --> cambiar de modo
+        if (PORTBbits.RB0 == 0){
+            modo = modo + 1;
+        }
+        //RB1 -> Cambiar de servomotor
+        else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
+        }
+        //RB0 -> Aumentar la dirección de memoria
+        else if (PORTBbits.RB2 == 0){
+            address++; //Aumentamos nuestra variable de localidad
+            //PORTA = 0; //Limpiamos el puerto A
+            contador = 0; //Colocamos nuestra bandera de Sleep en 0
+        }
+        //RB3 -> Disminuir la dirección de memoria
+        else if (PORTBbits.RB3 == 0){
+            address--; //Disminuimos nuestra variable de localidad
+            contador = 0; //Colocamos nuestra bandera de Sleep en 0
+        }
+        //RB4 -> Escribir en la EEPROM
+        else if (PORTBbits.RB4 == 0){
+            write_EEPROM (address, potenciometro); //Mandamos a llamar a nuestra función de escritra en la EEPROM
+            contador = 0; //Colocamos nuestra bandera de Sleep en 0
+        }
+        //RB5 -> Leer le EEPROM en el Puerto D
+        else if (PORTBbits.RB5 == 0){
+            //PORTD = 0; //Limpiamos el puerto D
+            data = read_EEPROM(address); //Mandamos a llamar a nuestra función de lectura en la EEPROM
+            //PORTD = data; //Ingresamos el valor tomado de la EEPROM en el puerto D
+            contador = 0; //Colocamos nuestra bandera de Sleep en 0
+            servos(data, modo);
+        }
+        //RB6 -> Sleep
+        else if (PORTBbits.RB6 == 0){
+             contador = 1; //Colocamos nuestra bandera de Sleep en 1
+             //PORTA = address; //Ingresamos en el puerto A el valor de la localidad en la que estamos
+             //PORTC = potenciometro; //Ingresamos en el puerto C el valor del potenciómetro
         }
         INTCONbits.RBIF = 0; //Apagamos la bandera del puerto B
     }
     
+    //Interrupción del ADC
     if (PIR1bits.ADIF) { //Si se activa la bandera de interrupcion del ADC
-        //Canal para girar ambos cañones PWM CCP1
-        if (ADCON0bits.CHS == 0b0000){ //Si está en ADC AN0
-            valorPot1 = 0.9*ADRESH;
-            PWM_duty(1, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+        if(modo == 0){ //Si está en 0 activamos el modo manual
+            //Canal para girar ambos cañones PWM CCP1
+            if (ADCON0bits.CHS == 0b0000){ //Si está en ADC AN0
+                valorPot1 = 0.6*ADRESH;
+                PWM_duty(1, ciclo_trabajo*((valorPot1)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+            }
+            //Canal para girar el cañón 1
+            else if (ADCON0bits.CHS == 0b0001){//Si está en ADC AN1
+                ang1 = ((ADRESH*0.0470)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
+            }
+            //Canal para girar el cañón 2
+            else if (ADCON0bits.CHS == 0b0010){//Si está en ADC AN2
+                ang2 = ((ADRESH*0.0470)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
+            }
+            //Canal para el IRONMAN PWM CCP2
+            else if (ADCON0bits.CHS == 0b0011){ //Si está en ADC AN3
+                valorPot2 = 0.9*ADRESH;
+                PWM_duty(2, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+            }
+            /*//Canal para el IRONMAN PWM CCP2
+            else if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
+                potenciometro = ADRESH;
+            }*/
         }
-        //Canal para girar el cañón 1
-        else if (ADCON0bits.CHS == 0b0001){//Si está en ADC AN1
-            ang1 = ((ADRESH*0.1176470588)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
+        else if(modo == 1){ //Si está en 1 activamos el modo EEPROM
+            //Canal para el IRONMAN PWM CCP2
+            if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
+                potenciometro = ADRESH;
+                contador = 0; //Colocamos nuestra bandera de Sleep en 0
+            }  
         }
-        //Canal para girar el cañón 2
-        else if (ADCON0bits.CHS == 0b0010){//Si está en ADC AN2
-            ang2 = ((ADRESH*0.1176470588)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
-        }
-        //Canal para el IRONMAN PWM CCP2
-        else if (ADCON0bits.CHS == 0b0011){ //Si está en ADC AN3
-            valorPot2 = 0.9*ADRESH;
-            PWM_duty(2, ciclo_trabajo*((ADRESH)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
-        }
-        //Canal para el IRONMAN PWM CCP2
-        else if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
-            potenciometro = ADRESH;
-        }
+            
         PIR1bits.ADIF = 0; //Limpiar la bandera de la interrupcion del ADC
     }
     return; 
@@ -136,13 +200,48 @@ void pulse(){
     return;
 }
 
+void servos(uint8_t dato, int modo){
+    if(modo == 1){
+        //Canal para girar el cañón 1
+        ang1 = ((dato*0.0470)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
+            
+        //Canal para girar el cañón 2
+        ang2 = ((dato*0.0470)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
+            
+        //Canal para girar ambos cañones PWM CCP1
+        valorPot1 = 0.6*dato;
+        PWM_duty(1, ciclo_trabajo*((valorPot1)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+            
+        //Canal para el IRONMAN PWM CCP2
+        //valorPot2 = 0.9*data;
+        PWM_duty(2, ciclo_trabajo*((dato)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
+    }
+    return;
+}
+
 void main(void) {
-    int Lmin = 6, Lmax = 36;
+    int Lmin = 6, Lmax = 19;
     ang1 = Lmin;
     ang2 = Lmin;
     setup (); 
+    initUART();
     ADCON0bits.GO = 1; //Activamos la lectura del ADC
     while(1){ //loop forever
+        if(flag == 1){
+            flag = 0;
+            PORTD = valor_entero;
+        }
+        //Comrpobación de modo sleep
+        if (contador == 1){ //Revisamos si nuestra bandera de Sleep está encendida
+            SLEEP(); //Mientras esté encendida pondremos al Pic en modo de reposo
+        }
+        
+        PORTE = modo;
+        
+        if(modo == 3){
+            modo = 0;
+        }
+        
         if(servo == 3){
             servo = 1;
         }
@@ -192,10 +291,11 @@ void setup(void){
     ANSELH = 0; 
     
     //Definimos puertos que serán salidas
-    TRISB = 0x0f;
-    TRISC = 0;
+    TRISB = 0b11111111;
+    TRISA = 0b11111111;
+    //TRISC = 0b11000000;
     TRISD = 0;
-    TRISE = 0;
+    TRISE = 0; 
     
     //Limpiamos los puertos
     PORTA = 0;
@@ -205,7 +305,7 @@ void setup(void){
     PORTE = 0;
     
     OPTION_REGbits.nRBPU = 0; //Habilitamos los PULLUPS
-    IOCB = 0b01111111; //Habilitamos las interrupciones al cambiar de estaso el puerto B
+    IOCB = 0b11111111; //Habilitamos las interrupciones al cambiar de estaso el puerto B
     //////////////oscilador
     OSCCONbits.IRCF = 0b110 ; ///4Mhz
     OSCCONbits.SCS = 1; //Utilizar oscilados interno
@@ -247,4 +347,119 @@ void setup(void){
     PWM_config(2, periodo);
     PWM_duty(2, ciclo_trabajo);
     return;
+}
+
+void initUART(void){
+    //paso 1
+    SPBRG = 25; //SPBRGH:SPBRG  = [(4Mhz/9600)/64]-1 = 12 ? real 9615.38
+    SPBRGH = 0; //%error = (9615.38-9600)/9600 * 100 = 0.16%
+    BRGH = 1;   
+    BRG16 = 0;
+    
+    //paso 2
+    CREN = 1;
+    SYNC = 0;   // TXSTAbits ? habilitar transmision & TXIF = 1
+    SPEN = 1;   //RCSTAbits ? apagar bandera TX
+    TXSTAbits.TXEN = 1; //permite transmitir
+    
+    //paso 3: habilitar los 9 bits
+    RCSTAbits.RX9 = 0;
+    
+    //paso 4
+    TXEN = 1; //TXSTAbits -> habilitar transmision & TXIF = 1
+    TXIF = 0; //PIRbits -> apagar bandera TX
+    //C
+    
+    //paso 5: interrupciones
+    PIE1bits.RCIE = 1; //Habilitamos interrupción de RCIF
+    PIR1bits.RCIF = 0; //Limpiamos bandera del RCIF
+
+    
+    
+    //paso 6: cargar 9no bit
+    //paso 7: cargar 
+    
+}
+
+uint8_t read_EEPROM(uint8_t address){
+    while(WR||RD); //Verifificar si hay algún proceso de escritura
+                   //o lectura en proceso
+    EEADR = address; //Accedemos a la dirección que queremos leer
+    EECON1bits.EEPGD = 0; //Lectura de la EEPROM
+    EECON1bits.RD = 1; //Obtenemos el dato correspondiente a la dirección 
+    return EEDAT;
+}
+
+void write_EEPROM (uint8_t address, uint8_t data){
+    uint8_t gieStatus;
+    while (WR); //Verificar WR para saber si hay un proceso
+                // de escritura en proceso
+    EEADR = address; //Dirección de memoria a escribir
+    EEDAT = data; //Ingresamos el datos que queremos escribir
+    EECON1bits.EEPGD = 0; //Acceso a memoria de datos en la EEPROM
+    EECON1bits.WREN = 1; //Habilitamos la escritura en la EEPROM
+    gieStatus = GIE;
+    INTCONbits.GIE = 0; //Deshabilitamos interrupciones
+    EECON2 = 0x55;
+    EECON2 = 0xAA;
+    EECON1bits.WR = 1; //Iniciamos escritura
+    EECON1bits.WREN = 0; //Deshabilitamos la escritura en la EEPROM
+    
+    INTCONbits.GIE = gieStatus; //Habilitamos las interrupciones
+} 
+
+/*uint8_t cadena(char txt){
+    int i;  //variable iteracion
+    for(i = 0; txt != '\0'; i++){
+        int entero = txt - '0'; //Nos devuelve el número entero al que corresponde el caracter ingresado
+        numero[i] = entero;
+        //valor_entero = atoi(numero);
+        //while(!PIR1bits.TXIF); // Esperamos a que el registro de transmisión esté vacío
+        //TXREG es el registro de la terminal, es decir, lo que posea ese registro se va a presentar en la terminal
+        //TXREG = txt[i]; // Envia caracter por caracter a la terminal8
+        
+    }
+    valor_entero = atoi(numero);
+    return valor_entero;
+}*/
+
+void TXT(void)
+{   
+    if (modo == 2){
+        while(!PIR1bits.RCIF); //Esperar a que presione un valor en la terminal
+        //char caracter = RCREG; //Le ingresamos el valor ingresado de la terminal a la variable caracter
+        i++;
+        //if (i <= 2){
+            //caracter[i++] = RCREG
+        //do{
+            //char caracter[i++] = RCREG;
+        caracter[i] = RCREG;
+        entero = caracter[i] - '0'; //Nos devuelve el número entero al que corresponde el caracter ingresado
+        numero[i] = entero;
+                /*if (caracter[i] != '\0'){
+                    
+                }*/
+            //}while((caracter[i-1] != '\0'));
+            
+            //caracter[i-1] = '\0';
+        
+        if (i == 2){
+            i = -1;
+            flag = 1;
+            valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
+        }
+
+        //PORTD = caracter;
+        /*if (caracter == '+'){ //Si la terminal recibe un + incrementamos el puerto D
+            PORTD++;
+        }
+        else if(caracter == '-'){ //Si la terminal recibe un - decrementamos el puerto D
+            PORTD--;
+        } */   
+        //POT(PORTD); //Ese mismo valor luego se lo ingresamos el registro TXREG que presenta dicho valor en la terminal
+        //TXREG ='\r'; //Damos un salto en la terminal
+        ////PORTD = caracter; //Le ingresamos al puerto B el valor de la terminal para poder observar en binario el valor decimal correspondiente 
+                          //al caracter ingresado
+    }
+    //return;
 }
