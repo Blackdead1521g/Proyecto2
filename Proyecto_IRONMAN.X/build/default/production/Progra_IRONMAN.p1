@@ -16,8 +16,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "483
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 483: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
-"72 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 72: void pulse();
+"69 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 69: void pulse();
 [v _pulse `(v ~T0 @X0 0 e? ]
 "544 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 544:     struct {
@@ -30,8 +30,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "554
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 554: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
 [v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
-"70 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 70: void TXT(void);
+"68 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 68: void TXT(void);
 [v _TXT `(v ~T0 @X0 0 ef ]
 "235 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 235:     struct {
@@ -44,14 +44,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "246
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 246: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
 [v _PORTBbits `VS7 ~T0 @X0 0 e@6 ]
-"74 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 74: void write_EEPROM (uint8_t address, uint8_t data);
+"71 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 71: void write_EEPROM (uint8_t address, uint8_t data);
 [v _write_EEPROM `(v ~T0 @X0 0 ef2`uc`uc ]
-"75
-[; ;Progra_IRONMAN.c: 75: uint8_t read_EEPROM(uint8_t address);
+"72
+[; ;Progra_IRONMAN.c: 72: uint8_t read_EEPROM(uint8_t address);
 [v _read_EEPROM `(uc ~T0 @X0 0 ef1`uc ]
-"73
-[; ;Progra_IRONMAN.c: 73: void servos(uint8_t dato, int modo);
+"70
+[; ;Progra_IRONMAN.c: 70: void servos(uint8_t dato, int modo);
 [v _servos `(v ~T0 @X0 0 ef2`uc`i ]
 "1252 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 1252:     struct {
@@ -97,11 +97,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 60: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
 [p mainexit ]
-"68 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 68: void setup(void);
+"66 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 66: void setup(void);
 [v _setup `(v ~T0 @X0 0 ef ]
-"69
-[; ;Progra_IRONMAN.c: 69: void initUART(void);
+"67
+[; ;Progra_IRONMAN.c: 67: void initUART(void);
 [v _initUART `(v ~T0 @X0 0 ef ]
 "353 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 353: extern volatile unsigned char PORTD __attribute__((address(0x008)));
@@ -568,79 +568,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3547
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3547: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"48 Progra_IRONMAN.c
-[; ;Progra_IRONMAN.c: 48: int servo = 1, ang1, ang2;
-[v _servo `i ~T0 @X0 1 e ]
+"46 Progra_IRONMAN.c
+[; ;Progra_IRONMAN.c: 46: unsigned char servo = 1, ang1, ang2;
+[v _servo `uc ~T0 @X0 1 e ]
 [i _servo
--> 1 `i
+-> -> 1 `i `uc
 ]
-[v _ang1 `i ~T0 @X0 1 e ]
-[v _ang2 `i ~T0 @X0 1 e ]
-"51
-[; ;Progra_IRONMAN.c: 51: int modo = 0;
+[v _ang1 `uc ~T0 @X0 1 e ]
+[v _ang2 `uc ~T0 @X0 1 e ]
+"49
+[; ;Progra_IRONMAN.c: 49: int modo = 0;
 [v _modo `i ~T0 @X0 1 e ]
 [i _modo
 -> 0 `i
 ]
-"52
-[; ;Progra_IRONMAN.c: 52: int i = -1;
+"50
+[; ;Progra_IRONMAN.c: 50: int i = -1;
 [v _i `i ~T0 @X0 1 e ]
 [i _i
 -U -> 1 `i
 ]
-"53
-[; ;Progra_IRONMAN.c: 53: int valorPot1 = 0;
+"51
+[; ;Progra_IRONMAN.c: 51: int valorPot1 = 0;
 [v _valorPot1 `i ~T0 @X0 1 e ]
 [i _valorPot1
 -> 0 `i
 ]
-"54
-[; ;Progra_IRONMAN.c: 54: int valorPot2 = 0;
+"52
+[; ;Progra_IRONMAN.c: 52: int valorPot2 = 0;
 [v _valorPot2 `i ~T0 @X0 1 e ]
 [i _valorPot2
 -> 0 `i
 ]
-"55
-[; ;Progra_IRONMAN.c: 55: int valor_uart = 0;
+"53
+[; ;Progra_IRONMAN.c: 53: int valor_uart = 0;
 [v _valor_uart `i ~T0 @X0 1 e ]
 [i _valor_uart
 -> 0 `i
 ]
-"56
-[; ;Progra_IRONMAN.c: 56: int contador = 0;
+"54
+[; ;Progra_IRONMAN.c: 54: int contador = 0;
 [v _contador `i ~T0 @X0 1 e ]
 [i _contador
 -> 0 `i
 ]
-"57
-[; ;Progra_IRONMAN.c: 57: char numero[2];
+"55
+[; ;Progra_IRONMAN.c: 55: char numero[2];
 [v _numero `uc ~T0 @X0 -> 2 `i e ]
-"58
-[; ;Progra_IRONMAN.c: 58: int valor_entero;
+"56
+[; ;Progra_IRONMAN.c: 56: int valor_entero;
 [v _valor_entero `i ~T0 @X0 1 e ]
-"59
-[; ;Progra_IRONMAN.c: 59: char caracter[2];
+"57
+[; ;Progra_IRONMAN.c: 57: char caracter[2];
 [v _caracter `uc ~T0 @X0 -> 2 `i e ]
-"60
-[; ;Progra_IRONMAN.c: 60: int flag = 0;
+"58
+[; ;Progra_IRONMAN.c: 58: int flag = 0;
 [v _flag `i ~T0 @X0 1 e ]
 [i _flag
 -> 0 `i
 ]
-"61
-[; ;Progra_IRONMAN.c: 61: int bandera = 0;
+"59
+[; ;Progra_IRONMAN.c: 59: int bandera = 0;
 [v _bandera `i ~T0 @X0 1 e ]
 [i _bandera
 -> 0 `i
 ]
-"62
-[; ;Progra_IRONMAN.c: 62: int entero = 0;
+"60
+[; ;Progra_IRONMAN.c: 60: int entero = 0;
 [v _entero `i ~T0 @X0 1 e ]
 [i _entero
 -> 0 `i
 ]
-"63
-[; ;Progra_IRONMAN.c: 63: uint8_t address = 0, data = 0, potenciometro = 0;
+"61
+[; ;Progra_IRONMAN.c: 61: uint8_t address = 0, data = 0, potenciometro = 0;
 [v _address `uc ~T0 @X0 1 e ]
 [i _address
 -> -> 0 `i `uc
@@ -654,141 +654,141 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"78
-[; ;Progra_IRONMAN.c: 78: void __attribute__((picinterrupt(("")))) isr(void) {
+"75
+[; ;Progra_IRONMAN.c: 75: void __attribute__((picinterrupt(("")))) isr(void) {
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"80
-[; ;Progra_IRONMAN.c: 80:     if (INTCONbits.T0IF)
+"77
+[; ;Progra_IRONMAN.c: 77:     if (INTCONbits.T0IF)
 [e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 144  ]
-"81
-[; ;Progra_IRONMAN.c: 81:     {
+"78
+[; ;Progra_IRONMAN.c: 78:     {
 {
-"82
-[; ;Progra_IRONMAN.c: 82:         pulse();
+"79
+[; ;Progra_IRONMAN.c: 79:         pulse();
 [e ( _pulse ..  ]
-"83
-[; ;Progra_IRONMAN.c: 83:         INTCONbits.T0IF = 0;
+"80
+[; ;Progra_IRONMAN.c: 80:         INTCONbits.T0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"84
-[; ;Progra_IRONMAN.c: 84:     }
+"81
+[; ;Progra_IRONMAN.c: 81:     }
 }
 [e :U 144 ]
-"87
-[; ;Progra_IRONMAN.c: 87:     if(PIR1bits.RCIF){
+"84
+[; ;Progra_IRONMAN.c: 84:     if(PIR1bits.RCIF){
 [e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 145  ]
 {
-"88
-[; ;Progra_IRONMAN.c: 88:         TXT();
+"85
+[; ;Progra_IRONMAN.c: 85:         TXT();
 [e ( _TXT ..  ]
-"91
-[; ;Progra_IRONMAN.c: 91:     }
+"88
+[; ;Progra_IRONMAN.c: 88:     }
 }
 [e :U 145 ]
-"94
-[; ;Progra_IRONMAN.c: 94:     if (INTCONbits.RBIF)
+"91
+[; ;Progra_IRONMAN.c: 91:     if (INTCONbits.RBIF)
 [e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 146  ]
-"95
-[; ;Progra_IRONMAN.c: 95:     {
+"92
+[; ;Progra_IRONMAN.c: 92:     {
 {
-"96
-[; ;Progra_IRONMAN.c: 96:         if (PORTBbits.RB0 == 0){
+"93
+[; ;Progra_IRONMAN.c: 93:         if (PORTBbits.RB0 == 0){
 [e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 147  ]
 {
-"97
-[; ;Progra_IRONMAN.c: 97:             modo = modo + 1;
+"94
+[; ;Progra_IRONMAN.c: 94:             modo = modo + 1;
 [e = _modo + _modo -> 1 `i ]
-"98
-[; ;Progra_IRONMAN.c: 98:         }
+"95
+[; ;Progra_IRONMAN.c: 95:         }
 }
 [e $U 148  ]
-"100
-[; ;Progra_IRONMAN.c: 100:         else if (PORTBbits.RB1 == 0){
+"97
+[; ;Progra_IRONMAN.c: 97:         else if (PORTBbits.RB1 == 0){
 [e :U 147 ]
 [e $ ! == -> . . _PORTBbits 0 1 `i -> 0 `i 149  ]
 {
-"101
-[; ;Progra_IRONMAN.c: 101:             servo = servo + 1;
-[e = _servo + _servo -> 1 `i ]
-"102
-[; ;Progra_IRONMAN.c: 102:         }
+"98
+[; ;Progra_IRONMAN.c: 98:             servo = servo + 1;
+[e = _servo -> + -> _servo `i -> 1 `i `uc ]
+"99
+[; ;Progra_IRONMAN.c: 99:         }
 }
 [e $U 150  ]
-"104
-[; ;Progra_IRONMAN.c: 104:         else if (PORTBbits.RB2 == 0){
+"101
+[; ;Progra_IRONMAN.c: 101:         else if (PORTBbits.RB2 == 0){
 [e :U 149 ]
 [e $ ! == -> . . _PORTBbits 0 2 `i -> 0 `i 151  ]
 {
-"105
-[; ;Progra_IRONMAN.c: 105:             address++;
+"102
+[; ;Progra_IRONMAN.c: 102:             address++;
 [e ++ _address -> -> 1 `i `uc ]
-"107
-[; ;Progra_IRONMAN.c: 107:             contador = 0;
+"104
+[; ;Progra_IRONMAN.c: 104:             contador = 0;
 [e = _contador -> 0 `i ]
-"108
-[; ;Progra_IRONMAN.c: 108:         }
+"105
+[; ;Progra_IRONMAN.c: 105:         }
 }
 [e $U 152  ]
-"110
-[; ;Progra_IRONMAN.c: 110:         else if (PORTBbits.RB3 == 0){
+"107
+[; ;Progra_IRONMAN.c: 107:         else if (PORTBbits.RB3 == 0){
 [e :U 151 ]
 [e $ ! == -> . . _PORTBbits 0 3 `i -> 0 `i 153  ]
 {
-"111
-[; ;Progra_IRONMAN.c: 111:             address--;
+"108
+[; ;Progra_IRONMAN.c: 108:             address--;
 [e -- _address -> -> 1 `i `uc ]
-"112
-[; ;Progra_IRONMAN.c: 112:             contador = 0;
+"109
+[; ;Progra_IRONMAN.c: 109:             contador = 0;
 [e = _contador -> 0 `i ]
-"113
-[; ;Progra_IRONMAN.c: 113:         }
+"110
+[; ;Progra_IRONMAN.c: 110:         }
 }
 [e $U 154  ]
-"115
-[; ;Progra_IRONMAN.c: 115:         else if (PORTBbits.RB4 == 0){
+"112
+[; ;Progra_IRONMAN.c: 112:         else if (PORTBbits.RB4 == 0){
 [e :U 153 ]
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 155  ]
 {
-"116
-[; ;Progra_IRONMAN.c: 116:             write_EEPROM (address, potenciometro);
+"113
+[; ;Progra_IRONMAN.c: 113:             write_EEPROM (address, potenciometro);
 [e ( _write_EEPROM (2 , _address _potenciometro ]
-"117
-[; ;Progra_IRONMAN.c: 117:             contador = 0;
+"114
+[; ;Progra_IRONMAN.c: 114:             contador = 0;
 [e = _contador -> 0 `i ]
-"118
-[; ;Progra_IRONMAN.c: 118:         }
+"115
+[; ;Progra_IRONMAN.c: 115:         }
 }
 [e $U 156  ]
-"120
-[; ;Progra_IRONMAN.c: 120:         else if (PORTBbits.RB5 == 0){
+"117
+[; ;Progra_IRONMAN.c: 117:         else if (PORTBbits.RB5 == 0){
 [e :U 155 ]
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 157  ]
 {
-"122
-[; ;Progra_IRONMAN.c: 122:             data = read_EEPROM(address);
+"119
+[; ;Progra_IRONMAN.c: 119:             data = read_EEPROM(address);
 [e = _data ( _read_EEPROM (1 _address ]
-"124
-[; ;Progra_IRONMAN.c: 124:             contador = 0;
+"121
+[; ;Progra_IRONMAN.c: 121:             contador = 0;
 [e = _contador -> 0 `i ]
-"125
-[; ;Progra_IRONMAN.c: 125:             servos(data, modo);
+"122
+[; ;Progra_IRONMAN.c: 122:             servos(data, modo);
 [e ( _servos (2 , _data _modo ]
-"126
-[; ;Progra_IRONMAN.c: 126:         }
+"123
+[; ;Progra_IRONMAN.c: 123:         }
 }
 [e $U 158  ]
-"128
-[; ;Progra_IRONMAN.c: 128:         else if (PORTBbits.RB6 == 0){
+"125
+[; ;Progra_IRONMAN.c: 125:         else if (PORTBbits.RB6 == 0){
 [e :U 157 ]
 [e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 159  ]
 {
-"129
-[; ;Progra_IRONMAN.c: 129:              contador = 1;
+"126
+[; ;Progra_IRONMAN.c: 126:              contador = 1;
 [e = _contador -> 1 `i ]
-"132
-[; ;Progra_IRONMAN.c: 132:         }
+"129
+[; ;Progra_IRONMAN.c: 129:         }
 }
 [e :U 159 ]
 [e :U 158 ]
@@ -797,823 +797,823 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 152 ]
 [e :U 150 ]
 [e :U 148 ]
-"133
-[; ;Progra_IRONMAN.c: 133:         INTCONbits.RBIF = 0;
+"130
+[; ;Progra_IRONMAN.c: 130:         INTCONbits.RBIF = 0;
 [e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"134
-[; ;Progra_IRONMAN.c: 134:     }
+"131
+[; ;Progra_IRONMAN.c: 131:     }
 }
 [e :U 146 ]
-"137
-[; ;Progra_IRONMAN.c: 137:     if (PIR1bits.ADIF) {
+"134
+[; ;Progra_IRONMAN.c: 134:     if (PIR1bits.ADIF) {
 [e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 160  ]
 {
-"138
-[; ;Progra_IRONMAN.c: 138:         if(modo == 0){
+"135
+[; ;Progra_IRONMAN.c: 135:         if(modo == 0){
 [e $ ! == _modo -> 0 `i 161  ]
 {
-"140
-[; ;Progra_IRONMAN.c: 140:             if (ADCON0bits.CHS == 0b0000){
+"137
+[; ;Progra_IRONMAN.c: 137:             if (ADCON0bits.CHS == 0b0000){
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 162  ]
 {
-"141
-[; ;Progra_IRONMAN.c: 141:                 valorPot1 = 0.6*ADRESH;
+"138
+[; ;Progra_IRONMAN.c: 138:                 valorPot1 = 0.6*ADRESH;
 [e = _valorPot1 -> * .0.6 -> -> _ADRESH `i `d `i ]
-"142
-[; ;Progra_IRONMAN.c: 142:                 PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+"139
+[; ;Progra_IRONMAN.c: 139:                 PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
 [e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> _valorPot1 `f -> .255.0 `f ]
-"143
-[; ;Progra_IRONMAN.c: 143:             }
+"140
+[; ;Progra_IRONMAN.c: 140:             }
 }
 [e $U 163  ]
-"145
-[; ;Progra_IRONMAN.c: 145:             else if (ADCON0bits.CHS == 0b0001){
+"142
+[; ;Progra_IRONMAN.c: 142:             else if (ADCON0bits.CHS == 0b0001){
 [e :U 162 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 164  ]
 {
-"146
-[; ;Progra_IRONMAN.c: 146:                 ang1 = ((ADRESH*0.047)+6);
-[e = _ang1 -> + * -> -> _ADRESH `i `d .0.047 -> -> 6 `i `d `i ]
-"147
-[; ;Progra_IRONMAN.c: 147:             }
+"143
+[; ;Progra_IRONMAN.c: 143:                 ang1 = ((ADRESH*0.047)+6);
+[e = _ang1 -> + * -> -> _ADRESH `i `d .0.047 -> -> 6 `i `d `uc ]
+"144
+[; ;Progra_IRONMAN.c: 144:             }
 }
 [e $U 165  ]
-"149
-[; ;Progra_IRONMAN.c: 149:             else if (ADCON0bits.CHS == 0b0010){
+"146
+[; ;Progra_IRONMAN.c: 146:             else if (ADCON0bits.CHS == 0b0010){
 [e :U 164 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 166  ]
 {
-"150
-[; ;Progra_IRONMAN.c: 150:                 ang2 = ((ADRESH*0.047)+6);
-[e = _ang2 -> + * -> -> _ADRESH `i `d .0.047 -> -> 6 `i `d `i ]
-"151
-[; ;Progra_IRONMAN.c: 151:             }
+"147
+[; ;Progra_IRONMAN.c: 147:                 ang2 = ((ADRESH*0.047)+6);
+[e = _ang2 -> + * -> -> _ADRESH `i `d .0.047 -> -> 6 `i `d `uc ]
+"148
+[; ;Progra_IRONMAN.c: 148:             }
 }
 [e $U 167  ]
-"153
-[; ;Progra_IRONMAN.c: 153:             else if (ADCON0bits.CHS == 0b0011){
+"150
+[; ;Progra_IRONMAN.c: 150:             else if (ADCON0bits.CHS == 0b0011){
 [e :U 166 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 168  ]
 {
-"154
-[; ;Progra_IRONMAN.c: 154:                 valorPot2 = 0.9*ADRESH;
+"151
+[; ;Progra_IRONMAN.c: 151:                 valorPot2 = 0.9*ADRESH;
 [e = _valorPot2 -> * .0.9 -> -> _ADRESH `i `d `i ]
-"155
-[; ;Progra_IRONMAN.c: 155:                 PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
+"152
+[; ;Progra_IRONMAN.c: 152:                 PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
 [e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> -> _ADRESH `i `f -> .255.0 `f ]
-"156
-[; ;Progra_IRONMAN.c: 156:             }
+"153
+[; ;Progra_IRONMAN.c: 153:             }
 }
 [e :U 168 ]
 [e :U 167 ]
 [e :U 165 ]
 [e :U 163 ]
-"157
-[; ;Progra_IRONMAN.c: 157:         }
+"154
+[; ;Progra_IRONMAN.c: 154:         }
 }
 [e $U 169  ]
-"158
-[; ;Progra_IRONMAN.c: 158:         else if(modo == 1){
+"155
+[; ;Progra_IRONMAN.c: 155:         else if(modo == 1){
 [e :U 161 ]
 [e $ ! == _modo -> 1 `i 170  ]
 {
-"160
-[; ;Progra_IRONMAN.c: 160:             if (ADCON0bits.CHS == 0b0100){
+"157
+[; ;Progra_IRONMAN.c: 157:             if (ADCON0bits.CHS == 0b0100){
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 171  ]
 {
-"161
-[; ;Progra_IRONMAN.c: 161:                 potenciometro = ADRESH;
+"158
+[; ;Progra_IRONMAN.c: 158:                 potenciometro = ADRESH;
 [e = _potenciometro _ADRESH ]
-"162
-[; ;Progra_IRONMAN.c: 162:                 contador = 0;
+"159
+[; ;Progra_IRONMAN.c: 159:                 contador = 0;
 [e = _contador -> 0 `i ]
-"163
-[; ;Progra_IRONMAN.c: 163:             }
+"160
+[; ;Progra_IRONMAN.c: 160:             }
 }
 [e :U 171 ]
-"164
-[; ;Progra_IRONMAN.c: 164:         }
+"161
+[; ;Progra_IRONMAN.c: 161:         }
 }
 [e :U 170 ]
 [e :U 169 ]
-"166
-[; ;Progra_IRONMAN.c: 166:         PIR1bits.ADIF = 0;
+"163
+[; ;Progra_IRONMAN.c: 163:         PIR1bits.ADIF = 0;
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"167
-[; ;Progra_IRONMAN.c: 167:     }
+"164
+[; ;Progra_IRONMAN.c: 164:     }
 }
 [e :U 160 ]
-"168
-[; ;Progra_IRONMAN.c: 168:     return;
+"165
+[; ;Progra_IRONMAN.c: 165:     return;
 [e $UE 143  ]
-"169
-[; ;Progra_IRONMAN.c: 169: }
+"166
+[; ;Progra_IRONMAN.c: 166: }
 [e :UE 143 ]
 }
-"171
-[; ;Progra_IRONMAN.c: 171: void pulse(){
+"168
+[; ;Progra_IRONMAN.c: 168: void pulse(){
 [v _pulse `(v ~T0 @X0 1 ef ]
 {
 [e :U _pulse ]
 [f ]
-"172
-[; ;Progra_IRONMAN.c: 172:     if(servo == 1){
-[e $ ! == _servo -> 1 `i 173  ]
+"169
+[; ;Progra_IRONMAN.c: 169:     if(servo == 1){
+[e $ ! == -> _servo `i -> 1 `i 173  ]
 {
-"173
-[; ;Progra_IRONMAN.c: 173:         if (PORTCbits.RC4 == 1)
+"170
+[; ;Progra_IRONMAN.c: 170:         if (PORTCbits.RC4 == 1)
 [e $ ! == -> . . _PORTCbits 0 4 `i -> 1 `i 174  ]
-"174
-[; ;Progra_IRONMAN.c: 174:             {
+"171
+[; ;Progra_IRONMAN.c: 171:             {
 {
-"175
-[; ;Progra_IRONMAN.c: 175:                 TMR0 = ang1;
-[e = _TMR0 -> _ang1 `uc ]
-"176
-[; ;Progra_IRONMAN.c: 176:                 PORTCbits.RC4 = 0;
+"172
+[; ;Progra_IRONMAN.c: 172:                 TMR0 = ang1;
+[e = _TMR0 _ang1 ]
+"173
+[; ;Progra_IRONMAN.c: 173:                 PORTCbits.RC4 = 0;
 [e = . . _PORTCbits 0 4 -> -> 0 `i `uc ]
-"177
-[; ;Progra_IRONMAN.c: 177:             }
+"174
+[; ;Progra_IRONMAN.c: 174:             }
 }
 [e $U 175  ]
-"178
-[; ;Progra_IRONMAN.c: 178:             else
+"175
+[; ;Progra_IRONMAN.c: 175:             else
 [e :U 174 ]
-"179
-[; ;Progra_IRONMAN.c: 179:             {
+"176
+[; ;Progra_IRONMAN.c: 176:             {
 {
-"180
-[; ;Progra_IRONMAN.c: 180:                 TMR0 = (255-ang1);
-[e = _TMR0 -> - -> 255 `i _ang1 `uc ]
-"181
-[; ;Progra_IRONMAN.c: 181:                 PORTCbits.RC4 = 1;
+"177
+[; ;Progra_IRONMAN.c: 177:                 TMR0 = (255-ang1);
+[e = _TMR0 -> - -> 255 `i -> _ang1 `i `uc ]
+"178
+[; ;Progra_IRONMAN.c: 178:                 PORTCbits.RC4 = 1;
 [e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
-"182
-[; ;Progra_IRONMAN.c: 182:             }
+"179
+[; ;Progra_IRONMAN.c: 179:             }
 }
 [e :U 175 ]
-"183
-[; ;Progra_IRONMAN.c: 183:     }
+"180
+[; ;Progra_IRONMAN.c: 180:     }
 }
 [e $U 176  ]
-"184
-[; ;Progra_IRONMAN.c: 184:     else if(servo == 2){
+"181
+[; ;Progra_IRONMAN.c: 181:     else if(servo == 2){
 [e :U 173 ]
-[e $ ! == _servo -> 2 `i 177  ]
+[e $ ! == -> _servo `i -> 2 `i 177  ]
 {
-"185
-[; ;Progra_IRONMAN.c: 185:         if (PORTCbits.RC5 == 1)
+"182
+[; ;Progra_IRONMAN.c: 182:         if (PORTCbits.RC5 == 1)
 [e $ ! == -> . . _PORTCbits 0 5 `i -> 1 `i 178  ]
-"186
-[; ;Progra_IRONMAN.c: 186:             {
+"183
+[; ;Progra_IRONMAN.c: 183:             {
 {
-"187
-[; ;Progra_IRONMAN.c: 187:                 TMR0 = ang2;
-[e = _TMR0 -> _ang2 `uc ]
-"188
-[; ;Progra_IRONMAN.c: 188:                 PORTCbits.RC5 = 0;
+"184
+[; ;Progra_IRONMAN.c: 184:                 TMR0 = ang2;
+[e = _TMR0 _ang2 ]
+"185
+[; ;Progra_IRONMAN.c: 185:                 PORTCbits.RC5 = 0;
 [e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"189
-[; ;Progra_IRONMAN.c: 189:             }
+"186
+[; ;Progra_IRONMAN.c: 186:             }
 }
 [e $U 179  ]
-"190
-[; ;Progra_IRONMAN.c: 190:             else
+"187
+[; ;Progra_IRONMAN.c: 187:             else
 [e :U 178 ]
-"191
-[; ;Progra_IRONMAN.c: 191:             {
+"188
+[; ;Progra_IRONMAN.c: 188:             {
 {
-"192
-[; ;Progra_IRONMAN.c: 192:                 TMR0 = (255-ang2);
-[e = _TMR0 -> - -> 255 `i _ang2 `uc ]
-"193
-[; ;Progra_IRONMAN.c: 193:                 PORTCbits.RC5 = 1;
+"189
+[; ;Progra_IRONMAN.c: 189:                 TMR0 = (255-ang2);
+[e = _TMR0 -> - -> 255 `i -> _ang2 `i `uc ]
+"190
+[; ;Progra_IRONMAN.c: 190:                 PORTCbits.RC5 = 1;
 [e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"194
-[; ;Progra_IRONMAN.c: 194:             }
+"191
+[; ;Progra_IRONMAN.c: 191:             }
 }
 [e :U 179 ]
-"195
-[; ;Progra_IRONMAN.c: 195:     }
+"192
+[; ;Progra_IRONMAN.c: 192:     }
 }
 [e :U 177 ]
 [e :U 176 ]
-"196
-[; ;Progra_IRONMAN.c: 196:     return;
+"193
+[; ;Progra_IRONMAN.c: 193:     return;
 [e $UE 172  ]
-"197
-[; ;Progra_IRONMAN.c: 197: }
+"194
+[; ;Progra_IRONMAN.c: 194: }
 [e :UE 172 ]
 }
-"199
-[; ;Progra_IRONMAN.c: 199: void servos(uint8_t dato, int modo){
+"196
+[; ;Progra_IRONMAN.c: 196: void servos(uint8_t dato, int modo){
 [v _servos `(v ~T0 @X0 1 ef2`uc`i ]
 {
 [e :U _servos ]
 [v _dato `uc ~T0 @X0 1 r1 ]
 [v _modo `i ~T0 @X0 1 r2 ]
 [f ]
-"200
-[; ;Progra_IRONMAN.c: 200:     if(modo == 1){
+"197
+[; ;Progra_IRONMAN.c: 197:     if(modo == 1){
 [e $ ! == _modo -> 1 `i 181  ]
 {
+"199
+[; ;Progra_IRONMAN.c: 199:         ang1 = ((dato*0.047)+6);
+[e = _ang1 -> + * -> -> _dato `i `d .0.047 -> -> 6 `i `d `uc ]
 "202
-[; ;Progra_IRONMAN.c: 202:         ang1 = ((dato*0.047)+6);
-[e = _ang1 -> + * -> -> _dato `i `d .0.047 -> -> 6 `i `d `i ]
+[; ;Progra_IRONMAN.c: 202:         ang2 = ((dato*0.047)+6);
+[e = _ang2 -> + * -> -> _dato `i `d .0.047 -> -> 6 `i `d `uc ]
 "205
-[; ;Progra_IRONMAN.c: 205:         ang2 = ((dato*0.047)+6);
-[e = _ang2 -> + * -> -> _dato `i `d .0.047 -> -> 6 `i `d `i ]
-"208
-[; ;Progra_IRONMAN.c: 208:         valorPot1 = 0.6*dato;
+[; ;Progra_IRONMAN.c: 205:         valorPot1 = 0.6*dato;
 [e = _valorPot1 -> * .0.6 -> -> _dato `i `d `i ]
-"209
-[; ;Progra_IRONMAN.c: 209:         PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+"206
+[; ;Progra_IRONMAN.c: 206:         PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
 [e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> _valorPot1 `f -> .255.0 `f ]
-"213
-[; ;Progra_IRONMAN.c: 213:         PWM_duty(2, 0.00025f*((dato)/255.0f));
+"210
+[; ;Progra_IRONMAN.c: 210:         PWM_duty(2, 0.00025f*((dato)/255.0f));
 [e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> -> _dato `i `f -> .255.0 `f ]
-"214
-[; ;Progra_IRONMAN.c: 214:     }
+"211
+[; ;Progra_IRONMAN.c: 211:     }
 }
 [e :U 181 ]
-"230
-[; ;Progra_IRONMAN.c: 230:     return;
+"212
+[; ;Progra_IRONMAN.c: 212:     return;
 [e $UE 180  ]
-"231
-[; ;Progra_IRONMAN.c: 231: }
+"213
+[; ;Progra_IRONMAN.c: 213: }
 [e :UE 180 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"233
-[; ;Progra_IRONMAN.c: 233: void main(void) {
+"215
+[; ;Progra_IRONMAN.c: 215: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"234
-[; ;Progra_IRONMAN.c: 234:     int Lmin = 6, Lmax = 19;
+"216
+[; ;Progra_IRONMAN.c: 216:     int Lmin = 6, Lmax = 19;
 [v _Lmin `i ~T0 @X0 1 a ]
 [e = _Lmin -> 6 `i ]
 [v _Lmax `i ~T0 @X0 1 a ]
 [e = _Lmax -> 19 `i ]
-"235
-[; ;Progra_IRONMAN.c: 235:     ang1 = Lmin;
-[e = _ang1 _Lmin ]
-"236
-[; ;Progra_IRONMAN.c: 236:     ang2 = Lmin;
-[e = _ang2 _Lmin ]
-"237
-[; ;Progra_IRONMAN.c: 237:     setup ();
+"217
+[; ;Progra_IRONMAN.c: 217:     ang1 = Lmin;
+[e = _ang1 -> _Lmin `uc ]
+"218
+[; ;Progra_IRONMAN.c: 218:     ang2 = Lmin;
+[e = _ang2 -> _Lmin `uc ]
+"219
+[; ;Progra_IRONMAN.c: 219:     setup ();
 [e ( _setup ..  ]
-"238
-[; ;Progra_IRONMAN.c: 238:     initUART();
+"220
+[; ;Progra_IRONMAN.c: 220:     initUART();
 [e ( _initUART ..  ]
-"239
-[; ;Progra_IRONMAN.c: 239:     ADCON0bits.GO = 1;
+"221
+[; ;Progra_IRONMAN.c: 221:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"240
-[; ;Progra_IRONMAN.c: 240:     while(1){
+"222
+[; ;Progra_IRONMAN.c: 222:     while(1){
 [e :U 184 ]
 {
-"242
-[; ;Progra_IRONMAN.c: 242:         if(flag == 1){
+"224
+[; ;Progra_IRONMAN.c: 224:         if(flag == 1){
 [e $ ! == _flag -> 1 `i 186  ]
 {
-"243
-[; ;Progra_IRONMAN.c: 243:             flag = 0;
+"225
+[; ;Progra_IRONMAN.c: 225:             flag = 0;
 [e = _flag -> 0 `i ]
-"244
-[; ;Progra_IRONMAN.c: 244:             bandera = 1;
+"226
+[; ;Progra_IRONMAN.c: 226:             bandera = 1;
 [e = _bandera -> 1 `i ]
-"245
-[; ;Progra_IRONMAN.c: 245:             valor_uart = PORTD;
+"227
+[; ;Progra_IRONMAN.c: 227:             valor_uart = PORTD;
 [e = _valor_uart -> _PORTD `i ]
-"246
-[; ;Progra_IRONMAN.c: 246:         }
+"228
+[; ;Progra_IRONMAN.c: 228:         }
 }
 [e :U 186 ]
-"249
-[; ;Progra_IRONMAN.c: 249:         if (contador == 1){
+"231
+[; ;Progra_IRONMAN.c: 231:         if (contador == 1){
 [e $ ! == _contador -> 1 `i 187  ]
 {
-"250
-[; ;Progra_IRONMAN.c: 250:             __asm("sleep");
+"232
+[; ;Progra_IRONMAN.c: 232:             __asm("sleep");
 [; <" sleep ;# ">
-"251
-[; ;Progra_IRONMAN.c: 251:         }
+"233
+[; ;Progra_IRONMAN.c: 233:         }
 }
 [e :U 187 ]
-"253
-[; ;Progra_IRONMAN.c: 253:         PORTE = modo;
+"235
+[; ;Progra_IRONMAN.c: 235:         PORTE = modo;
 [e = _PORTE -> _modo `uc ]
-"255
-[; ;Progra_IRONMAN.c: 255:         if(modo > 2){
+"237
+[; ;Progra_IRONMAN.c: 237:         if(modo > 2){
 [e $ ! > _modo -> 2 `i 188  ]
 {
-"256
-[; ;Progra_IRONMAN.c: 256:             modo = 0;
+"238
+[; ;Progra_IRONMAN.c: 238:             modo = 0;
 [e = _modo -> 0 `i ]
-"257
-[; ;Progra_IRONMAN.c: 257:         }
+"239
+[; ;Progra_IRONMAN.c: 239:         }
 }
 [e :U 188 ]
-"259
-[; ;Progra_IRONMAN.c: 259:         if(servo > 2){
-[e $ ! > _servo -> 2 `i 189  ]
+"241
+[; ;Progra_IRONMAN.c: 241:         if(servo > 2){
+[e $ ! > -> _servo `i -> 2 `i 189  ]
 {
-"260
-[; ;Progra_IRONMAN.c: 260:             servo = 1;
-[e = _servo -> 1 `i ]
-"261
-[; ;Progra_IRONMAN.c: 261:         }
+"242
+[; ;Progra_IRONMAN.c: 242:             servo = 1;
+[e = _servo -> -> 1 `i `uc ]
+"243
+[; ;Progra_IRONMAN.c: 243:         }
 }
 [e :U 189 ]
-"264
-[; ;Progra_IRONMAN.c: 264:         ang1 = (ang1<Lmin) ? Lmin:ang1;
-[e = _ang1 ? < _ang1 _Lmin : _Lmin _ang1 ]
-"265
-[; ;Progra_IRONMAN.c: 265:         ang1 = (ang1>Lmax) ? Lmax:ang1;
-[e = _ang1 ? > _ang1 _Lmax : _Lmax _ang1 ]
-"267
-[; ;Progra_IRONMAN.c: 267:         ang2 = (ang2<Lmin) ? Lmin:ang2;
-[e = _ang2 ? < _ang2 _Lmin : _Lmin _ang2 ]
-"268
-[; ;Progra_IRONMAN.c: 268:         ang2 = (ang2>Lmax) ? Lmax:ang2;
-[e = _ang2 ? > _ang2 _Lmax : _Lmax _ang2 ]
-"272
-[; ;Progra_IRONMAN.c: 272:         if (ADCON0bits.GO == 0) {
+"246
+[; ;Progra_IRONMAN.c: 246:         ang1 = (ang1<Lmin) ? Lmin:ang1;
+[e = _ang1 -> ? < -> _ang1 `i _Lmin : _Lmin -> _ang1 `i `uc ]
+"247
+[; ;Progra_IRONMAN.c: 247:         ang1 = (ang1>Lmax) ? Lmax:ang1;
+[e = _ang1 -> ? > -> _ang1 `i _Lmax : _Lmax -> _ang1 `i `uc ]
+"249
+[; ;Progra_IRONMAN.c: 249:         ang2 = (ang2<Lmin) ? Lmin:ang2;
+[e = _ang2 -> ? < -> _ang2 `i _Lmin : _Lmin -> _ang2 `i `uc ]
+"250
+[; ;Progra_IRONMAN.c: 250:         ang2 = (ang2>Lmax) ? Lmax:ang2;
+[e = _ang2 -> ? > -> _ang2 `i _Lmax : _Lmax -> _ang2 `i `uc ]
+"254
+[; ;Progra_IRONMAN.c: 254:         if (ADCON0bits.GO == 0) {
 [e $ ! == -> . . _ADCON0bits 1 1 `i -> 0 `i 190  ]
 {
-"273
-[; ;Progra_IRONMAN.c: 273:             if(ADCON0bits.CHS == 0b0000)
+"255
+[; ;Progra_IRONMAN.c: 255:             if(ADCON0bits.CHS == 0b0000)
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 0 `i 191  ]
-"274
-[; ;Progra_IRONMAN.c: 274:             {
+"256
+[; ;Progra_IRONMAN.c: 256:             {
 {
-"275
-[; ;Progra_IRONMAN.c: 275:                 ADCON0bits.CHS = 0b0100;
+"257
+[; ;Progra_IRONMAN.c: 257:                 ADCON0bits.CHS = 0b0100;
 [e = . . _ADCON0bits 0 2 -> -> 4 `i `uc ]
-"276
-[; ;Progra_IRONMAN.c: 276:             }
+"258
+[; ;Progra_IRONMAN.c: 258:             }
 }
 [e $U 192  ]
-"277
-[; ;Progra_IRONMAN.c: 277:             else if(ADCON0bits.CHS == 0b0100)
+"259
+[; ;Progra_IRONMAN.c: 259:             else if(ADCON0bits.CHS == 0b0100)
 [e :U 191 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 4 `i 193  ]
-"278
-[; ;Progra_IRONMAN.c: 278:             {
+"260
+[; ;Progra_IRONMAN.c: 260:             {
 {
-"279
-[; ;Progra_IRONMAN.c: 279:                 ADCON0bits.CHS = 0b0011;
+"261
+[; ;Progra_IRONMAN.c: 261:                 ADCON0bits.CHS = 0b0011;
 [e = . . _ADCON0bits 0 2 -> -> 3 `i `uc ]
-"280
-[; ;Progra_IRONMAN.c: 280:             }
+"262
+[; ;Progra_IRONMAN.c: 262:             }
 }
 [e $U 194  ]
-"281
-[; ;Progra_IRONMAN.c: 281:             else if(ADCON0bits.CHS == 0b0011)
+"263
+[; ;Progra_IRONMAN.c: 263:             else if(ADCON0bits.CHS == 0b0011)
 [e :U 193 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 3 `i 195  ]
-"282
-[; ;Progra_IRONMAN.c: 282:             {
+"264
+[; ;Progra_IRONMAN.c: 264:             {
 {
-"283
-[; ;Progra_IRONMAN.c: 283:                 ADCON0bits.CHS = 0b0010;
+"265
+[; ;Progra_IRONMAN.c: 265:                 ADCON0bits.CHS = 0b0010;
 [e = . . _ADCON0bits 0 2 -> -> 2 `i `uc ]
-"284
-[; ;Progra_IRONMAN.c: 284:             }
+"266
+[; ;Progra_IRONMAN.c: 266:             }
 }
 [e $U 196  ]
-"285
-[; ;Progra_IRONMAN.c: 285:             else if(ADCON0bits.CHS == 0b0010)
+"267
+[; ;Progra_IRONMAN.c: 267:             else if(ADCON0bits.CHS == 0b0010)
 [e :U 195 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 2 `i 197  ]
-"286
-[; ;Progra_IRONMAN.c: 286:             {
+"268
+[; ;Progra_IRONMAN.c: 268:             {
 {
-"287
-[; ;Progra_IRONMAN.c: 287:                 ADCON0bits.CHS = 0b0001;
+"269
+[; ;Progra_IRONMAN.c: 269:                 ADCON0bits.CHS = 0b0001;
 [e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
-"288
-[; ;Progra_IRONMAN.c: 288:             }
+"270
+[; ;Progra_IRONMAN.c: 270:             }
 }
 [e $U 198  ]
-"289
-[; ;Progra_IRONMAN.c: 289:             else if(ADCON0bits.CHS == 0b0001)
+"271
+[; ;Progra_IRONMAN.c: 271:             else if(ADCON0bits.CHS == 0b0001)
 [e :U 197 ]
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 1 `i 199  ]
-"290
-[; ;Progra_IRONMAN.c: 290:             {
+"272
+[; ;Progra_IRONMAN.c: 272:             {
 {
-"291
-[; ;Progra_IRONMAN.c: 291:                 ADCON0bits.CHS = 0b0000;
+"273
+[; ;Progra_IRONMAN.c: 273:                 ADCON0bits.CHS = 0b0000;
 [e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
-"292
-[; ;Progra_IRONMAN.c: 292:             }
+"274
+[; ;Progra_IRONMAN.c: 274:             }
 }
 [e :U 199 ]
 [e :U 198 ]
 [e :U 196 ]
 [e :U 194 ]
 [e :U 192 ]
-"293
-[; ;Progra_IRONMAN.c: 293:             _delay((unsigned long)((1000)*(4000000/4000000.0)));
+"275
+[; ;Progra_IRONMAN.c: 275:             _delay((unsigned long)((1000)*(4000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"294
-[; ;Progra_IRONMAN.c: 294:             ADCON0bits.GO = 1;
+"276
+[; ;Progra_IRONMAN.c: 276:             ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"295
-[; ;Progra_IRONMAN.c: 295:         }
+"277
+[; ;Progra_IRONMAN.c: 277:         }
 }
 [e :U 190 ]
-"297
-[; ;Progra_IRONMAN.c: 297:         if(bandera == 1){
+"279
+[; ;Progra_IRONMAN.c: 279:         if(bandera == 1){
 [e $ ! == _bandera -> 1 `i 200  ]
 {
-"298
-[; ;Progra_IRONMAN.c: 298:             bandera = 0;
+"280
+[; ;Progra_IRONMAN.c: 280:             bandera = 0;
 [e = _bandera -> 0 `i ]
-"300
-[; ;Progra_IRONMAN.c: 300:             ang1 = ((valor_uart*0.047)+6);
-[e = _ang1 -> + * -> _valor_uart `d .0.047 -> -> 6 `i `d `i ]
-"303
-[; ;Progra_IRONMAN.c: 303:             ang2 = ((valor_uart*0.047)+6);
-[e = _ang2 -> + * -> _valor_uart `d .0.047 -> -> 6 `i `d `i ]
-"306
-[; ;Progra_IRONMAN.c: 306:             valorPot1 = 0.6*valor_uart;
+"282
+[; ;Progra_IRONMAN.c: 282:             ang1 = ((valor_uart*0.047)+6);
+[e = _ang1 -> + * -> _valor_uart `d .0.047 -> -> 6 `i `d `uc ]
+"285
+[; ;Progra_IRONMAN.c: 285:             ang2 = ((valor_uart*0.047)+6);
+[e = _ang2 -> + * -> _valor_uart `d .0.047 -> -> 6 `i `d `uc ]
+"288
+[; ;Progra_IRONMAN.c: 288:             valorPot1 = 0.6*valor_uart;
 [e = _valorPot1 -> * .0.6 -> _valor_uart `d `i ]
-"307
-[; ;Progra_IRONMAN.c: 307:             PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+"289
+[; ;Progra_IRONMAN.c: 289:             PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
 [e ( _PWM_duty (2 , -> -> 1 `i `uc * -> .0.00025 `f / -> _valorPot1 `f -> .255.0 `f ]
-"310
-[; ;Progra_IRONMAN.c: 310:             PWM_duty(2, 0.00025f*((valor_uart)/255.0f));
+"292
+[; ;Progra_IRONMAN.c: 292:             PWM_duty(2, 0.00025f*((valor_uart)/255.0f));
 [e ( _PWM_duty (2 , -> -> 2 `i `uc * -> .0.00025 `f / -> _valor_uart `f -> .255.0 `f ]
-"311
-[; ;Progra_IRONMAN.c: 311:         }
+"293
+[; ;Progra_IRONMAN.c: 293:         }
 }
 [e :U 200 ]
-"313
-[; ;Progra_IRONMAN.c: 313:     }
+"295
+[; ;Progra_IRONMAN.c: 295:     }
 }
 [e :U 183 ]
 [e $U 184  ]
 [e :U 185 ]
-"314
-[; ;Progra_IRONMAN.c: 314:     return;
+"296
+[; ;Progra_IRONMAN.c: 296:     return;
 [e $UE 182  ]
-"315
-[; ;Progra_IRONMAN.c: 315: }
+"297
+[; ;Progra_IRONMAN.c: 297: }
 [e :UE 182 ]
 }
-"317
-[; ;Progra_IRONMAN.c: 317: void setup(void){
+"299
+[; ;Progra_IRONMAN.c: 299: void setup(void){
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"319
-[; ;Progra_IRONMAN.c: 319:     ANSELbits.ANS0 = 1;
+"301
+[; ;Progra_IRONMAN.c: 301:     ANSELbits.ANS0 = 1;
 [e = . . _ANSELbits 0 0 -> -> 1 `i `uc ]
-"320
-[; ;Progra_IRONMAN.c: 320:     ANSELbits.ANS1 = 1;
+"302
+[; ;Progra_IRONMAN.c: 302:     ANSELbits.ANS1 = 1;
 [e = . . _ANSELbits 0 1 -> -> 1 `i `uc ]
-"321
-[; ;Progra_IRONMAN.c: 321:     ANSELbits.ANS2 = 1;
+"303
+[; ;Progra_IRONMAN.c: 303:     ANSELbits.ANS2 = 1;
 [e = . . _ANSELbits 0 2 -> -> 1 `i `uc ]
-"322
-[; ;Progra_IRONMAN.c: 322:     ANSELbits.ANS3 = 1;
+"304
+[; ;Progra_IRONMAN.c: 304:     ANSELbits.ANS3 = 1;
 [e = . . _ANSELbits 0 3 -> -> 1 `i `uc ]
-"323
-[; ;Progra_IRONMAN.c: 323:     ANSELbits.ANS4 = 1;
+"305
+[; ;Progra_IRONMAN.c: 305:     ANSELbits.ANS4 = 1;
 [e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
-"324
-[; ;Progra_IRONMAN.c: 324:     ANSELH = 0;
+"306
+[; ;Progra_IRONMAN.c: 306:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"327
-[; ;Progra_IRONMAN.c: 327:     TRISB = 0b11111111;
+"309
+[; ;Progra_IRONMAN.c: 309:     TRISB = 0b11111111;
 [e = _TRISB -> -> 255 `i `uc ]
-"328
-[; ;Progra_IRONMAN.c: 328:     TRISA = 0b11111111;
+"310
+[; ;Progra_IRONMAN.c: 310:     TRISA = 0b11111111;
 [e = _TRISA -> -> 255 `i `uc ]
-"329
-[; ;Progra_IRONMAN.c: 329:     TRISC = 0b11000000;
+"311
+[; ;Progra_IRONMAN.c: 311:     TRISC = 0b11000000;
 [e = _TRISC -> -> 192 `i `uc ]
-"330
-[; ;Progra_IRONMAN.c: 330:     TRISD = 0;
+"312
+[; ;Progra_IRONMAN.c: 312:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"331
-[; ;Progra_IRONMAN.c: 331:     TRISE = 0;
+"313
+[; ;Progra_IRONMAN.c: 313:     TRISE = 0;
 [e = _TRISE -> -> 0 `i `uc ]
-"334
-[; ;Progra_IRONMAN.c: 334:     modo = 0;
+"316
+[; ;Progra_IRONMAN.c: 316:     modo = 0;
 [e = _modo -> 0 `i ]
-"335
-[; ;Progra_IRONMAN.c: 335:     PORTA = 0;
+"317
+[; ;Progra_IRONMAN.c: 317:     PORTA = 0;
 [e = _PORTA -> -> 0 `i `uc ]
-"336
-[; ;Progra_IRONMAN.c: 336:     PORTB = 0;
+"318
+[; ;Progra_IRONMAN.c: 318:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
-"337
-[; ;Progra_IRONMAN.c: 337:     PORTC = 0;
+"319
+[; ;Progra_IRONMAN.c: 319:     PORTC = 0;
 [e = _PORTC -> -> 0 `i `uc ]
-"338
-[; ;Progra_IRONMAN.c: 338:     PORTD = 0;
+"320
+[; ;Progra_IRONMAN.c: 320:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"339
-[; ;Progra_IRONMAN.c: 339:     PORTE = 0;
+"321
+[; ;Progra_IRONMAN.c: 321:     PORTE = 0;
 [e = _PORTE -> -> 0 `i `uc ]
-"341
-[; ;Progra_IRONMAN.c: 341:     OPTION_REGbits.nRBPU = 0;
+"323
+[; ;Progra_IRONMAN.c: 323:     OPTION_REGbits.nRBPU = 0;
 [e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-"342
-[; ;Progra_IRONMAN.c: 342:     IOCB = 0b11111111;
+"324
+[; ;Progra_IRONMAN.c: 324:     IOCB = 0b11111111;
 [e = _IOCB -> -> 255 `i `uc ]
-"344
-[; ;Progra_IRONMAN.c: 344:     OSCCONbits.IRCF = 0b110 ;
+"326
+[; ;Progra_IRONMAN.c: 326:     OSCCONbits.IRCF = 0b110 ;
 [e = . . _OSCCONbits 0 4 -> -> 6 `i `uc ]
-"345
-[; ;Progra_IRONMAN.c: 345:     OSCCONbits.SCS = 1;
+"327
+[; ;Progra_IRONMAN.c: 327:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"350
-[; ;Progra_IRONMAN.c: 350:     OPTION_REGbits.T0CS = 0;
+"332
+[; ;Progra_IRONMAN.c: 332:     OPTION_REGbits.T0CS = 0;
 [e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-"351
-[; ;Progra_IRONMAN.c: 351:     OPTION_REGbits.PSA = 0;
+"333
+[; ;Progra_IRONMAN.c: 333:     OPTION_REGbits.PSA = 0;
 [e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-"352
-[; ;Progra_IRONMAN.c: 352:     OPTION_REGbits.PS2 = 1;
+"334
+[; ;Progra_IRONMAN.c: 334:     OPTION_REGbits.PS2 = 1;
 [e = . . _OPTION_REGbits 1 2 -> -> 1 `i `uc ]
-"353
-[; ;Progra_IRONMAN.c: 353:     OPTION_REGbits.PS1 = 0;
+"335
+[; ;Progra_IRONMAN.c: 335:     OPTION_REGbits.PS1 = 0;
 [e = . . _OPTION_REGbits 1 1 -> -> 0 `i `uc ]
-"354
-[; ;Progra_IRONMAN.c: 354:     OPTION_REGbits.PS0 = 1;
+"336
+[; ;Progra_IRONMAN.c: 336:     OPTION_REGbits.PS0 = 1;
 [e = . . _OPTION_REGbits 1 0 -> -> 1 `i `uc ]
-"355
-[; ;Progra_IRONMAN.c: 355:     TMR0 = 0;
+"337
+[; ;Progra_IRONMAN.c: 337:     TMR0 = 0;
 [e = _TMR0 -> -> 0 `i `uc ]
-"358
-[; ;Progra_IRONMAN.c: 358:     INTCONbits.RBIF = 0;
+"340
+[; ;Progra_IRONMAN.c: 340:     INTCONbits.RBIF = 0;
 [e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-"359
-[; ;Progra_IRONMAN.c: 359:     INTCONbits.RBIE = 1;
+"341
+[; ;Progra_IRONMAN.c: 341:     INTCONbits.RBIE = 1;
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"360
-[; ;Progra_IRONMAN.c: 360:     INTCONbits.T0IF = 0;
+"342
+[; ;Progra_IRONMAN.c: 342:     INTCONbits.T0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"361
-[; ;Progra_IRONMAN.c: 361:     INTCONbits.T0IE = 1;
+"343
+[; ;Progra_IRONMAN.c: 343:     INTCONbits.T0IE = 1;
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"362
-[; ;Progra_IRONMAN.c: 362:     PIR1bits.ADIF = 0;
+"344
+[; ;Progra_IRONMAN.c: 344:     PIR1bits.ADIF = 0;
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"363
-[; ;Progra_IRONMAN.c: 363:     INTCONbits.PEIE = 1;
+"345
+[; ;Progra_IRONMAN.c: 345:     INTCONbits.PEIE = 1;
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"364
-[; ;Progra_IRONMAN.c: 364:     PIE1bits.ADIE = 1;
+"346
+[; ;Progra_IRONMAN.c: 346:     PIE1bits.ADIE = 1;
 [e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
-"365
-[; ;Progra_IRONMAN.c: 365:     INTCONbits.GIE = 1;
+"347
+[; ;Progra_IRONMAN.c: 347:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"366
-[; ;Progra_IRONMAN.c: 366:     ADCON0bits.GO = 1;
+"348
+[; ;Progra_IRONMAN.c: 348:     ADCON0bits.GO = 1;
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"369
-[; ;Progra_IRONMAN.c: 369:     ADCON0bits.CHS = 0b0000;
+"351
+[; ;Progra_IRONMAN.c: 351:     ADCON0bits.CHS = 0b0000;
 [e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
-"370
-[; ;Progra_IRONMAN.c: 370:     ADCON1bits.VCFG0 = 0;
+"352
+[; ;Progra_IRONMAN.c: 352:     ADCON1bits.VCFG0 = 0;
 [e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
-"371
-[; ;Progra_IRONMAN.c: 371:     ADCON1bits.VCFG1 = 0;
+"353
+[; ;Progra_IRONMAN.c: 353:     ADCON1bits.VCFG1 = 0;
 [e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
-"372
-[; ;Progra_IRONMAN.c: 372:     ADCON0bits.ADCS = 0b10;
+"354
+[; ;Progra_IRONMAN.c: 354:     ADCON0bits.ADCS = 0b10;
 [e = . . _ADCON0bits 0 3 -> -> 2 `i `uc ]
-"374
-[; ;Progra_IRONMAN.c: 374:     ADCON1bits.ADFM = 0;
+"356
+[; ;Progra_IRONMAN.c: 356:     ADCON1bits.ADFM = 0;
 [e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
-"375
-[; ;Progra_IRONMAN.c: 375:     ADCON0bits.ADON = 1;
+"357
+[; ;Progra_IRONMAN.c: 357:     ADCON0bits.ADON = 1;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"376
-[; ;Progra_IRONMAN.c: 376:      _delay((unsigned long)((1)*(4000000/4000.0)));
+"358
+[; ;Progra_IRONMAN.c: 358:      _delay((unsigned long)((1)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"379
-[; ;Progra_IRONMAN.c: 379:     PWM_config(1, 0.020f);
+"361
+[; ;Progra_IRONMAN.c: 361:     PWM_config(1, 0.020f);
 [e ( _PWM_config (2 , -> -> 1 `i `uc -> .0.020 `f ]
-"380
-[; ;Progra_IRONMAN.c: 380:     PWM_duty(1, 0.00025f);
+"362
+[; ;Progra_IRONMAN.c: 362:     PWM_duty(1, 0.00025f);
 [e ( _PWM_duty (2 , -> -> 1 `i `uc -> .0.00025 `f ]
-"381
-[; ;Progra_IRONMAN.c: 381:     PWM_config(2, 0.020f);
+"363
+[; ;Progra_IRONMAN.c: 363:     PWM_config(2, 0.020f);
 [e ( _PWM_config (2 , -> -> 2 `i `uc -> .0.020 `f ]
-"382
-[; ;Progra_IRONMAN.c: 382:     PWM_duty(2, 0.00025f);
+"364
+[; ;Progra_IRONMAN.c: 364:     PWM_duty(2, 0.00025f);
 [e ( _PWM_duty (2 , -> -> 2 `i `uc -> .0.00025 `f ]
-"383
-[; ;Progra_IRONMAN.c: 383:     return;
+"365
+[; ;Progra_IRONMAN.c: 365:     return;
 [e $UE 201  ]
-"384
-[; ;Progra_IRONMAN.c: 384: }
+"366
+[; ;Progra_IRONMAN.c: 366: }
 [e :UE 201 ]
 }
-"386
-[; ;Progra_IRONMAN.c: 386: void initUART(void){
+"368
+[; ;Progra_IRONMAN.c: 368: void initUART(void){
 [v _initUART `(v ~T0 @X0 1 ef ]
 {
 [e :U _initUART ]
 [f ]
-"388
-[; ;Progra_IRONMAN.c: 388:     SPBRG = 25;
+"370
+[; ;Progra_IRONMAN.c: 370:     SPBRG = 25;
 [e = _SPBRG -> -> 25 `i `uc ]
-"389
-[; ;Progra_IRONMAN.c: 389:     SPBRGH = 0;
+"371
+[; ;Progra_IRONMAN.c: 371:     SPBRGH = 0;
 [e = _SPBRGH -> -> 0 `i `uc ]
-"390
-[; ;Progra_IRONMAN.c: 390:     BRGH = 1;
+"372
+[; ;Progra_IRONMAN.c: 372:     BRGH = 1;
 [e = _BRGH -> -> 1 `i `b ]
-"391
-[; ;Progra_IRONMAN.c: 391:     BRG16 = 0;
+"373
+[; ;Progra_IRONMAN.c: 373:     BRG16 = 0;
 [e = _BRG16 -> -> 0 `i `b ]
-"394
-[; ;Progra_IRONMAN.c: 394:     CREN = 1;
+"376
+[; ;Progra_IRONMAN.c: 376:     CREN = 1;
 [e = _CREN -> -> 1 `i `b ]
-"395
-[; ;Progra_IRONMAN.c: 395:     SYNC = 0;
+"377
+[; ;Progra_IRONMAN.c: 377:     SYNC = 0;
 [e = _SYNC -> -> 0 `i `b ]
-"396
-[; ;Progra_IRONMAN.c: 396:     SPEN = 1;
+"378
+[; ;Progra_IRONMAN.c: 378:     SPEN = 1;
 [e = _SPEN -> -> 1 `i `b ]
-"397
-[; ;Progra_IRONMAN.c: 397:     TXSTAbits.TXEN = 1;
+"379
+[; ;Progra_IRONMAN.c: 379:     TXSTAbits.TXEN = 1;
 [e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-"400
-[; ;Progra_IRONMAN.c: 400:     RCSTAbits.RX9 = 0;
+"382
+[; ;Progra_IRONMAN.c: 382:     RCSTAbits.RX9 = 0;
 [e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
-"403
-[; ;Progra_IRONMAN.c: 403:     TXEN = 1;
+"385
+[; ;Progra_IRONMAN.c: 385:     TXEN = 1;
 [e = _TXEN -> -> 1 `i `b ]
-"404
-[; ;Progra_IRONMAN.c: 404:     TXIF = 0;
+"386
+[; ;Progra_IRONMAN.c: 386:     TXIF = 0;
 [e = _TXIF -> -> 0 `i `b ]
-"408
-[; ;Progra_IRONMAN.c: 408:     PIE1bits.RCIE = 1;
+"390
+[; ;Progra_IRONMAN.c: 390:     PIE1bits.RCIE = 1;
 [e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-"409
-[; ;Progra_IRONMAN.c: 409:     PIR1bits.RCIF = 0;
+"391
+[; ;Progra_IRONMAN.c: 391:     PIR1bits.RCIF = 0;
 [e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-"415
-[; ;Progra_IRONMAN.c: 415:     return;
-[e $UE 202  ]
-"416
-[; ;Progra_IRONMAN.c: 416: }
+"398
+[; ;Progra_IRONMAN.c: 398: }
 [e :UE 202 ]
 }
-"418
-[; ;Progra_IRONMAN.c: 418: uint8_t read_EEPROM(uint8_t address){
+"400
+[; ;Progra_IRONMAN.c: 400: uint8_t read_EEPROM(uint8_t address){
 [v _read_EEPROM `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _read_EEPROM ]
 [v _address `uc ~T0 @X0 1 r1 ]
 [f ]
-"419
-[; ;Progra_IRONMAN.c: 419:     while(WR||RD);
+"401
+[; ;Progra_IRONMAN.c: 401:     while(WR||RD);
 [e $U 204  ]
 [e :U 205 ]
 [e :U 204 ]
 [e $ || _WR _RD 205  ]
 [e :U 206 ]
-"421
-[; ;Progra_IRONMAN.c: 421:     EEADR = address;
+"403
+[; ;Progra_IRONMAN.c: 403:     EEADR = address;
 [e = _EEADR _address ]
-"422
-[; ;Progra_IRONMAN.c: 422:     EECON1bits.EEPGD = 0;
+"404
+[; ;Progra_IRONMAN.c: 404:     EECON1bits.EEPGD = 0;
 [e = . . _EECON1bits 0 5 -> -> 0 `i `uc ]
-"423
-[; ;Progra_IRONMAN.c: 423:     EECON1bits.RD = 1;
+"405
+[; ;Progra_IRONMAN.c: 405:     EECON1bits.RD = 1;
 [e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
-"424
-[; ;Progra_IRONMAN.c: 424:     return EEDAT;
+"406
+[; ;Progra_IRONMAN.c: 406:     return EEDAT;
 [e ) _EEDAT ]
 [e $UE 203  ]
-"425
-[; ;Progra_IRONMAN.c: 425: }
+"407
+[; ;Progra_IRONMAN.c: 407: }
 [e :UE 203 ]
 }
-"427
-[; ;Progra_IRONMAN.c: 427: void write_EEPROM (uint8_t address, uint8_t data){
+"409
+[; ;Progra_IRONMAN.c: 409: void write_EEPROM (uint8_t address, uint8_t data){
 [v _write_EEPROM `(v ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _write_EEPROM ]
 [v _address `uc ~T0 @X0 1 r1 ]
 [v _data `uc ~T0 @X0 1 r2 ]
 [f ]
-"428
-[; ;Progra_IRONMAN.c: 428:     uint8_t gieStatus;
+"410
+[; ;Progra_IRONMAN.c: 410:     uint8_t gieStatus;
 [v _gieStatus `uc ~T0 @X0 1 a ]
-"429
-[; ;Progra_IRONMAN.c: 429:     while (WR);
+"411
+[; ;Progra_IRONMAN.c: 411:     while (WR);
 [e $U 208  ]
 [e :U 209 ]
 [e :U 208 ]
 [e $ _WR 209  ]
 [e :U 210 ]
-"431
-[; ;Progra_IRONMAN.c: 431:     EEADR = address;
+"413
+[; ;Progra_IRONMAN.c: 413:     EEADR = address;
 [e = _EEADR _address ]
-"432
-[; ;Progra_IRONMAN.c: 432:     EEDAT = data;
+"414
+[; ;Progra_IRONMAN.c: 414:     EEDAT = data;
 [e = _EEDAT _data ]
-"433
-[; ;Progra_IRONMAN.c: 433:     EECON1bits.EEPGD = 0;
+"415
+[; ;Progra_IRONMAN.c: 415:     EECON1bits.EEPGD = 0;
 [e = . . _EECON1bits 0 5 -> -> 0 `i `uc ]
-"434
-[; ;Progra_IRONMAN.c: 434:     EECON1bits.WREN = 1;
+"416
+[; ;Progra_IRONMAN.c: 416:     EECON1bits.WREN = 1;
 [e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
-"435
-[; ;Progra_IRONMAN.c: 435:     gieStatus = GIE;
+"417
+[; ;Progra_IRONMAN.c: 417:     gieStatus = GIE;
 [e = _gieStatus -> _GIE `uc ]
-"436
-[; ;Progra_IRONMAN.c: 436:     INTCONbits.GIE = 0;
+"418
+[; ;Progra_IRONMAN.c: 418:     INTCONbits.GIE = 0;
 [e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-"437
-[; ;Progra_IRONMAN.c: 437:     EECON2 = 0x55;
+"419
+[; ;Progra_IRONMAN.c: 419:     EECON2 = 0x55;
 [e = _EECON2 -> -> 85 `i `uc ]
-"438
-[; ;Progra_IRONMAN.c: 438:     EECON2 = 0xAA;
+"420
+[; ;Progra_IRONMAN.c: 420:     EECON2 = 0xAA;
 [e = _EECON2 -> -> 170 `i `uc ]
-"439
-[; ;Progra_IRONMAN.c: 439:     EECON1bits.WR = 1;
+"421
+[; ;Progra_IRONMAN.c: 421:     EECON1bits.WR = 1;
 [e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
-"440
-[; ;Progra_IRONMAN.c: 440:     EECON1bits.WREN = 0;
+"422
+[; ;Progra_IRONMAN.c: 422:     EECON1bits.WREN = 0;
 [e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
-"442
-[; ;Progra_IRONMAN.c: 442:     INTCONbits.GIE = gieStatus;
+"424
+[; ;Progra_IRONMAN.c: 424:     INTCONbits.GIE = gieStatus;
 [e = . . _INTCONbits 0 7 _gieStatus ]
-"443
-[; ;Progra_IRONMAN.c: 443: }
+"425
+[; ;Progra_IRONMAN.c: 425: }
 [e :UE 207 ]
 }
-"445
-[; ;Progra_IRONMAN.c: 445: void TXT(void)
+"427
+[; ;Progra_IRONMAN.c: 427: void TXT(void)
 [v _TXT `(v ~T0 @X0 1 ef ]
-"446
-[; ;Progra_IRONMAN.c: 446: {
+"428
+[; ;Progra_IRONMAN.c: 428: {
 {
 [e :U _TXT ]
 [f ]
-"447
-[; ;Progra_IRONMAN.c: 447:     if (modo == 2){
+"429
+[; ;Progra_IRONMAN.c: 429:     if (modo == 2){
 [e $ ! == _modo -> 2 `i 212  ]
 {
-"448
-[; ;Progra_IRONMAN.c: 448:         while(!PIR1bits.RCIF);
+"430
+[; ;Progra_IRONMAN.c: 430:         while(!PIR1bits.RCIF);
 [e $U 213  ]
 [e :U 214 ]
 [e :U 213 ]
 [e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 214  ]
 [e :U 215 ]
-"449
-[; ;Progra_IRONMAN.c: 449:         i++;
+"431
+[; ;Progra_IRONMAN.c: 431:         i++;
 [e ++ _i -> 1 `i ]
-"450
-[; ;Progra_IRONMAN.c: 450:         caracter[i] = RCREG;
+"432
+[; ;Progra_IRONMAN.c: 432:         caracter[i] = RCREG;
 [e = *U + &U _caracter * -> -> _i `ui `ux -> -> # *U &U _caracter `ui `ux -> _RCREG `uc ]
-"451
-[; ;Progra_IRONMAN.c: 451:         entero = caracter[i] - '0';
+"433
+[; ;Progra_IRONMAN.c: 433:         entero = caracter[i] - '0';
 [e = _entero -> - -> *U + &U _caracter * -> -> _i `ui `ux -> -> # *U &U _caracter `ui `ux `ui -> 48 `ui `i ]
-"452
-[; ;Progra_IRONMAN.c: 452:         numero[i] = entero;
+"434
+[; ;Progra_IRONMAN.c: 434:         numero[i] = entero;
 [e = *U + &U _numero * -> -> _i `ui `ux -> -> # *U &U _numero `ui `ux -> _entero `uc ]
-"454
-[; ;Progra_IRONMAN.c: 454:         if (i == 2){
+"436
+[; ;Progra_IRONMAN.c: 436:         if (i == 2){
 [e $ ! == _i -> 2 `i 216  ]
 {
-"455
-[; ;Progra_IRONMAN.c: 455:             i = -1;
+"437
+[; ;Progra_IRONMAN.c: 437:             i = -1;
 [e = _i -U -> 1 `i ]
-"456
-[; ;Progra_IRONMAN.c: 456:             flag = 1;
+"438
+[; ;Progra_IRONMAN.c: 438:             flag = 1;
 [e = _flag -> 1 `i ]
-"458
-[; ;Progra_IRONMAN.c: 458:             valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
+"440
+[; ;Progra_IRONMAN.c: 440:             valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
 [e = _valor_entero + + * -> *U + &U _numero * -> -> -> 0 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 100 `i * -> *U + &U _numero * -> -> -> 1 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 10 `i * -> *U + &U _numero * -> -> -> 2 `i `ui `ux -> -> # *U &U _numero `ui `ux `i -> 1 `i ]
-"459
-[; ;Progra_IRONMAN.c: 459:             PORTD = valor_entero;
+"441
+[; ;Progra_IRONMAN.c: 441:             PORTD = valor_entero;
 [e = _PORTD -> _valor_entero `uc ]
-"460
-[; ;Progra_IRONMAN.c: 460:         }
+"442
+[; ;Progra_IRONMAN.c: 442:         }
 }
 [e :U 216 ]
-"461
-[; ;Progra_IRONMAN.c: 461:     }
+"443
+[; ;Progra_IRONMAN.c: 443:     }
 }
 [e :U 212 ]
-"462
-[; ;Progra_IRONMAN.c: 462: }
+"444
+[; ;Progra_IRONMAN.c: 444:     return;
+[e $UE 211  ]
+"445
+[; ;Progra_IRONMAN.c: 445: }
 [e :UE 211 ]
 }

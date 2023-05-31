@@ -40,12 +40,10 @@
 #define ciclo_trabajo 0.00025f //Ciclo de trabajo de 2 ms
 #define servo1 PORTCbits.RC4 /// usar C4 como salida del servo 1
 #define servo2 PORTCbits.RC5 /// usar C5 como salida del servo 2
-#define aumentar PORTBbits.RB0
-#define decrementar PORTBbits.RB1
 
 
-//unsigned char servo = 1, ang1, ang2;
-int servo = 1, ang1, ang2;
+
+unsigned char servo = 1, ang1, ang2;
 
 //---------------------Variables---------------------------------
 int modo = 0;
@@ -68,7 +66,6 @@ uint8_t  address = 0, data = 0, potenciometro = 0;
 void setup(void);
 void initUART(void);
 void TXT(void);
-//uint8_t cadena(char txt);
 void pulse();
 void servos(uint8_t  dato, int modo);
 void write_EEPROM (uint8_t  address, uint8_t  data);
@@ -212,21 +209,6 @@ void servos(uint8_t dato, int modo){
         //valorPot2 = 0.9*data;
         PWM_duty(2, ciclo_trabajo*((dato)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
     }
-    /*else if(modo == 2){
-        //Canal para girar el cañón 1
-        ang1 = ((valor_uart*0.0470)+6); //Convertimos el valor del pot para que vaya de 0 a 18 y le sumamos 14 para que vaya en un rango de 14 a 32
-            
-        //Canal para girar el cañón 2
-        ang2 = ((valor_uart*0.0470)+6); //Bits bajos     Convertimos el valor del pot para que vaya de 0 a 3987 y le sumamos 3987 para que vaya en un rango de 3987 a 7974
-            
-        //Canal para girar ambos cañones PWM CCP1
-        valorPot1 = 0.6*valor_uart;
-        PWM_duty(1, ciclo_trabajo*((valorPot1)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
-            
-        //Canal para el IRONMAN PWM CCP2
-        //valorPot2 = 0.9*data;
-        PWM_duty(2, ciclo_trabajo*((valor_uart)/255.0f)); //Llamamos a nuestra función de ciclo de trabajo
-    }*/
     return;
 }
 
@@ -412,7 +394,7 @@ void initUART(void){
     
     //paso 6: cargar 9no bit
     //paso 7: cargar 
-    return;
+    //return;
 }
 
 uint8_t read_EEPROM(uint8_t address){
@@ -459,4 +441,5 @@ void TXT(void)
             PORTD = valor_entero;
         }
     }
+    return;
 }

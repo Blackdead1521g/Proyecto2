@@ -2853,8 +2853,8 @@ extern char * ftoa(float f, int * status);
 void PWM_config(char canal, float periodo_ms);
 void PWM_duty(char canal, float duty);
 # 35 "Progra_IRONMAN.c" 2
-# 48 "Progra_IRONMAN.c"
-int servo = 1, ang1, ang2;
+# 46 "Progra_IRONMAN.c"
+unsigned char servo = 1, ang1, ang2;
 
 
 int modo = 0;
@@ -2877,7 +2877,6 @@ uint8_t address = 0, data = 0, potenciometro = 0;
 void setup(void);
 void initUART(void);
 void TXT(void);
-
 void pulse();
 void servos(uint8_t dato, int modo);
 void write_EEPROM (uint8_t address, uint8_t data);
@@ -3021,7 +3020,6 @@ void servos(uint8_t dato, int modo){
 
         PWM_duty(2, 0.00025f*((dato)/255.0f));
     }
-# 230 "Progra_IRONMAN.c"
     return;
 }
 
@@ -3207,7 +3205,7 @@ void initUART(void){
 
 
 
-    return;
+
 }
 
 uint8_t read_EEPROM(uint8_t address){
@@ -3254,4 +3252,5 @@ void TXT(void)
             PORTD = valor_entero;
         }
     }
+    return;
 }
