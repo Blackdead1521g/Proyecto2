@@ -2853,22 +2853,21 @@ extern char * ftoa(float f, int * status);
 void PWM_config(char canal, float periodo_ms);
 void PWM_duty(char canal, float duty);
 # 35 "Progra_IRONMAN.c" 2
-# 47 "Progra_IRONMAN.c"
-unsigned char servo = 1, ang1, ang2;
+# 48 "Progra_IRONMAN.c"
+int servo = 1, ang1, ang2;
 
 
 int modo = 0;
 int i = -1;
 int valorPot1 = 0;
 int valorPot2 = 0;
-int dutyPot = 0;
-int periodoPot = 0;
-float potMapeado = 0;
+int valor_uart = 0;
 int contador = 0;
 char numero[2];
 int valor_entero;
 char caracter[2];
 int flag = 0;
+int bandera = 0;
 int entero = 0;
 uint8_t address = 0, data = 0, potenciometro = 0;
 
@@ -2878,7 +2877,7 @@ uint8_t address = 0, data = 0, potenciometro = 0;
 void setup(void);
 void initUART(void);
 void TXT(void);
-uint8_t cadena(char txt);
+
 void pulse();
 void servos(uint8_t dato, int modo);
 void write_EEPROM (uint8_t address, uint8_t data);
@@ -2953,21 +2952,17 @@ void __attribute__((picinterrupt(("")))) isr(void) {
             }
 
             else if (ADCON0bits.CHS == 0b0001){
-                ang1 = ((ADRESH*0.0470)+6);
+                ang1 = ((ADRESH*0.047)+6);
             }
 
             else if (ADCON0bits.CHS == 0b0010){
-                ang2 = ((ADRESH*0.0470)+6);
+                ang2 = ((ADRESH*0.047)+6);
             }
 
             else if (ADCON0bits.CHS == 0b0011){
                 valorPot2 = 0.9*ADRESH;
                 PWM_duty(2, 0.00025f*((ADRESH)/255.0f));
             }
-
-
-
-
         }
         else if(modo == 1){
 
@@ -3013,10 +3008,10 @@ void pulse(){
 void servos(uint8_t dato, int modo){
     if(modo == 1){
 
-        ang1 = ((dato*0.0470)+6);
+        ang1 = ((dato*0.047)+6);
 
 
-        ang2 = ((dato*0.0470)+6);
+        ang2 = ((dato*0.047)+6);
 
 
         valorPot1 = 0.6*dato;
@@ -3026,6 +3021,7 @@ void servos(uint8_t dato, int modo){
 
         PWM_duty(2, 0.00025f*((dato)/255.0f));
     }
+# 230 "Progra_IRONMAN.c"
     return;
 }
 
@@ -3037,10 +3033,13 @@ void main(void) {
     initUART();
     ADCON0bits.GO = 1;
     while(1){
+
         if(flag == 1){
             flag = 0;
-            PORTD = valor_entero;
+            bandera = 1;
+            valor_uart = PORTD;
         }
+
 
         if (contador == 1){
             __asm("sleep");
@@ -3048,19 +3047,21 @@ void main(void) {
 
         PORTE = modo;
 
-        if(modo == 3){
+        if(modo > 2){
             modo = 0;
         }
 
-        if(servo == 3){
+        if(servo > 2){
             servo = 1;
         }
+
 
         ang1 = (ang1<Lmin) ? Lmin:ang1;
         ang1 = (ang1>Lmax) ? Lmax:ang1;
 
         ang2 = (ang2<Lmin) ? Lmin:ang2;
         ang2 = (ang2>Lmax) ? Lmax:ang2;
+
 
 
         if (ADCON0bits.GO == 0) {
@@ -3087,6 +3088,23 @@ void main(void) {
             _delay((unsigned long)((1000)*(4000000/4000000.0)));
             ADCON0bits.GO = 1;
         }
+
+        if(bandera == 1){
+            bandera = 0;
+
+            ang1 = ((valor_uart*0.047)+6);
+
+
+            ang2 = ((valor_uart*0.047)+6);
+
+
+            valorPot1 = 0.6*valor_uart;
+            PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
+
+
+            PWM_duty(2, 0.00025f*((valor_uart)/255.0f));
+        }
+
     }
     return;
 }
@@ -3103,11 +3121,12 @@ void setup(void){
 
     TRISB = 0b11111111;
     TRISA = 0b11111111;
-
+    TRISC = 0b11000000;
     TRISD = 0;
     TRISE = 0;
 
 
+    modo = 0;
     PORTA = 0;
     PORTB = 0;
     PORTC = 0;
@@ -3188,7 +3207,7 @@ void initUART(void){
 
 
 
-
+    return;
 }
 
 uint8_t read_EEPROM(uint8_t address){
@@ -3217,33 +3236,22 @@ void write_EEPROM (uint8_t address, uint8_t data){
 
     INTCONbits.GIE = gieStatus;
 }
-# 426 "Progra_IRONMAN.c"
+
 void TXT(void)
 {
     if (modo == 2){
         while(!PIR1bits.RCIF);
-
         i++;
-
-
-
-
         caracter[i] = RCREG;
         entero = caracter[i] - '0';
         numero[i] = entero;
 
-
-
-
-
-
-
         if (i == 2){
             i = -1;
             flag = 1;
+
             valor_entero = numero[0]*100 + numero[1]*10 + numero[2]*1;
+            PORTD = valor_entero;
         }
-# 463 "Progra_IRONMAN.c"
     }
-    return;
 }
