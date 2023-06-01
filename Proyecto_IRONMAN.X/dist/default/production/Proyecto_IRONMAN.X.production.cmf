@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+$C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 12 12 3 2 1
@@ -106,29 +106,29 @@ STRING 1800-1948 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Proyecto_IRONMAN.X.production.o
-15 cinit CODE >762:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-15 cinit CODE >765:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-15 cinit CODE >833:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-16 cinit CODE >834:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-17 cinit CODE >835:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-1C cinit CODE >836:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-1D cinit CODE >837:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-22 cinit CODE >838:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-23 cinit CODE >839:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-28 cinit CODE >840:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-29 cinit CODE >859:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-2A cinit CODE >860:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-2B cinit CODE >861:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-2C cinit CODE >862:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-2D cinit CODE >863:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-32 cinit CODE >866:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-33 cinit CODE >867:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-34 cinit CODE >868:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-35 cinit CODE >869:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-36 cinit CODE >870:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-3B cinit CODE >876:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-3B cinit CODE >878:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-3C cinit CODE >879:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
+15 cinit CODE >762:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+15 cinit CODE >765:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+15 cinit CODE >833:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+16 cinit CODE >834:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+17 cinit CODE >835:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+1C cinit CODE >836:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+1D cinit CODE >837:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+22 cinit CODE >838:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+23 cinit CODE >839:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+28 cinit CODE >840:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+29 cinit CODE >859:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+2A cinit CODE >860:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+2B cinit CODE >861:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+2C cinit CODE >862:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+2D cinit CODE >863:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+32 cinit CODE >866:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+33 cinit CODE >867:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+34 cinit CODE >868:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+35 cinit CODE >869:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+36 cinit CODE >870:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+3B cinit CODE >876:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+3B cinit CODE >878:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+3C cinit CODE >879:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
 4 intentry CODE >75:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 1982 text24 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 1982 text24 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
@@ -144,46 +144,46 @@ $dist/default/production\Proyecto_IRONMAN.X.production.o
 199C text24 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 19A2 text24 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 19A6 text24 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
-1B48 text23 CODE >431:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B48 text23 CODE >433:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B51 text23 CODE >434:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B56 text23 CODE >435:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B5A text23 CODE >435:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B5E text23 CODE >436:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B66 text23 CODE >437:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B6F text23 CODE >437:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B72 text23 CODE >438:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B77 text23 CODE >440:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B7E text23 CODE >441:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B82 text23 CODE >442:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1B88 text23 CODE >444:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BB4 text23 CODE >444:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BBE text23 CODE >444:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BC2 text23 CODE >445:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BC6 text23 CODE >449:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A1C text22 CODE >171:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A1C text22 CODE >172:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A23 text22 CODE >173:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A29 text22 CODE >175:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A2F text22 CODE >176:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A30 text22 CODE >177:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A31 text22 CODE >180:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A37 text22 CODE >181:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A39 text22 CODE >184:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A3F text22 CODE >185:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A45 text22 CODE >187:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A4B text22 CODE >188:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A4C text22 CODE >189:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A4D text22 CODE >192:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A53 text22 CODE >193:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1A54 text22 CODE >197:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1949 text21 CODE >404:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-194A text21 CODE >405:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1954 text21 CODE >407:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1958 text21 CODE >408:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-195B text21 CODE >409:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-195C text21 CODE >410:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-195F text21 CODE >411:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B48 text23 CODE >427:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B48 text23 CODE >429:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B51 text23 CODE >430:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B56 text23 CODE >431:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B5A text23 CODE >431:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B5E text23 CODE >432:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B66 text23 CODE >433:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B6F text23 CODE >433:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B72 text23 CODE >434:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B77 text23 CODE >436:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B7E text23 CODE >437:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B82 text23 CODE >438:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1B88 text23 CODE >440:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BB4 text23 CODE >440:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BBE text23 CODE >440:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BC2 text23 CODE >441:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BC6 text23 CODE >445:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A1C text22 CODE >167:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A1C text22 CODE >168:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A23 text22 CODE >169:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A29 text22 CODE >171:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A2F text22 CODE >172:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A30 text22 CODE >173:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A31 text22 CODE >176:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A37 text22 CODE >177:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A39 text22 CODE >180:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A3F text22 CODE >181:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A45 text22 CODE >183:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A4B text22 CODE >184:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A4C text22 CODE >185:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A4D text22 CODE >188:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A53 text22 CODE >189:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1A54 text22 CODE >193:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1949 text21 CODE >400:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+194A text21 CODE >401:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1954 text21 CODE >403:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1958 text21 CODE >404:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+195B text21 CODE >405:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+195C text21 CODE >406:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+195F text21 CODE >407:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 1E2D text20 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
 1E2D text20 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
 1E32 text20 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
@@ -765,87 +765,89 @@ $dist/default/production\Proyecto_IRONMAN.X.production.o
 10B9 text14 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 10BA text14 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 10C2 text14 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1C5C text13 CODE >199:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C5F text13 CODE >200:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C65 text13 CODE >202:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1CBB text13 CODE >205:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1D13 text13 CODE >208:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1D5A text13 CODE >209:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1DC1 text13 CODE >213:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1E2C text13 CODE >216:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1960 text12 CODE >413:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1961 text12 CODE >415:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1967 text12 CODE >417:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-196B text12 CODE >418:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-196D text12 CODE >419:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1970 text12 CODE >420:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1971 text12 CODE >421:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1975 text12 CODE >422:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1976 text12 CODE >423:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1978 text12 CODE >424:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-197A text12 CODE >425:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-197B text12 CODE >426:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-197C text12 CODE >428:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-197D text12 CODE >428:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-197F text12 CODE >428:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1981 text12 CODE >429:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C5C text13 CODE >195:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C5F text13 CODE >196:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C65 text13 CODE >198:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1CBB text13 CODE >201:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1D13 text13 CODE >204:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1D5A text13 CODE >205:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1DC1 text13 CODE >209:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1E2C text13 CODE >212:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1960 text12 CODE >409:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1961 text12 CODE >411:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1967 text12 CODE >413:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+196B text12 CODE >414:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+196D text12 CODE >415:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1970 text12 CODE >416:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1971 text12 CODE >417:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1975 text12 CODE >418:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1976 text12 CODE >419:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1978 text12 CODE >420:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+197A text12 CODE >421:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+197B text12 CODE >422:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+197C text12 CODE >424:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+197D text12 CODE >424:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+197F text12 CODE >424:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1981 text12 CODE >425:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9C2 text11 CODE >75:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9C2 text11 CODE >77:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9C6 text11 CODE >79:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9CB text11 CODE >80:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9CC text11 CODE >84:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9D2 text11 CODE >85:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9D7 text11 CODE >91:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9DB text11 CODE >93:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9E1 text11 CODE >94:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9E7 text11 CODE >94:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9D7 text11 CODE >90:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9DB text11 CODE >92:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9E1 text11 CODE >93:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9E7 text11 CODE >93:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9EB text11 CODE >95:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9EF text11 CODE >96:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9EC text11 CODE >97:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9F0 text11 CODE >98:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9F4 text11 CODE >99:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9F5 text11 CODE >100:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+9F6 text11 CODE >102:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 9FA text11 CODE >103:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-9FE text11 CODE >104:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A05 text11 CODE >109:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A09 text11 CODE >110:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A0E text11 CODE >114:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A12 text11 CODE >115:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A1D text11 CODE >119:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A21 text11 CODE >121:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A2C text11 CODE >123:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A30 text11 CODE >124:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A3C text11 CODE >125:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A3D text11 CODE >127:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A41 text11 CODE >128:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A48 text11 CODE >131:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A48 text11 CODE >132:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A49 text11 CODE >136:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A4F text11 CODE >137:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A57 text11 CODE >140:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A60 text11 CODE >140:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-A64 text11 CODE >141:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-AAD text11 CODE >142:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B14 text11 CODE >143:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B15 text11 CODE >145:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B1E text11 CODE >145:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B22 text11 CODE >146:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B7C text11 CODE >147:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B7D text11 CODE >149:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B86 text11 CODE >149:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-B8A text11 CODE >150:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-BE4 text11 CODE >151:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-BE5 text11 CODE >153:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-BEE text11 CODE >153:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-BF2 text11 CODE >154:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-C3B text11 CODE >155:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CA7 text11 CODE >156:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CA7 text11 CODE >157:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CA8 text11 CODE >158:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CAE text11 CODE >160:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CB7 text11 CODE >160:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CBB text11 CODE >161:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CC1 text11 CODE >162:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CC5 text11 CODE >166:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CC8 text11 CODE >169:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A00 text11 CODE >105:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A04 text11 CODE >106:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A05 text11 CODE >108:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A09 text11 CODE >109:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A0E text11 CODE >113:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A12 text11 CODE >114:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A1D text11 CODE >118:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A21 text11 CODE >120:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A2C text11 CODE >122:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A30 text11 CODE >123:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A34 text11 CODE >124:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A40 text11 CODE >125:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A41 text11 CODE >127:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A45 text11 CODE >128:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A4C text11 CODE >129:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A4C text11 CODE >130:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A4D text11 CODE >134:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A53 text11 CODE >135:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A5B text11 CODE >137:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A64 text11 CODE >137:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+A68 text11 CODE >138:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+AB1 text11 CODE >139:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B18 text11 CODE >140:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B19 text11 CODE >142:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B22 text11 CODE >142:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B26 text11 CODE >143:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B80 text11 CODE >144:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B81 text11 CODE >146:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B8A text11 CODE >146:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+B8E text11 CODE >147:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+BE8 text11 CODE >148:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+BE9 text11 CODE >150:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+BF2 text11 CODE >150:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+BF6 text11 CODE >151:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+C3F text11 CODE >152:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CAB text11 CODE >153:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CAB text11 CODE >154:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CAC text11 CODE >155:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CB2 text11 CODE >157:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CBB text11 CODE >157:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CBF text11 CODE >158:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CC5 text11 CODE >162:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CC8 text11 CODE >165:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 15A8 text10 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
 15A8 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
 15AD text10 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
@@ -1053,21 +1055,21 @@ CC8 text11 CODE >169:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRO
 1173 text9 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 1174 text9 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 117C text9 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-19A7 text8 CODE >372:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19A7 text8 CODE >374:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19AB text8 CODE >375:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19AC text8 CODE >376:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19AD text8 CODE >377:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19B0 text8 CODE >380:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19B3 text8 CODE >381:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19B6 text8 CODE >382:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19B9 text8 CODE >383:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19BC text8 CODE >386:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19BF text8 CODE >389:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19C2 text8 CODE >390:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19C5 text8 CODE >394:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19C8 text8 CODE >395:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-19CB text8 CODE >402:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19A7 text8 CODE >368:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19A7 text8 CODE >370:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19AB text8 CODE >371:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19AC text8 CODE >372:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19AD text8 CODE >373:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19B0 text8 CODE >376:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19B3 text8 CODE >377:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19B6 text8 CODE >378:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19B9 text8 CODE >379:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19BC text8 CODE >382:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19BF text8 CODE >385:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19C2 text8 CODE >386:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19C5 text8 CODE >390:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19C8 text8 CODE >391:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+19CB text8 CODE >398:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 117D text7 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
 117D text7 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
 1182 text7 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
@@ -1468,129 +1470,129 @@ F8 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\s
 7CC text2 CODE >50:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\PWM_SERVO1.c
 7DD text2 CODE >51:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\PWM_SERVO1.c
 7F6 text2 CODE >54:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\PWM_SERVO1.c
-1BC7 text1 CODE >303:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BC7 text1 CODE >305:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCA text1 CODE >306:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCB text1 CODE >307:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCC text1 CODE >308:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCD text1 CODE >309:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCE text1 CODE >310:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BCF text1 CODE >313:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BD3 text1 CODE >314:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BD5 text1 CODE >315:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BD7 text1 CODE >316:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BD8 text1 CODE >317:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BD9 text1 CODE >320:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BDB text1 CODE >321:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BDE text1 CODE >322:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BDF text1 CODE >323:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BE0 text1 CODE >324:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BE1 text1 CODE >325:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BE2 text1 CODE >327:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BE5 text1 CODE >328:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BE7 text1 CODE >330:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BEB text1 CODE >331:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BEC text1 CODE >336:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BED text1 CODE >337:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BEE text1 CODE >338:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BEF text1 CODE >339:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF0 text1 CODE >340:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF1 text1 CODE >341:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF4 text1 CODE >344:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF5 text1 CODE >345:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF6 text1 CODE >346:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF7 text1 CODE >347:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF8 text1 CODE >348:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BF9 text1 CODE >349:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BFA text1 CODE >350:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BFD text1 CODE >351:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1BFE text1 CODE >352:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C01 text1 CODE >355:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C03 text1 CODE >356:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C06 text1 CODE >357:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C07 text1 CODE >358:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C0D text1 CODE >360:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C10 text1 CODE >361:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C13 text1 CODE >362:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C1B text1 CODE >365:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C2B text1 CODE >366:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C3B text1 CODE >367:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C4B text1 CODE >368:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-1C5B text1 CODE >370:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CD5 maintext CODE >218:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CD5 maintext CODE >219:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CDF maintext CODE >220:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CE1 maintext CODE >221:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CE3 maintext CODE >222:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CE8 maintext CODE >223:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CED maintext CODE >224:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CF0 maintext CODE >227:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CF8 maintext CODE >228:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CFA maintext CODE >229:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-CFE maintext CODE >230:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D09 maintext CODE >234:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D0F maintext CODE >235:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D10 maintext CODE >238:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D16 maintext CODE >240:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D1D maintext CODE >240:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D21 maintext CODE >240:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D25 maintext CODE >241:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D29 maintext CODE >242:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D2C maintext CODE >245:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D30 maintext CODE >245:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D34 maintext CODE >246:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D36 maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D3B maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D3F maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D55 maintext CODE >251:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D5A maintext CODE >251:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D5E maintext CODE >251:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D74 maintext CODE >253:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D77 maintext CODE >253:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D7B maintext CODE >253:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D91 maintext CODE >254:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D96 maintext CODE >254:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-D9A maintext CODE >254:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DB0 maintext CODE >258:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DB6 maintext CODE >259:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DBD maintext CODE >259:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DC1 maintext CODE >261:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DC7 maintext CODE >262:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DC8 maintext CODE >263:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DD1 maintext CODE >263:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DD5 maintext CODE >265:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DDB maintext CODE >266:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DDC maintext CODE >267:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DE5 maintext CODE >267:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DE9 maintext CODE >269:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DEF maintext CODE >270:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DF0 maintext CODE >271:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DF9 maintext CODE >271:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-DFD maintext CODE >273:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E03 maintext CODE >274:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E04 maintext CODE >275:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E0D maintext CODE >275:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E11 maintext CODE >277:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E16 maintext CODE >278:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E16 maintext CODE >279:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E1E maintext CODE >280:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E21 maintext CODE >283:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E29 maintext CODE >284:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E2B maintext CODE >286:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-E83 maintext CODE >289:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-EDB maintext CODE >292:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-F22 maintext CODE >293:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-F8F maintext CODE >296:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
-7F7 clrtext CODE >846:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7F7 clrtext CODE >847:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7F8 clrtext CODE >848:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7F8 clrtext CODE >849:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7F9 clrtext CODE >850:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7FA clrtext CODE >851:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7FB clrtext CODE >852:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7FC clrtext CODE >853:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7FD clrtext CODE >854:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
-7FE clrtext CODE >855:C:\Users\Black\AppData\Local\Temp\xcAsjr0.s
+1BC7 text1 CODE >299:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BC7 text1 CODE >301:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCA text1 CODE >302:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCB text1 CODE >303:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCC text1 CODE >304:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCD text1 CODE >305:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCE text1 CODE >306:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BCF text1 CODE >309:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BD3 text1 CODE >310:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BD5 text1 CODE >311:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BD7 text1 CODE >312:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BD8 text1 CODE >313:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BD9 text1 CODE >316:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BDB text1 CODE >317:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BDE text1 CODE >318:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BDF text1 CODE >319:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BE0 text1 CODE >320:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BE1 text1 CODE >321:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BE2 text1 CODE >323:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BE5 text1 CODE >324:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BE7 text1 CODE >326:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BEB text1 CODE >327:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BEC text1 CODE >332:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BED text1 CODE >333:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BEE text1 CODE >334:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BEF text1 CODE >335:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF0 text1 CODE >336:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF1 text1 CODE >337:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF4 text1 CODE >340:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF5 text1 CODE >341:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF6 text1 CODE >342:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF7 text1 CODE >343:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF8 text1 CODE >344:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BF9 text1 CODE >345:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BFA text1 CODE >346:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BFD text1 CODE >347:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1BFE text1 CODE >348:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C01 text1 CODE >351:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C03 text1 CODE >352:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C06 text1 CODE >353:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C07 text1 CODE >354:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C0D text1 CODE >356:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C10 text1 CODE >357:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C13 text1 CODE >358:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C1B text1 CODE >361:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C2B text1 CODE >362:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C3B text1 CODE >363:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C4B text1 CODE >364:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+1C5B text1 CODE >366:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CD5 maintext CODE >214:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CD5 maintext CODE >215:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CDF maintext CODE >216:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CE1 maintext CODE >217:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CE3 maintext CODE >218:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CE8 maintext CODE >219:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CED maintext CODE >220:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CF0 maintext CODE >223:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CF8 maintext CODE >224:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CFA maintext CODE >225:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+CFE maintext CODE >226:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D09 maintext CODE >230:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D0F maintext CODE >231:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D10 maintext CODE >234:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D16 maintext CODE >236:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D1D maintext CODE >236:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D21 maintext CODE >236:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D25 maintext CODE >237:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D29 maintext CODE >238:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D2C maintext CODE >241:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D30 maintext CODE >241:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D34 maintext CODE >242:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D36 maintext CODE >246:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D3B maintext CODE >246:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D3F maintext CODE >246:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D55 maintext CODE >247:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D5A maintext CODE >247:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D5E maintext CODE >247:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D74 maintext CODE >249:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D77 maintext CODE >249:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D7B maintext CODE >249:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D91 maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D96 maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+D9A maintext CODE >250:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DB0 maintext CODE >254:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DB6 maintext CODE >255:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DBD maintext CODE >255:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DC1 maintext CODE >257:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DC7 maintext CODE >258:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DC8 maintext CODE >259:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DD1 maintext CODE >259:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DD5 maintext CODE >261:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DDB maintext CODE >262:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DDC maintext CODE >263:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DE5 maintext CODE >263:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DE9 maintext CODE >265:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DEF maintext CODE >266:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DF0 maintext CODE >267:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DF9 maintext CODE >267:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+DFD maintext CODE >269:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E03 maintext CODE >270:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E04 maintext CODE >271:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E0D maintext CODE >271:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E11 maintext CODE >273:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E16 maintext CODE >274:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E16 maintext CODE >275:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E1E maintext CODE >276:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E21 maintext CODE >279:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E29 maintext CODE >280:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E2B maintext CODE >282:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+E83 maintext CODE >285:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+EDB maintext CODE >288:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+F22 maintext CODE >289:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+F8F maintext CODE >292:C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+7F7 clrtext CODE >846:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7F7 clrtext CODE >847:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7F8 clrtext CODE >848:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7F8 clrtext CODE >849:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7F9 clrtext CODE >850:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7FA clrtext CODE >851:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7FB clrtext CODE >852:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7FC clrtext CODE >853:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7FD clrtext CODE >854:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
+7FE clrtext CODE >855:C:\Users\Black\AppData\Local\Temp\xcAsmb8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1636,7 +1638,7 @@ _SYNC 4C4 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
 _TXEN 4C5 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
 _TXIF 64 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+___sp 0 0 STACK 2 stack C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 _ang1 138 0 BANK2 1 nvBANK2 dist/default/production\Proyecto_IRONMAN.X.production.o
 _ang2 137 0 BANK2 1 nvBANK2 dist/default/production\Proyecto_IRONMAN.X.production.o
 _data D4 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_IRONMAN.X.production.o
@@ -1644,7 +1646,7 @@ _flag 131 0 BANK2 1 bssBANK2 dist/default/production\Proyecto_IRONMAN.X.producti
 _main 19AA 0 CODE 0 maintext dist/default/production\Proyecto_IRONMAN.X.production.o
 _modo D1 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_IRONMAN.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
-start 24 0 CODE 0 init C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+start 24 0 CODE 0 init C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 ___flmul@aexp 1C6 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMAN.X.production.o
 ___flmul@bexp 1CB 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMAN.X.production.o
 ___flmul@prod 1CC 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMAN.X.production.o
@@ -1656,12 +1658,12 @@ __LidataBANK1 0 0 ABS 0 idataBANK1 -
 __Hpowerup 0 0 CODE 0 powerup -
 __end_ofi1___xxtofl 2186 0 CODE 0 text14 dist/default/production\Proyecto_IRONMAN.X.production.o
 _read_EEPROM 3292 0 CODE 0 text21 dist/default/production\Proyecto_IRONMAN.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 _initUART 334E 0 CODE 0 text8 dist/default/production\Proyecto_IRONMAN.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Proyecto_IRONMAN.X.production.o
@@ -1696,8 +1698,8 @@ __end_of___fltol 359A 0 CODE 0 text6 dist/default/production\Proyecto_IRONMAN.X.
 i1___fltol@f1 68 0 BANK0 1 cstackBANK0 dist/default/production\Proyecto_IRONMAN.X.production.o
 _address D5 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_IRONMAN.X.production.o
 __Umul8_16@multiplicand 190 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMAN.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
-___stacklo 0 0 ABS 0 - C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+___stackhi 0 0 ABS 0 - C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
+___stacklo 0 0 ABS 0 - C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 i1___fladd@aexp 65 0 BANK0 1 cstackBANK0 dist/default/production\Proyecto_IRONMAN.X.production.o
 i1___fladd@bexp 66 0 BANK0 1 cstackBANK0 dist/default/production\Proyecto_IRONMAN.X.production.o
 ___fladd@a 1D6 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMAN.X.production.o
@@ -1722,7 +1724,7 @@ __pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production\Proyecto_IRONMA
 PWM_duty@particion1 118 0 BANK2 1 cstackBANK2 dist/default/production\Proyecto_IRONMAN.X.production.o
 PWM_duty@particion2 11A 0 BANK2 1 cstackBANK2 dist/default/production\Proyecto_IRONMAN.X.production.o
 __end_ofi1__Umul8_16 33E6 0 CODE 0 text19 dist/default/production\Proyecto_IRONMAN.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+___int_sp 0 0 STACK 2 stack C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 write_EEPROM@gieStatus 72 0 COMMON 1 cstackCOMMON dist/default/production\Proyecto_IRONMAN.X.production.o
 __end_of_servos 3C5A 0 CODE 0 text13 dist/default/production\Proyecto_IRONMAN.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
@@ -1802,7 +1804,7 @@ i1___flmul@temp 52 0 BANK0 1 cstackBANK0 dist/default/production\Proyecto_IRONMA
 __HnvBANK2 0 0 ABS 0 nvBANK2 -
 __Lintentry 8 0 CODE 0 intentry -
 i1___fladd@signs 64 0 BANK0 1 cstackBANK0 dist/default/production\Proyecto_IRONMAN.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Black\AppData\Local\Temp\xcAsjr0.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Black\AppData\Local\Temp\xcAsmb8.o
 __end_of___xxtofl 22FA 0 CODE 0 text9 dist/default/production\Proyecto_IRONMAN.X.production.o
 i1PWM_duty@canal A9 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_IRONMAN.X.production.o
 __pdataBANK1 D6 0 BANK1 1 dataBANK1 dist/default/production\Proyecto_IRONMAN.X.production.o

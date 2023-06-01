@@ -2895,7 +2895,6 @@ void __attribute__((picinterrupt(("")))) isr(void) {
     if(PIR1bits.RCIF){
         TXT();
 
-
     }
 
 
@@ -2903,12 +2902,12 @@ void __attribute__((picinterrupt(("")))) isr(void) {
     {
         if (PORTBbits.RB0 == 0){
             modo = modo + 1;
-            contador = 0;
+
         }
 
         else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
-            contador = 0;
+
         }
 
         else if (PORTBbits.RB2 == 0){
@@ -2931,14 +2930,13 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 
             data = read_EEPROM(address);
 
+            PORTD = data;
             contador = 0;
             servos(data, modo);
         }
 
         else if (PORTBbits.RB6 == 0){
              contador = 1;
-
-
         }
         INTCONbits.RBIF = 0;
     }
@@ -2946,7 +2944,6 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 
     if (PIR1bits.ADIF) {
         if(modo == 0){
-
 
             if (ADCON0bits.CHS == 0b0000){
                 valorPot1 = 0.6*ADRESH;
@@ -2970,7 +2967,6 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 
             if (ADCON0bits.CHS == 0b0100){
                 potenciometro = ADRESH;
-                PORTD = potenciometro;
             }
         }
 

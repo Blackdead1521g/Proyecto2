@@ -1,14 +1,14 @@
-/* Archivo: PostLab02.c
+/* Archivo: Progra_IRONMAN.c
  * Dispositivo: PIC16F887
  * Autor: Kevin Alarcón
  * Compilador: XC8(v2.40), MPLABX V6.05
  * 
  * 
- * Programa: Utilizar los PWM del pic y crear un nuevo PWM para la intensidad de un led
- * Hardware: Potenciómetros en RA0, RA2 y RA5; 2 servo motores en RC1 y RC2, 1 led en RC3
+ * Programa: Maniobrar servomotores con tres modos distintos
+ * Hardware: Potenciometros, botones, servomotores y leds
  * 
- * Creado: 10 de abril, 2023
- * Última modificación: 13 de abril, 2023
+ * Creado: 10 de mayo, 2023
+ * Última modificación: 01 de junio, 2023
  */
 // CONFIG1
 #pragma config FOSC = INTRC_NOCLKOUT// Oscillator Selection bits (INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O function on RA7/OSC1/CLKIN)
@@ -83,7 +83,6 @@ void __interrupt() isr(void) {
     //Interrupción del puerto serial
     if(PIR1bits.RCIF){ //Verificamos que la bandera del EUSART esté llena (ya recibió un valor)
         TXT();
-        //recibido = RCREG; //Ingresamos el dato recibido desde la hiperterminal en la variable recibido
         //RCREG es el registro que contiene el valor que ingresamos en la hiperterminal
     }
 
@@ -92,12 +91,12 @@ void __interrupt() isr(void) {
     {   //RB0 --> cambiar de modo
         if (PORTBbits.RB0 == 0){
             modo = modo + 1;
-            contador = 0;
+            //contador = 0;
         }
         //RB1 -> Cambiar de servomotor
         else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
-            contador = 0;
+            //contador = 0;
         }
         //RB0 -> Aumentar la dirección de memoria
         else if (PORTBbits.RB2 == 0){
@@ -120,14 +119,13 @@ void __interrupt() isr(void) {
             //PORTD = 0; //Limpiamos el puerto D
             data = read_EEPROM(address); //Mandamos a llamar a nuestra función de lectura en la EEPROM
             //PORTD = data; //Ingresamos el valor tomado de la EEPROM en el puerto D
+            PORTD = data;
             contador = 0; //Colocamos nuestra bandera de Sleep en 0
             servos(data, modo);
         }
         //RB6 -> Sleep
         else if (PORTBbits.RB6 == 0){
              contador = 1; //Colocamos nuestra bandera de Sleep en 1
-             //PORTA = address; //Ingresamos en el puerto A el valor de la localidad en la que estamos
-             //PORTC = potenciometro; //Ingresamos en el puerto C el valor del potenciómetro
         }
         INTCONbits.RBIF = 0; //Apagamos la bandera del puerto B
     }
@@ -135,7 +133,6 @@ void __interrupt() isr(void) {
     //Interrupción del ADC
     if (PIR1bits.ADIF) { //Si se activa la bandera de interrupcion del ADC
         if(modo == 0){ //Si está en 0 activamos el modo manual
-            //PORTD = 0;
             //Canal para girar ambos cañones PWM CCP1
             if (ADCON0bits.CHS == 0b0000){ //Si está en ADC AN0
                 valorPot1 = 0.6*ADRESH;
@@ -159,7 +156,6 @@ void __interrupt() isr(void) {
             //Canal para el IRONMAN PWM CCP2
             if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
                 potenciometro = ADRESH;
-                PORTD = potenciometro;
             }  
         }
             
