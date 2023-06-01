@@ -67,7 +67,7 @@ void setup(void);
 void initUART(void);
 void TXT(void);
 void pulse();
-void servos(uint8_t  dato, int modo);
+void servos(uint8_t dato, int modo);
 void write_EEPROM (uint8_t  address, uint8_t  data);
 uint8_t  read_EEPROM(uint8_t  address);
 
@@ -92,10 +92,12 @@ void __interrupt() isr(void) {
     {   //RB0 --> cambiar de modo
         if (PORTBbits.RB0 == 0){
             modo = modo + 1;
+            contador = 0;
         }
         //RB1 -> Cambiar de servomotor
         else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
+            contador = 0;
         }
         //RB0 -> Aumentar la dirección de memoria
         else if (PORTBbits.RB2 == 0){
@@ -133,6 +135,7 @@ void __interrupt() isr(void) {
     //Interrupción del ADC
     if (PIR1bits.ADIF) { //Si se activa la bandera de interrupcion del ADC
         if(modo == 0){ //Si está en 0 activamos el modo manual
+            //PORTD = 0;
             //Canal para girar ambos cañones PWM CCP1
             if (ADCON0bits.CHS == 0b0000){ //Si está en ADC AN0
                 valorPot1 = 0.6*ADRESH;
@@ -156,7 +159,7 @@ void __interrupt() isr(void) {
             //Canal para el IRONMAN PWM CCP2
             if (ADCON0bits.CHS == 0b0100){ //Si está en ADC AN4
                 potenciometro = ADRESH;
-                contador = 0; //Colocamos nuestra bandera de Sleep en 0
+                PORTD = potenciometro;
             }  
         }
             
@@ -236,6 +239,7 @@ void main(void) {
         
         if(modo > 2){ //No permitimos que el modo avance más de 2 ya que solo 3 modos tenemos contando el modo 0
             modo = 0;
+            PORTD = 0;
         }
         
         if(servo > 2){ //No permitimos que la variable servo sea más de 2 porque solo tenemos dos servos manejados con TMR0

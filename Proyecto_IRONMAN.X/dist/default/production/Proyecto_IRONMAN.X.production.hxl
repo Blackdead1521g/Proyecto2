@@ -10,15 +10,15 @@
  Intel Hex-file ranges:
   0h - 5h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
   8h - FFDh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  1004h - 1FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  2010h - 2FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
-  32A0h - 4007h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  1006h - 1FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  2016h - 2FFFh		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
+  3292h - 4007h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
   400Eh - 4011h		(dist/default/production\Proyecto_IRONMAN.X.production.hex)
  Unused ranges:
   6h - 7h
-  FFEh - 1003h
-  2000h - 200Fh
-  3000h - 329Fh
+  FFEh - 1005h
+  2000h - 2015h
+  3000h - 3291h
   4008h - 400Dh
 
 ### Hex Memory Map ###
@@ -284,7 +284,7 @@
 00000FD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00000FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
-00001000 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001000 | -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001030 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -541,7 +541,7 @@
 00001FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------
-00002010 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002010 | -- -- -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002020 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002030 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002040 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -797,6 +797,7 @@
 00002FE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00002FF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------
+00003290 | -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000032A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000032B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000032C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

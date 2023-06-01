@@ -29,21 +29,21 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "75 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 [v _isr isr `II(v  1 e 1 0 ]
-"168
+"171
 [v _pulse pulse `(v  1 e 1 0 ]
-"196
+"199
 [v _servos servos `(v  1 e 1 0 ]
-"215
+"218
 [v _main main `(v  1 e 1 0 ]
-"299
+"303
 [v _setup setup `(v  1 e 1 0 ]
-"368
+"372
 [v _initUART initUART `(v  1 e 1 0 ]
-"400
+"404
 [v _read_EEPROM read_EEPROM `(uc  1 e 1 0 ]
-"409
+"413
 [v _write_EEPROM write_EEPROM `(v  1 e 1 0 ]
-"427
+"431
 [v _TXT TXT `(v  1 e 1 0 ]
 "5 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\PWM_SERVO1.c
 [v _PWM_config PWM_config `(v  1 e 1 0 ]
@@ -70,7 +70,7 @@
 [v _PORTBbits PORTBbits `VES90  1 e 1 @6 ]
 "291
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
-[s S172 . 1 `uc 1 RC0 1 0 :1:0 
+[s S173 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -80,8 +80,8 @@
 `uc 1 RC7 1 0 :1:7 
 ]
 "308
-[u S181 . 1 `S172 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES181  1 e 1 @7 ]
+[u S182 . 1 `S173 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES182  1 e 1 @7 ]
 "353
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
 "415
@@ -395,18 +395,18 @@
 [v _address address `uc  1 e 1 0 ]
 [v _data data `uc  1 e 1 0 ]
 [v _potenciometro potenciometro `uc  1 e 1 0 ]
-"215
+"218
 [v _main main `(v  1 e 1 0 ]
 {
-"216
+"219
 [v main@Lmin Lmin `i  1 a 2 29 ]
 [v main@Lmax Lmax `i  1 a 2 27 ]
-"297
+"301
 } 0
-"299
+"303
 [v _setup setup `(v  1 e 1 0 ]
 {
-"366
+"370
 } 0
 "34 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\PWM_SERVO1.c
 [v _PWM_duty PWM_duty `(v  1 e 1 0 ]
@@ -500,10 +500,10 @@
 [v ___fldiv@b b `d  1 p 4 18 ]
 "185
 } 0
-"368 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+"372 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 [v _initUART initUART `(v  1 e 1 0 ]
 {
-"398
+"402
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -539,28 +539,28 @@
 "75 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"166
+"169
 } 0
-"409
+"413
 [v _write_EEPROM write_EEPROM `(v  1 e 1 0 ]
 {
 [v write_EEPROM@address address `uc  1 a 1 wreg ]
-"410
+"414
 [v write_EEPROM@gieStatus gieStatus `uc  1 a 1 2 ]
-"409
+"413
 [v write_EEPROM@address address `uc  1 a 1 wreg ]
 [v write_EEPROM@data data `uc  1 p 1 0 ]
 [v write_EEPROM@address address `uc  1 a 1 1 ]
-"425
+"429
 } 0
-"196
+"199
 [v _servos servos `(v  1 e 1 0 ]
 {
 [v servos@dato dato `uc  1 a 1 wreg ]
 [v servos@dato dato `uc  1 a 1 wreg ]
 [v servos@modo modo `i  1 p 2 14 ]
 [v servos@dato dato `uc  1 a 1 24 ]
-"213
+"216
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
 [v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -676,23 +676,23 @@
 [v i1___fldiv@b b `d  1 p 4 4 ]
 "185
 } 0
-"400 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
+"404 C:\Users\Black\MPLABXProjects\Proyecto_IRONMAN.X\Progra_IRONMAN.c
 [v _read_EEPROM read_EEPROM `(uc  1 e 1 0 ]
 {
 [v read_EEPROM@address address `uc  1 a 1 wreg ]
 [v read_EEPROM@address address `uc  1 a 1 wreg ]
 [v read_EEPROM@address address `uc  1 a 1 0 ]
-"407
+"411
 } 0
-"168
+"171
 [v _pulse pulse `(v  1 e 1 0 ]
 {
-"194
+"197
 } 0
-"427
+"431
 [v _TXT TXT `(v  1 e 1 0 ]
 {
-"445
+"449
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]

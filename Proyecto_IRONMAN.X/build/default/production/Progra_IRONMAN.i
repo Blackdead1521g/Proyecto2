@@ -2903,10 +2903,12 @@ void __attribute__((picinterrupt(("")))) isr(void) {
     {
         if (PORTBbits.RB0 == 0){
             modo = modo + 1;
+            contador = 0;
         }
 
         else if (PORTBbits.RB1 == 0){
             servo = servo + 1;
+            contador = 0;
         }
 
         else if (PORTBbits.RB2 == 0){
@@ -2945,6 +2947,7 @@ void __attribute__((picinterrupt(("")))) isr(void) {
     if (PIR1bits.ADIF) {
         if(modo == 0){
 
+
             if (ADCON0bits.CHS == 0b0000){
                 valorPot1 = 0.6*ADRESH;
                 PWM_duty(1, 0.00025f*((valorPot1)/255.0f));
@@ -2967,7 +2970,7 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 
             if (ADCON0bits.CHS == 0b0100){
                 potenciometro = ADRESH;
-                contador = 0;
+                PORTD = potenciometro;
             }
         }
 
@@ -3047,6 +3050,7 @@ void main(void) {
 
         if(modo > 2){
             modo = 0;
+            PORTD = 0;
         }
 
         if(servo > 2){
